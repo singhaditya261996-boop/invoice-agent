@@ -1,0 +1,30 @@
+[project]
+name = "invoice-agent"
+version = "0.1.0"
+description = "Agentic AI system for AP invoice exception triage and reconciliation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=1.7",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "pydantic>=2.6",
+    "rapidfuzz>=3.6",
+    "python-dotenv>=1.0",
+    "python-multipart>=0.0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "httpx>=0.27"]
+# Alternative provider for running the pipeline without Anthropic credits (see docs/model-card.md).
+google = ["google-genai>=1.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*", "data*", "eval*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

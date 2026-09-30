@@ -58,6 +58,7 @@ class Run:
         self.ds = ds
         mode = RunMode.OFFLINE if args.estimate or args.simulate_extraction_errors is not None else RunMode(args.mode)
         self.settings = Settings(mode=mode, llm_effort=args.effort, llm_provider=args.provider,
+                                 reuse_recorded=args.reuse_recorded,
                                  **({"google_model": args.model} if args.provider == "google" and args.model
                                     else {"llm_model": args.model} if args.model else {}))
         self.name = args.name or "-".join(filter(None, [
@@ -76,7 +77,11 @@ class Run:
             if isinstance(self.sources.get(d.doc_id), str):
                 self.truth_by_text[self.sources[d.doc_id]].append((d.doc_id, d.invoice))
         self.simulated = args.estimate or args.simulate_extraction_errors is not None
-        self.fixtures = FixtureStore(self.out / "llm_responses.json", autosave=False) if mode == RunMode.LIVE else None
+        # With --reuse-recorded the shared demo-fixture store is both source and destination, so
+        # successive pilots accumulate instead of re-paying for invoices already measured.
+        self.fixtures = FixtureStore(
+            self.settings.fixtures_path if args.reuse_recorded else self.out / "llm_responses.json",
+            autosave=False) if mode == RunMode.LIVE else None
         self.client = None
         if mode == RunMode.LIVE and self.settings.llm_provider == "anthropic":
             import anthropic
@@ -299,7 +304,7 @@ def write_report(run: Run, scored: dict, cross: dict, robust: dict | None) -> st
               f"- LLM calls: {llm['calls']} ({llm['failed_calls']} fell back to rules), "
               f"{llm['input_tokens']:,} input / {llm['output_tokens']:,} output tokens",
               f"- Cost: ${llm['cost_usd']:.2f} (£{llm['cost_gbp']:.2f}), £{llm['cost_per_invoice_gbp']:.4f} per invoice",
-              f"- Latency per invoice: median {scored['latency_ms']['median']} ms, p90 {scored['latency_ms']['p90']} ms",
+              latency_line(scored, llm),
               "", f"## Failures ({len(scored['failures'])})", ""]
     if scored["failures"]:
         lines += ["| Doc | Expected | Got | Conf. | Detail |", "|---|---|---|---|---|"]
@@ -309,6 +314,13 @@ def write_report(run: Run, scored: dict, cross: dict, robust: dict | None) -> st
         lines.append("None.")
     lines += ["", "## Caveats", ""] + [f"- {c}" for c in caveats(run)]
     return "\n".join(lines) + "\n"
+
+
+def latency_line(scored: dict, llm: dict) -> str:
+    lat = scored["latency_ms"]
+    replayed = f", {llm['cached_calls']} calls replayed from earlier runs" if llm["cached_calls"] else ""
+    return (f"- Latency per invoice: median {lat['median']} ms, p90 {lat['p90']} ms "
+            f"(measured on the {lat['invoices']} invoices whose model calls ran this time{replayed})")
 
 
 def caveats(run: Run) -> list[str]:
@@ -321,6 +333,10 @@ def caveats(run: Run) -> list[str]:
     if run.simulated:
         out.append("Extraction was simulated, not performed by a model. The simulation tests the safeguards "
                    "around extraction, not extraction quality itself.")
+    if any(c.cached for r in run.results.values() for c in r.llm_calls):
+        out.append("Some model responses were replayed from earlier runs (--reuse-recorded), so this run's "
+                   "accuracy covers every invoice listed but its latency covers only the invoices whose "
+                   "calls actually ran.")
     out.append("Calibration can only be meaningfully fitted where the agent makes mistakes. With near-perfect "
                "accuracy every bucket is ~100% accurate, so stated confidence looks under-confident.")
     return out
@@ -343,6 +359,10 @@ def main(argv: list[str] | None = None) -> Run:
     parser.add_argument("--estimate", action="store_true", help="project live cost without calling the API")
     parser.add_argument("--simulate-extraction-errors", type=float, metavar="RATE",
                         help="simulated extraction with this share of invoices misread (implies --input documents)")
+    parser.add_argument("--rescore", action="store_true",
+                        help="recompute metrics and report from a run's saved results.jsonl; no API calls")
+    parser.add_argument("--reuse-recorded", action="store_true",
+                        help="replay identical requests recorded by an earlier live run (saves quota/cost)")
     parser.add_argument("--fit-calibration", action="store_true", help=f"write a fitted table to {CALIBRATION_PATH}")
     parser.add_argument("--no-calibration", action="store_true", help="ignore any saved calibration table")
     parser.add_argument("--seed", type=int, default=0)
@@ -355,8 +375,18 @@ def main(argv: list[str] | None = None) -> Run:
     ds = Dataset.load(DEFAULT_OUT)
     run = Run(args, ds)
     run.out.mkdir(parents=True, exist_ok=True)
-    print(f"Running {run.name}: {len(run.docs)} invoices")
-    run.execute()
+    if args.rescore:
+        saved = run.out / "results.jsonl"
+        if not saved.exists():
+            parser.error(f"no saved results at {saved}")
+        run.results = {r.doc_id: r for r in (InvoiceResult.model_validate_json(line)
+                                             for line in saved.read_text().splitlines())}
+        run.docs = list(run.results)
+        run.elapsed = 0.0
+        print(f"Rescoring {run.name}: {len(run.results)} invoices from {saved.name}")
+    else:
+        print(f"Running {run.name}: {len(run.docs)} invoices")
+        run.execute()
 
     if args.estimate:
         est = estimate(run)

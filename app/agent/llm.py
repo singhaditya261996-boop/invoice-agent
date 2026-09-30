@@ -70,7 +70,23 @@ class FixtureStore:
             self.path.write_text(json.dumps(self.entries, indent=2, sort_keys=True) + "\n")
 
 
-class ClaudeLLM:
+class _Recorded:
+    """Cache-first lookup shared by the live clients (settings.reuse_recorded).
+
+    Lets a run extend an earlier one: requests already answered are replayed, and only genuinely
+    new ones spend quota or money. Replayed calls are reported as cached, never as fresh.
+    """
+
+    fixtures: FixtureStore | None
+    settings: Settings
+
+    def _recorded(self, task: str, model: str, system: str, content: Content, schema: dict) -> dict | None:
+        if not (self.fixtures and self.settings.reuse_recorded):
+            return None
+        return self.fixtures.get(FixtureStore.key(task, model, system, content, schema))
+
+
+class ClaudeLLM(_Recorded):
     def __init__(self, settings: Settings, client: anthropic.Anthropic | None = None,
                  fixtures: FixtureStore | None = None) -> None:
         self.settings = settings
@@ -80,6 +96,10 @@ class ClaudeLLM:
 
     def json(self, task: str, system: str, content: Content, schema: dict) -> dict | None:
         model = self.settings.llm_model
+        cached = self._recorded(task, model, system, content, schema)
+        if cached is not None:
+            self.calls.append(LLMCall(step=task, model=model, cached=True))
+            return cached
         call = LLMCall(step=task, model=model)
         self.calls.append(call)
         start = time.monotonic()
@@ -169,7 +189,7 @@ def _rate_limited(error: Exception) -> bool:
     return "429" in text or "resource_exhausted" in text or "rate limit" in text or "quota" in text
 
 
-class GeminiLLM:
+class GeminiLLM(_Recorded):
     """Google Gemini behind the same interface. Kept deliberately parallel to ClaudeLLM."""
 
     def __init__(self, settings: Settings, client=None, fixtures: FixtureStore | None = None) -> None:
@@ -183,6 +203,10 @@ class GeminiLLM:
         self.client = client
 
     def json(self, task: str, system: str, content: Content, schema: dict) -> dict | None:
+        cached = self._recorded(task, self.model, system, content, schema)
+        if cached is not None:
+            self.calls.append(LLMCall(step=task, model=self.model, cached=True))
+            return cached
         call = LLMCall(step=task, model=self.model)
         self.calls.append(call)
         start = time.monotonic()

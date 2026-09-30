@@ -40,6 +40,7 @@ class Settings(BaseModel):
     llm_effort: str = "medium"  # low | medium | high | xhigh | max; tune against eval (Step 5)
     llm_max_tokens: int = 16000
     record_fixtures: bool = False  # live mode: also write responses to the demo-mode fixture store
+    reuse_recorded: bool = False  # live mode: replay an identical earlier request instead of paying again
     fixtures_path: Path = Path(__file__).resolve().parents[1] / "data" / "fixtures" / "llm_responses.json"
 
     # D-02 tolerances

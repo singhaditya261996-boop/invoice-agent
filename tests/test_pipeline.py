@@ -316,3 +316,16 @@ def test_gemini_failure_falls_back_to_rules():
     llm = GeminiLLM(Settings(mode=RunMode.LIVE, llm_provider="google"), client=client)
     assert llm.json("extract", "sys", "doc", {}) is None
     assert "INVALID_ARGUMENT" in llm.calls[0].error
+
+
+def test_reuse_recorded_replays_instead_of_calling(tmp_path):
+    """A repeat live run must not pay twice for an identical request (quota and cost control)."""
+    s = Settings(mode=RunMode.LIVE, record_fixtures=True, reuse_recorded=True, fixtures_path=tmp_path / "f.json")
+    client, sent = _fake_client(text='{"a": 1}')
+    first = ClaudeLLM(s, client=client)
+    assert first.json("t", "sys", "hi", {}) == {"a": 1} and not first.calls[0].cached
+
+    second = ClaudeLLM(s, client=_fake_client(text='{"a": 2}')[0])
+    assert second.json("t", "sys", "hi", {}) == {"a": 1}  # replayed, not the new client's answer
+    assert second.calls[0].cached
+    assert second.json("t", "sys", "different", {}) == {"a": 2}  # a new request still goes out

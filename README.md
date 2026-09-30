@@ -113,16 +113,16 @@ Full log, including the ones still open: [docs/decision-log.md](docs/decision-lo
 Two kinds of run. The first covers all 500 synthetic invoices with the rules only. The second is a
 small live pilot that actually reads invoice documents with a model.
 
-| | Rules only, 500 invoices | Live pilot, 11 invoices |
+| | Rules only, 500 invoices | Live pilot, 19 invoices |
 |---|---|---|
 | Extraction accuracy | not exercised | **100% of fields on every invoice it read** |
 | Match accuracy | 100% | 100% |
-| Classification accuracy | 100% | 90.9% |
+| Classification accuracy | 100% | 94.7% |
+| Action accuracy | 100% | **100%** |
 | Auto-approval precision | 100% | 100% |
 | Escalation recall | 100% | 100% |
 | False approvals | **0** | **0** |
-| Auto-resolution rate | 32.5% | 42.9% |
-| Median latency | — | 42.9 s (target < 30 s) |
+| Median latency | — | 23.8 s (target < 30 s) |
 | Cost per invoice | — | £0 (free tier) |
 
 **Robustness.** With deliberate misreads injected into up to 100% of invoices, at the high
@@ -132,9 +132,13 @@ were caught** by the arithmetic checks or the three-way match. None was auto-app
 **How to read these numbers.** The synthetic data was generated from the same rules the agent
 applies, so rule-based steps score near 100% by construction — it is a regression baseline and a
 safety test, not a production accuracy estimate. The live pilot ran on **Gemini 3 Flash**, not on
-the model this product would ship with, because it was free; its classification miss was one invoice
-the daily quota cut off, which the agent sent to manual entry rather than guessing at. Eleven
-invoices is a small sample, and latency exceeded target on a thinking-heavy preview model.
+the model this product would ship with, because it was free.
+
+The gap between 94.7% classification and 100% action accuracy is the whole design in one line: the
+single miss was an invoice the daily quota cut off mid-run, so the agent could not read it — and it
+escalated for manual entry instead of guessing. Wrong category, right decision. Nineteen invoices is
+still a small sample, latency was measured on the five whose calls ran fresh, and auto-resolution
+rate on a sample this size is too noisy to report against the 40–60% target.
 
 Full results, including what each run does not show:
 [eval/results/SUMMARY.md](eval/results/SUMMARY.md).
@@ -142,7 +146,7 @@ Full results, including what each run does not show:
 ## Limitations and risks
 
 - **No real invoice has been through this system.** Every number above comes from synthetic data.
-- **Extraction is the weakest link** and the least tested: 11 invoices on one model.
+- **Extraction is the weakest link** and the least tested: 19 invoices on one model.
 - **Confidence scores are not yet calibrated.** The mechanism is built and measured (14.5% error
   as-is, 0.4% when fitted), but fitting it needs a live run over the full set, so the green/amber
   bands currently understate certainty.
@@ -186,7 +190,7 @@ uvicorn app.api.main:app --reload      # API on :8000
 cd app/frontend && npm install && npm run dev    # UI on :5173
 ```
 
-In the UI choose **Demo** and **Documents** with 8 invoices to replay the recorded pilot, or
+In the UI choose **Demo** and **Documents** with 16 invoices to replay the recorded pilot, or
 **Rules only** with **Structured** input to run all 500 with no model at all.
 
 Evaluation runs:

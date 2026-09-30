@@ -22,7 +22,7 @@ def args(**overrides):
     base = dict(mode="offline", input="structured", limit=None, workers=4, provider="anthropic", model=None,
                 effort="medium",
                 max_cost_usd=1.0, estimate=False, simulate_extraction_errors=None, fit_calibration=False,
-                no_calibration=True, seed=0, name="test")
+                no_calibration=True, seed=0, name="test", reuse_recorded=False, rescore=False)
     return argparse.Namespace(**base | overrides)
 
 

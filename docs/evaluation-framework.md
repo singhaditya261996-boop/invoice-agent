@@ -41,6 +41,7 @@ PRD targets, plus four metrics added during the build (marked *added*).
 | *Action accuracy* | Correct action, not just correct category | reported |
 | *Misreads caught* | Payment-affecting misreads stopped before approval | 100% |
 | *Cross-fitted calibration error* | Calibration error after fitting on held-out halves | < 5% |
+| *Latency coverage* | Invoices whose model calls ran fresh, so latency is real | reported |
 
 Two definitions worth stating, because they decide what counts as a failure:
 
@@ -75,7 +76,7 @@ detection only ever compares invoices from the same supplier, so results match a
 | Documents, perfect extraction (simulated) | 100% | 100% | 100% | 12.5% |
 | 30% of invoices misread (simulated) | 78.0% | 100% | 100% | 6.2% |
 | Every invoice misread (simulated) | 28.4% | 100% | 100% | 0.5% |
-| **Live pilot, 11 invoices, Gemini 3 Flash** | 90.9% | 100% | 100% | 42.9% |
+| **Live pilot, 19 invoices, Gemini 3 Flash** | 94.7% | 100% | 100% | 26.7% |
 
 Classification accuracy falls in the misread runs by design: the agent is classifying a different
 invoice from the one the label describes. The safety metrics are what matter there, and **369 of
@@ -119,10 +120,12 @@ The evaluation is not only a scorecard; it found defects that the tests did not:
 
 ## 7. Not yet measured
 
-The live pilot covered 11 invoices on an alternative model (Gemini 3 Flash, free tier): extraction
-was exercised for real, field accuracy was 100% on every invoice it read, and median latency was
-42.9 s against a 30 s target. Its one classification miss was an invoice the daily quota cut off,
-which the agent sent to manual entry rather than guessing.
+The live pilot covered 19 invoices on an alternative model (Gemini 3 Flash, free tier), run over two
+sittings because the free tier allows 20 requests per model per day; the second reused the first's
+recorded responses so quota went only on new invoices. Extraction was exercised for real: field
+accuracy was 100% on every invoice it read, action accuracy 100%, and median latency 23.8 s against
+a 30 s target (measured on the invoices whose calls ran fresh). The one classification miss was an
+invoice the daily quota cut off, which the agent escalated for manual entry rather than guessing.
 
 Still outstanding: everything at full scale on the shipping model — extraction accuracy over 500
 documents, goods-receipt note interpretation, root-cause choice on overlapping discrepancies, brief

@@ -163,7 +163,10 @@ def score(results: dict[str, InvoiceResult], ds: Dataset, settings: Settings) ->
     raw_buckets = calibration_buckets([(r.classification.raw_confidence or 0.0, ok) for r, ok in zip(rs, code_ok)])
 
     usage = llm_usage([c for r in rs for c in r.llm_calls], n, settings)
-    latencies = sorted(r.latency_ms for r in rs)
+    # Latency is only meaningful for invoices whose model calls actually ran this time: an invoice
+    # served from recorded responses returns in milliseconds and would flatter the median.
+    timed = [r for r in rs if not any(c.cached for c in r.llm_calls)]
+    latencies = sorted(r.latency_ms for r in timed)
 
     confusion: dict[str, Counter] = defaultdict(Counter)
     for r, l in zip(rs, ls):
@@ -206,6 +209,7 @@ def score(results: dict[str, InvoiceResult], ds: Dataset, settings: Settings) ->
         "escalation_recall": rate(sum(r.classification.action != Action.AUTO_APPROVE for r, _ in problematic),
                                   len(problematic)),
         "median_latency_s": round(median(latencies) / 1000, 3) if latencies else None,
+        "latency_measured_on": len(timed),
         "cost_per_invoice_gbp": round(usage.cost_per_invoice_gbp, 5),
     }
     product = summarize(rs, {}, settings)
@@ -224,8 +228,10 @@ def score(results: dict[str, InvoiceResult], ds: Dataset, settings: Settings) ->
             "ece_weighted": expected_calibration_error(buckets),
             "raw_buckets": raw_buckets,
         },
-        "latency_ms": {"median": latencies[n // 2] if n else None, "p90": latencies[int(n * 0.9)] if n else None,
-                       "max": latencies[-1] if n else None},
+        "latency_ms": {"invoices": len(timed),
+                       "median": latencies[len(timed) // 2] if timed else None,
+                       "p90": latencies[int(len(timed) * 0.9)] if timed else None,
+                       "max": latencies[-1] if timed else None},
         "llm": usage.model_dump(),
         "per_code": per_code,
         "confusion": {k: dict(v) for k, v in sorted(confusion.items())},

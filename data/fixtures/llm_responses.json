@@ -71,6 +71,78 @@
     },
     "task": "gr_notes"
   },
+  "0e84960a11c587ddc0b0f6351fdf0ec1": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-05-24",
+      "invoice_date": "2026-04-24",
+      "invoice_number": "000493",
+      "line_items": [
+        {
+          "description": "Whiteboard markers, assorted, pack of 12",
+          "quantity": "37",
+          "tax": "70.67",
+          "total": "353.35",
+          "unit_price": "9.55"
+        },
+        {
+          "description": "Desk organiser set",
+          "quantity": "16",
+          "tax": "109.18",
+          "total": "545.92",
+          "unit_price": "34.12"
+        },
+        {
+          "description": "Spiral notebooks A5, pack of 10",
+          "quantity": "26",
+          "tax": "75.09",
+          "total": "375.44",
+          "unit_price": "14.44"
+        }
+      ],
+      "po_reference": null,
+      "subtotal": "1274.71",
+      "supplier_name": "Harrowgate Stationery Co Ltd",
+      "tax_amount": "254.94",
+      "total_amount": "1529.65",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "0e952441cf1e3ebf01b673a4413c430a": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-04-24",
+      "invoice_date": "2026-03-25",
+      "invoice_number": "001586",
+      "line_items": [
+        {
+          "description": "Double-wall cardboard boxes, pack of 25",
+          "quantity": "41",
+          "tax": "328.66",
+          "total": "1643.28",
+          "unit_price": "40.08"
+        }
+      ],
+      "po_reference": "PO-2025-617146",
+      "subtotal": "1643.28",
+      "supplier_name": "Brackenfield Packaging Ltd",
+      "tax_amount": "328.66",
+      "total_amount": "1971.94",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "2d00b46baa19d8b71afffd71a3631277": {
+    "response": {
+      "recommended_action": "Please confirm with M. Clarke if PO-2026-867985 is the correct reference for this invoice. Once verified, the PO number should be manually added to the record.",
+      "summary": "Invoice 000493 from Harrowgate Stationery Co Ltd is missing a PO reference.",
+      "what_i_could_not_resolve": "I could not locate a PO reference on the invoice, although the supplier and subtotal match PO-2026-867985 exactly. I am uncertain if this is the correct purchase order without an explicit reference on the document."
+    },
+    "task": "brief"
+  },
   "2dd38da539a47c1e19186245be299303": {
     "response": {
       "confidence": 1.0,
@@ -117,6 +189,135 @@
     },
     "task": "extract"
   },
+  "31b6927e80c982960f3a97bc06af8b64": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-09-11",
+      "invoice_date": "2026-07-13",
+      "invoice_number": "NFM/2026/0473",
+      "line_items": [
+        {
+          "description": "HVAC filter replacement, per unit",
+          "quantity": "7",
+          "tax": "125.94",
+          "total": "629.72",
+          "unit_price": "89.96"
+        }
+      ],
+      "po_reference": "PO-2026-167309",
+      "subtotal": "629.72",
+      "supplier_name": "Northvale Facilities Management plc",
+      "tax_amount": "225.94",
+      "total_amount": "855.66",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "4605e96d604bcb29f781706f37333aca": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-07-03",
+      "invoice_date": "2026-06-03",
+      "invoice_number": "001774",
+      "line_items": [
+        {
+          "description": "Stretch wrap film, 500mm roll",
+          "quantity": "20",
+          "tax": "57.56",
+          "total": "287.80",
+          "unit_price": "14.39"
+        },
+        {
+          "description": "Void fill paper, per roll",
+          "quantity": "16",
+          "tax": "103.14",
+          "total": "515.68",
+          "unit_price": "32.23"
+        },
+        {
+          "description": "Double-wall cardboard boxes, pack of 25",
+          "quantity": "106",
+          "tax": "862.20",
+          "total": "4311.02",
+          "unit_price": "40.67"
+        }
+      ],
+      "po_reference": "PO-2026-236391",
+      "subtotal": "5114.50",
+      "supplier_name": "Brackenfield Packaging Ltd",
+      "tax_amount": "1022.90",
+      "total_amount": "6137.40",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "469eb288c4c8b9c23541494cddd8ff14": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-25",
+      "invoice_date": "2026-02-23",
+      "invoice_number": "PFF26-3862",
+      "line_items": [
+        {
+          "description": "Bottled spring water, case of 24",
+          "quantity": "91",
+          "tax": "201.66",
+          "total": "1008.28",
+          "unit_price": "11.08"
+        }
+      ],
+      "po_reference": "PO-2026-882220",
+      "subtotal": "1008.28",
+      "supplier_name": "Pennine Fresh Foods Ltd",
+      "tax_amount": "201.66",
+      "total_amount": "1209.94",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "4a232de4c746f4e127f9aed366f108e0": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-07-08",
+      "invoice_date": "2026-06-08",
+      "invoice_number": "MFL26-7997",
+      "line_items": [
+        {
+          "description": "Contract review, fixed fee",
+          "quantity": "1",
+          "tax": "623.73",
+          "total": "3118.66",
+          "unit_price": "3118.66"
+        },
+        {
+          "description": "Commercial contracts advice, per hour",
+          "quantity": "9",
+          "tax": "366.82",
+          "total": "1834.11",
+          "unit_price": "203.79"
+        }
+      ],
+      "po_reference": "PO-2026-8013",
+      "subtotal": "4952.77",
+      "supplier_name": "Marlow & Finch Legal Services LLP",
+      "tax_amount": "990.55",
+      "total_amount": "5943.32",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "5be1c7c481b837a410de98e36cf81cdc": {
+    "response": {
+      "explanation": "The note states that the service was completed as scheduled, indicating a full delivery with no missing items or issues.",
+      "indicates_shortfall": false,
+      "units_not_received": null
+    },
+    "task": "gr_notes"
+  },
   "5d1d5411cfc55036a689aed223a8ff86": {
     "response": {
       "confidence": 1.0,
@@ -141,6 +342,22 @@
       "unreadable_fields": []
     },
     "task": "extract"
+  },
+  "6d445821f4b1b9e37d7c10ab9ecf3566": {
+    "response": {
+      "recommended_action": "Please confirm with M. Clarke that PO-2026-882202 is the correct purchase order and update the reference to allow processing.",
+      "summary": "Invoice PFF26-3862 from Pennine Fresh Foods Ltd citing non-existent PO reference PO-2026-882220.",
+      "what_i_could_not_resolve": "I could not find the PO reference PO-2026-882220 in the system. While PO-2026-882202 is a perfect match for the supplier and amount, I cannot confirm it is the intended reference without manual verification."
+    },
+    "task": "brief"
+  },
+  "889366f6c24c7b53e3a6aa021d86eebd": {
+    "response": {
+      "recommended_action": "Please verify with the requester if PO-2026-765305 is the correct purchase order for this transaction and update the reference if confirmed.",
+      "summary": "Invoice 001802 from Brackenfield Packaging Ltd is missing a formal PO number, citing only a verbal order for the \u00a34,184.57 total.",
+      "what_i_could_not_resolve": "I could not definitively match this invoice to a purchase order because the document does not provide a valid reference number. I identified PO-2026-765305 as a potential candidate, but its confidence score of 0.77 was too low to proceed automatically."
+    },
+    "task": "brief"
   },
   "98a44edeed07d4b6ebe1786dd750d0c1": {
     "response": {
@@ -214,11 +431,35 @@
     },
     "task": "extract"
   },
+  "af7e129269a3854272541f3b3bdc8598": {
+    "response": {
+      "recommended_action": "Please verify that this is a duplicate submission and take no action unless the supplier disputes the rejection.",
+      "summary": "Invoice 001682 from Brackenfield Packaging Ltd is a duplicate for \u00a32,922.78.",
+      "what_i_could_not_resolve": "I identified a matching prior invoice with the same number, supplier, PO, and total amount of \u00a32,922.78. I am unable to determine if this submission is an intentional separate charge or an accidental duplicate."
+    },
+    "task": "brief"
+  },
   "ba77e0e7c39ebd21884fe5c6de5d9be2": {
     "response": {
       "recommended_action": "Confirm the final accepted quantity with K. Brennan and pay only for the goods kept. Hold the balance of the invoice until the replacement delivery is successfully booked in.",
       "summary": "Invoice 000731 from Harrowgate Stationery Co Ltd for \u00a32,973.56 shows a quantity discrepancy involving 8 rejected units.",
       "what_i_could_not_resolve": "I matched the subtotal to PO-2026-712257, but the goods receipt notes by K. Brennan state that 8 units were rejected as faulty. While the structured data indicates a full receipt, the written notes indicate a shortfall that I cannot reconcile against the invoiced amount."
+    },
+    "task": "brief"
+  },
+  "bba7718ff4d67ecf59117fc5f7bb15c8": {
+    "response": {
+      "recommended_action": "Please verify if PO-2026-236391 was already fully invoiced and, if so, reject this invoice or request a credit note.",
+      "summary": "Invoice 001774 from Brackenfield Packaging Ltd for \u00a36,137.40 cannot be processed because PO-2026-236391 is already closed.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-236391 based on the supplier name and subtotal, but the purchase order is marked as fully fulfilled and closed. I am unable to determine if a previous invoice was already settled or if the order was closed in error."
+    },
+    "task": "brief"
+  },
+  "c3d4c8cdd0bbc7bfabe081a370081e39": {
+    "response": {
+      "recommended_action": "I recommend requesting a corrected invoice from the supplier with the VAT calculated at the standard rate before proceeding with approval.",
+      "summary": "Invoice NFM/2026/0473 from Northvale Facilities Management plc has a VAT discrepancy of +\u00a3100.00.",
+      "what_i_could_not_resolve": "I matched the subtotal of \u00a3629.72 to PO-2026-167309, but the stated VAT of \u00a3225.94 implies an incorrect tax rate of 35.9%. I cannot reconcile why the tax amount is \u00a3100.00 higher than the expected \u00a3125.94 calculated at 20%."
     },
     "task": "brief"
   },
@@ -229,6 +470,14 @@
       "units_not_received": null
     },
     "task": "gr_notes"
+  },
+  "c726eb3f8d28c10f26b2ba3b3183bd4f": {
+    "response": {
+      "recommended_action": "Please confirm with the requester, D. Fraser, that PO-2026-617146 is the correct purchase order for this invoice. Once verified, update the PO reference to allow the invoice to proceed to payment.",
+      "summary": "Invoice 001586 from Brackenfield Packaging Ltd cites an invalid PO reference, PO-2025-617146.",
+      "what_i_could_not_resolve": "I could not validate the PO reference PO-2025-617146 because it does not exist in our system. I identified PO-2026-617146 as a potential match based on an identical supplier and subtotal of \u00a31,643.28, but I cannot confirm if this was the intended reference."
+    },
+    "task": "brief"
   },
   "c747e27687871fe5352d3171dadb9ec8": {
     "response": {
@@ -254,6 +503,45 @@
     },
     "task": "gr_notes"
   },
+  "d5cecc1a75ecdf3b22d97523e791852a": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-07-29",
+      "invoice_date": "2026-06-29",
+      "invoice_number": "001802",
+      "line_items": [
+        {
+          "description": "Double-wall cardboard boxes, pack of 25",
+          "quantity": "70",
+          "tax": "289.66",
+          "total": "1448.30",
+          "unit_price": "20.69"
+        },
+        {
+          "description": "Stretch wrap film, 500mm roll",
+          "quantity": "104",
+          "tax": "322.40",
+          "total": "1612.00",
+          "unit_price": "15.50"
+        },
+        {
+          "description": "Void fill paper, per roll",
+          "quantity": "12",
+          "tax": "85.37",
+          "total": "426.84",
+          "unit_price": "35.57"
+        }
+      ],
+      "po_reference": "Verbal order",
+      "subtotal": "3487.14",
+      "supplier_name": "Brackenfield Packaging Ltd",
+      "tax_amount": "697.43",
+      "total_amount": "4184.57",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
   "d9b1ed17e63e28504286cd516e34b7e4": {
     "response": {
       "confidence": 1.0,
@@ -278,6 +566,39 @@
       "unreadable_fields": []
     },
     "task": "extract"
+  },
+  "db5eb500045a95cb7a6b0309b38dd55c": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-28",
+      "invoice_date": "2026-02-26",
+      "invoice_number": "INV-CVG-08525",
+      "line_items": [
+        {
+          "description": "Keyholding and alarm response, per call-out",
+          "quantity": "7",
+          "tax": "188.38",
+          "total": "941.92",
+          "unit_price": "134.56"
+        }
+      ],
+      "po_reference": "PO-2026-305561",
+      "subtotal": "941.92",
+      "supplier_name": "Calder Valley Guarding Ltd",
+      "tax_amount": "188.38",
+      "total_amount": "1130.30",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "dbb11ade0dfef56c3185c22b77025861": {
+    "response": {
+      "recommended_action": "Please confirm if this is a separate charge; otherwise, no action is required unless the supplier disputes the rejection.",
+      "summary": "Invoice INV-CVG-08525 from Calder Valley Guarding Ltd flagged as a duplicate of an existing record for \u00a31,130.30.",
+      "what_i_could_not_resolve": "I identified that this invoice matches a previously recorded entry for INV-CVG-08525 with the same supplier, PO reference, and total amount. While the document aligns with PO-2026-305561 and goods receipt GR-2026-364188, I cannot confirm if this represents a unique transaction or a repeated filing."
+    },
+    "task": "brief"
   },
   "dc2c38b3563bef5297ffd4c4e615a4ec": {
     "response": {
@@ -358,6 +679,14 @@
       "unreadable_fields": []
     },
     "task": "extract"
+  },
+  "f8088e756917bae81e160e95a3bbebcb": {
+    "response": {
+      "recommended_action": "Confirm with the requester that PO-2026-801319 is the correct purchase order and update the reference to allow processing.",
+      "summary": "Invoice MFL26-7997 from Marlow & Finch Legal Services LLP quotes an invalid purchase order reference PO-2026-8013.",
+      "what_i_could_not_resolve": "I could not locate purchase order PO-2026-8013 in the system as cited on the invoice. While PO-2026-801319 is an exact match for the supplier and subtotal of 4,952.77, I am uncertain if this is the correct intended reference."
+    },
+    "task": "brief"
   },
   "fe16d4268871f2ae7b2e5957a587ca85": {
     "response": {

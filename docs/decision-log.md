@@ -209,4 +209,6 @@ schema translation — so this costs little and keeps the default honest.
 
 **Constraint on the results.** Any figure produced this way describes that model. Every document
 reporting pilot numbers names the model beside them, and the shipping-model run remains outstanding.
-The free tier allows 20 requests per model per day, which is why the pilot is 11 invoices.
+The free tier allows 20 requests per model per day, which is why the pilot is 19 invoices, run
+over two sittings; the second reused the first's recorded responses so quota went only on
+invoices not yet measured.

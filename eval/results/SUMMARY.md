@@ -2,7 +2,7 @@
 
 Status: **partial.** The PRD protocol (§5.3) calls for a live run on all 500 invoice documents with
 the shipping model. That has not been done. What exists: a rules-only baseline over all 500, a cost
-projection, simulated extraction errors, and an 11-invoice live pilot on an alternative model
+projection, simulated extraction errors, and a 19-invoice live pilot on an alternative model
 (Gemini 3 Flash, free tier) that exercises real document extraction end to end.
 
 Per-run reports: `<run>/report.md`. Machine-readable metrics: `<run>/metrics.json`.
@@ -15,29 +15,34 @@ Per-run reports: `<run>/report.md`. Machine-readable metrics: `<run>/metrics.jso
 | `simulated-perfect-extraction` | Same, from documents, with extraction answered correctly | 100% | 100% | 100% | 12.5% | 63.0% |
 | `simulated-errors-0.3-documents` | 30% of invoices have one field misread, at 95% stated confidence | 78.0% | 100% | 100% | 6.2% | 46.6% |
 | `simulated-errors-1-documents` | Every invoice has one field misread | 28.4% | 100% | 100% | 0.5% | 13.8% |
-| `live-gemini3-documents-n8` | **Real extraction**, 11 invoices, Gemini 3 Flash | 90.9% | 100% | 100% | 42.9% | 54.5% |
+| `live-gemini3-documents-n8` | First live pilot, 11 invoices, Gemini 3 Flash | 90.9% | 100% | 100% | 42.9% | 54.5% |
+| `live-gemini3-documents-n19` | **Real extraction**, 19 invoices, same model, extends the above | 94.7% | 100% | 100% | 26.7% | 36.8% |
 
 PRD targets: classification > 90%, auto-approve precision > 99.5%, escalation recall > 99%,
 auto-resolution 40–60%. Classification accuracy is expected to fall when fields are misread,
 because the agent is then looking at a different invoice. What matters is that none of those
 invoices is paid wrongly.
 
-## The live pilot (11 invoices, Gemini 3 Flash, £0)
+## The live pilot (19 invoices, Gemini 3 Flash, £0)
 
-Small but real: documents read by a model, briefs written by it, no rules standing in for it.
+Run over two sittings, ten days apart, because the free tier allows 20 requests per model per day.
+The second run replayed the first run's recorded responses (`--reuse-recorded`) and spent its quota
+only on invoices not yet measured, so the samples combine into one.
 
-- **Field accuracy was 100% on every invoice the model actually read** (10 of 11). The 11th was cut
-  off by the free-tier daily quota (20 requests per model per day), and the agent sent it to manual
-  entry rather than guessing — the first observation of graceful degradation against a real API.
-- **Auto-resolution reached 42.9%**, inside the PRD's 40–60% band, because this model reports full
-  confidence in its extractions so the [D-11](../../docs/decision-log.md#d-11-extraction-confidence-is-multiplied-into-classification-confidence)
-  penalty never applies. Seven exceptions is far too small to conclude from, but it points at D-11
-  rather than the autonomy boundary as the binding constraint on document input.
-- **Median latency was 42.9 s, against a 30 s target** — a thinking-heavy preview model, and the
-  metric includes brief generation.
-- **Calibration error was 6.3%**, close to the 5% target, now measured against real errors.
-- The run's 19 recorded responses are now the demo-mode fixtures, so the UI replays real model
-  output with no API key.
+- **Field accuracy was 100% on every invoice the model actually read** (18 of 19). Both runs lost
+  exactly one invoice to the daily quota, and both times the agent sent it to manual entry rather
+  than guessing — graceful degradation observed against a real API rather than a stub.
+- **Action accuracy was 100% while classification was 94.7%.** The single classification miss is the
+  quota-stopped invoice: unreadable, so unclassified, so escalated — which was the correct action
+  anyway. The failure mode costs an analyst two minutes and cannot cost money.
+- **Median latency 23.8 s**, inside the 30 s target, measured on the five invoices whose calls ran
+  fresh in the second sitting. The first sitting measured 42.9 s on eleven. Both are real; the
+  spread on samples this size is wide.
+- **Calibration error 6.6%** against the < 5% target, now measured on real errors rather than none.
+- **Auto-resolution rate is not worth quoting at this size**: 42.9% on the first sample, 26.7% on
+  the larger one, entirely driven by which exception types the stratified sample happened to draw.
+- The 37 recorded responses are the demo-mode fixtures, so the UI replays real model output for
+  these 19 invoices with no API key.
 
 **These numbers describe Gemini 3 Flash, not the model this product would ship with.** They show
 the pipeline works end to end against a real API; they are not a substitute for the Claude run.
@@ -77,7 +82,7 @@ the pipeline works end to end against a real API; they are not a substitute for 
 
 ## Not yet measured (needs a full run on the shipping model)
 
-The pilot above covers extraction, GR-notes reading and brief writing on 11 invoices with Gemini 3
+The pilot above covers extraction, GR-notes reading and brief writing on 19 invoices with Gemini 3
 Flash. Outstanding:
 
 - Extraction accuracy at volume, on the model this product would ship with (target > 95%)

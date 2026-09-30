@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Design tokens. Tailwind utilities reference these variables, so dark mode only swaps values. */
+@theme {
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-page: #f9f9f7;
+  --color-surface: #fcfcfb;
+  --color-raised: #ffffff;
+  --color-ink: #0b0b0b;
+  --color-ink-2: #52514e;
+  --color-muted: #6f6d67;
+  --color-grid: #e1e0d9;
+  --color-baseline: #c3c2b7;
+  --color-line: rgba(11, 11, 11, 0.1);
+  --color-wash: #f0efec;
+
+  --color-accent: #256abf;
+  --color-accent-ink: #ffffff;
+  --color-accent-soft: #cde2fb;
+
+  /* Categorical series, fixed order (validated: scripts/validate_palette.js) */
+  --color-series-1: #2a78d6;
+  --color-series-2: #eb6834;
+  --color-series-3: #1baf7a;
+
+  /* Status: reserved for confidence bands (trust design §7.1); always paired with icon + label */
+  --color-good: #0ca30c;
+  --color-warning: #fab219;
+  --color-critical: #d03b3b;
+  --color-good-ink: #006300;
+  --color-critical-ink: #b42828;
+}
+
+@layer base {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --color-page: #0d0d0d;
+      --color-surface: #1a1a19;
+      --color-raised: #22221f;
+      --color-ink: #ffffff;
+      --color-ink-2: #c3c2b7;
+      --color-muted: #9a988f;
+      --color-grid: #2c2c2a;
+      --color-baseline: #383835;
+      --color-line: rgba(255, 255, 255, 0.1);
+      --color-wash: #2a2a27;
+      --color-accent: #3987e5;
+      --color-accent-ink: #0b0b0b;
+      --color-accent-soft: #184f95;
+      --color-series-1: #3987e5;
+      --color-series-2: #d95926;
+      --color-series-3: #199e70;
+      --color-good-ink: #0ca30c;
+      --color-critical-ink: #e66767;
+    }
+  }
+
+  body {
+    background: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

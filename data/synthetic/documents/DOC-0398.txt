@@ -1,0 +1,10 @@
+Invoice | Redmere Software Ltd
+Ref: RSL26-5901   Issued: 2026-06-19   Due: 2026-07-19
+Purchase Order Ref: PO-2026-664311
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Premium support tier, 12 months | qty 1 | unit 7823.06 | net 7823.06 | vat 1564.61
+2. Implementation support, per day | qty 9 | unit 1037.32 | net 9335.88 | vat 1867.18
+
+Net 17158.94 | VAT 3431.79 | Gross 20590.73

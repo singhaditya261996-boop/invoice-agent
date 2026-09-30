@@ -1,0 +1,10 @@
+Invoice | Brightwater Print & Media Limited
+Ref: 008158   Issued: 2026-05-05   Due: 2026-06-04
+Purchase Order Ref: PO-2026-317613
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Printed brochures, A4 16pp, per 100 | qty 21 | unit 144.45 | net 3033.45 | vat 606.69
+2. Business cards, per 500 | qty 33 | unit 38.35 | net 1265.55 | vat 253.11
+
+Net 4299.00 | VAT 859.80 | Gross 5158.80

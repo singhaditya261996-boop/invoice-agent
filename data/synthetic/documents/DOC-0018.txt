@@ -1,0 +1,16 @@
+From: Silverbirch Recruitment Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-SRL-07385
+Dated 9 July 2026
+Your order reference: PO-2026-692998
+
+Supplied:
+  - 1 x Permanent placement fee @ GBP 7186.97 = GBP 7186.97 (VAT GBP 1437.39)
+  - 187 x Temporary AP clerk, per hour @ GBP 26.05 = GBP 4871.35 (VAT GBP 974.27)
+
+Net amount: GBP 12058.32
+VAT: GBP 2411.66
+Amount payable: GBP 14469.98
+
+Payment due by 8 August 2026 (Net 30).

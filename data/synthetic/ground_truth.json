@@ -1,0 +1,5660 @@
+[
+  {
+    "doc_id": "DOC-0001",
+    "invoice_number": "NFM/2026/0468",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-212250",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0002",
+    "invoice_number": "CCS26-8110",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-713526",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0003",
+    "invoice_number": "000884",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-943012",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 7"
+  },
+  {
+    "doc_id": "DOC-0004",
+    "invoice_number": "MFL26-7941",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-394468",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+2228.69 (+13.09%)"
+  },
+  {
+    "doc_id": "DOC-0005",
+    "invoice_number": "008035",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-222449",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0006",
+    "invoice_number": "HES/2026/5330",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-896296",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0007",
+    "invoice_number": "SI-0006834",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-738135",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0008",
+    "invoice_number": "CCS26-8147",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-131889",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0009",
+    "invoice_number": "INV-ACL-04059",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-090211",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+5.30 (+0.57%); tolerance \u00a39.36"
+  },
+  {
+    "doc_id": "DOC-0010",
+    "invoice_number": "INV-BIT-05145",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-139353",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0011",
+    "invoice_number": "INV-MOS-04552",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-741532",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-6.12 (-0.83%); tolerance \u00a37.36"
+  },
+  {
+    "doc_id": "DOC-0012",
+    "invoice_number": "PFF26-3933",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-474869",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0013",
+    "invoice_number": "LCA/2026/3688",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-355161",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0014",
+    "invoice_number": "QEL26-3272",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-317950",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0015",
+    "invoice_number": "MFL26-7841",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-080688",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0016",
+    "invoice_number": "INV-ACL-04237",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-271211",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0017",
+    "invoice_number": "001774",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-236391",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 70 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0018",
+    "invoice_number": "INV-SRL-07385",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-692998",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0019",
+    "invoice_number": "HES/2026/5370",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-324869",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0020",
+    "invoice_number": "OKA/2026/8599",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-546009",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0021",
+    "invoice_number": "INV-SRL-07274",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-054872",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0022",
+    "invoice_number": "INV-MOS-04564",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-053727",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0023",
+    "invoice_number": "INV-SRL-07184",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-557127",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0024",
+    "invoice_number": "CCS26-7955",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-326845",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0025",
+    "invoice_number": "QEL26-3647",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-659775",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0026",
+    "invoice_number": "SI-0006954",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-849749",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0027",
+    "invoice_number": "RSL26-5868",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-878633",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0028",
+    "invoice_number": "CCS26-8178",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-763008",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 82 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0029",
+    "invoice_number": "CCS26-8325",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-870693",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0030",
+    "invoice_number": "QEL26-3460",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-085002",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0031",
+    "invoice_number": "INV-MOS-04635",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-824481",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0032",
+    "invoice_number": "001840",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-627205",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 105 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0033",
+    "invoice_number": "SI-0007826",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-550414",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0034",
+    "invoice_number": "SI-0007698",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-348177",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO2026348177' is a formatting variant of PO-2026-348177"
+  },
+  {
+    "doc_id": "DOC-0035",
+    "invoice_number": "SI-0007790",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-805214",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0036",
+    "invoice_number": "000493",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-867985",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [],
+    "notes": "PO reference ''; true PO PO-2026-867985"
+  },
+  {
+    "doc_id": "DOC-0037",
+    "invoice_number": "001682",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-564244",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0038",
+    "invoice_number": "007193",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-434672",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-7.27 (-0.36%); tolerance \u00a320.26"
+  },
+  {
+    "doc_id": "DOC-0039",
+    "invoice_number": "INV-SML-05821",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-543421",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO2026543421' is a formatting variant of PO-2026-543421"
+  },
+  {
+    "doc_id": "DOC-0040",
+    "invoice_number": "PFF26-3854",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-753485",
+    "duplicate_of": null,
+    "variant": "line_omitted",
+    "edge_cases": [],
+    "notes": "Header tax \u00a3126.58 vs \u00a3343.16 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0041",
+    "invoice_number": "000731",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-712257",
+    "duplicate_of": null,
+    "variant": "gr_notes_only",
+    "edge_cases": [
+      "gr_notes_only"
+    ],
+    "notes": "GR structured quantities show full receipt, but notes record 8 units returned"
+  },
+  {
+    "doc_id": "DOC-0042",
+    "invoice_number": "SI-0006741",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-936566",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 108 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0043",
+    "invoice_number": "INV-SML-05741",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-895217",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO#2026-895217' is a formatting variant of PO-2026-895217"
+  },
+  {
+    "doc_id": "DOC-0044",
+    "invoice_number": "INV-MOS-04633",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-825974",
+    "duplicate_of": null,
+    "variant": "typo",
+    "edge_cases": [
+      "ambiguous_name_typo"
+    ],
+    "notes": "Invoice supplier 'Mierdian Office Supplies Ltd' vs PO supplier 'Meridian Office Supplies Ltd'"
+  },
+  {
+    "doc_id": "DOC-0045",
+    "invoice_number": "INV-MOS-04853",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-445730",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0046",
+    "invoice_number": "SI-0007702",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-147566",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0047",
+    "invoice_number": "INV-SRL-07290",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-046934",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0048",
+    "invoice_number": "001725",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-073769",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 2 by 9"
+  },
+  {
+    "doc_id": "DOC-0049",
+    "invoice_number": "NFM/2026/0473",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-167309",
+    "duplicate_of": null,
+    "variant": "arithmetic_slip",
+    "edge_cases": [],
+    "notes": "Header tax \u00a3225.94 vs \u00a3125.94 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0050",
+    "invoice_number": "INV-ACL-04290",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-647947",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0051",
+    "invoice_number": "INV-ACL-03918",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-817232",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0052",
+    "invoice_number": "007119",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-574172",
+    "duplicate_of": null,
+    "variant": "corrupted_dropped_digit",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2026-57472'; true PO PO-2026-574172"
+  },
+  {
+    "doc_id": "DOC-0053",
+    "invoice_number": "INV-BIT-04789",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-673741",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0054",
+    "invoice_number": "INV-ACL-04200",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-115626",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+11.52 (+0.68%); tolerance \u00a317.02"
+  },
+  {
+    "doc_id": "DOC-0055",
+    "invoice_number": "RSL26-6019",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-415812",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0056",
+    "invoice_number": "NFM/2026/0476",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-416032",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0057",
+    "invoice_number": "001534",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-943949",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0058",
+    "invoice_number": "MFL26-7902",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-203957",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+2024.70 (+10.31%)"
+  },
+  {
+    "doc_id": "DOC-0059",
+    "invoice_number": "INV-ACL-03885",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-577289",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0060",
+    "invoice_number": "INV-CVG-08501",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-730842",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 5% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0061",
+    "invoice_number": "LCA/2026/3676",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-230772",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO/2026/230772' is a formatting variant of PO-2026-230772"
+  },
+  {
+    "doc_id": "DOC-0062",
+    "invoice_number": "001682",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-564244",
+    "duplicate_of": "DOC-0037",
+    "variant": "exact_resubmission",
+    "edge_cases": [],
+    "notes": "Duplicate of 001682 (2026-05-14), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0063",
+    "invoice_number": "PFF26-3939",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-844146",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0064",
+    "invoice_number": "INV-BIT-04795",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-507545",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0065",
+    "invoice_number": "006869",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-594024",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0066",
+    "invoice_number": "PFF26-4139",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-700731",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 2 by 2"
+  },
+  {
+    "doc_id": "DOC-0067",
+    "invoice_number": "006998",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-476435",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0068",
+    "invoice_number": "000796",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-679506",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 2 by 13"
+  },
+  {
+    "doc_id": "DOC-0069",
+    "invoice_number": "000861",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-706188",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0070",
+    "invoice_number": "WFL/2026/5265",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-699199",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 3 by 3"
+  },
+  {
+    "doc_id": "DOC-0071",
+    "invoice_number": "QEL26-3503",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-626185",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0072",
+    "invoice_number": "INV-TDC-04057",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-207854",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0073",
+    "invoice_number": "INV-SRL-07184-R",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-557127",
+    "duplicate_of": "DOC-0023",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-SRL-07184 (2026-02-19), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0074",
+    "invoice_number": "INV-ACL-04180",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-677234",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0075",
+    "invoice_number": "HES/2026/5401",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-519306",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+227.51 (+12.86%)"
+  },
+  {
+    "doc_id": "DOC-0076",
+    "invoice_number": "001704",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-367643",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0077",
+    "invoice_number": "INV-SML-05762",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-204765",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0078",
+    "invoice_number": "007057",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-300105",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0079",
+    "invoice_number": "HES/2026/5447",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-293731",
+    "duplicate_of": null,
+    "variant": "gr_notes_only",
+    "edge_cases": [
+      "gr_notes_only"
+    ],
+    "notes": "GR structured quantities show full receipt, but notes record 19 units returned"
+  },
+  {
+    "doc_id": "DOC-0080",
+    "invoice_number": "INV-SRL-07314",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-968156",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0081",
+    "invoice_number": "RSL26-5979",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-624266",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0082",
+    "invoice_number": "001802",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0083",
+    "invoice_number": "SI-0007016",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-340902",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0084",
+    "invoice_number": "WFL/2026/5333",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-457542",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0085",
+    "invoice_number": "INV-CVG-08674",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-976433",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+2.20 (+0.84%); tolerance \u00a32.63"
+  },
+  {
+    "doc_id": "DOC-0086",
+    "invoice_number": "INV-BIT-04991",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-963526",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Blackthorn IT Solutions LTD' is a formatting variant of 'Blackthorn IT Solutions Ltd'"
+  },
+  {
+    "doc_id": "DOC-0087",
+    "invoice_number": "INV-BIT-04963",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-213033",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 2 by 3"
+  },
+  {
+    "doc_id": "DOC-0088",
+    "invoice_number": "INV-MOS-04440",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-188795",
+    "duplicate_of": null,
+    "variant": "corrupted_dropped_digit",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2026-18895'; true PO PO-2026-188795"
+  },
+  {
+    "doc_id": "DOC-0089",
+    "invoice_number": "SI-0006936",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-154999",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0090",
+    "invoice_number": "HES/2026/5250",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-864652",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+6.24 (+0.61%); tolerance \u00a310.21"
+  },
+  {
+    "doc_id": "DOC-0091",
+    "invoice_number": "RSL26-5949",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-425068",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0092",
+    "invoice_number": "008177",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-058216",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0093",
+    "invoice_number": "008288",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-037500",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 91 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0094",
+    "invoice_number": "QEL26-3360",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-672394",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0095",
+    "invoice_number": "INV-BIT-05170",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-039479",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0096",
+    "invoice_number": "NFM/2026/0484",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-102883",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0097",
+    "invoice_number": "HES/2026/5422",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-808789",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 3 by 10"
+  },
+  {
+    "doc_id": "DOC-0098",
+    "invoice_number": "SI-0006751",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-359411",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0099",
+    "invoice_number": "CCS26-8061",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-670975",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0100",
+    "invoice_number": "SI-0006766",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-623899",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0101",
+    "invoice_number": "OKA/2026/8611",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-908855",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0102",
+    "invoice_number": "CCS26-8162",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-680776",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0103",
+    "invoice_number": "CCS26-8217",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-124050",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 69 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0104",
+    "invoice_number": "SI-0007813",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-007402",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0105",
+    "invoice_number": "002883",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-506048",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+13.32 (+0.56%); tolerance \u00a323.81"
+  },
+  {
+    "doc_id": "DOC-0106",
+    "invoice_number": "SI-0007990",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-623665",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0107",
+    "invoice_number": "INV-SRL-07198",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-478714",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-612.72 (-11.38%)"
+  },
+  {
+    "doc_id": "DOC-0108",
+    "invoice_number": "INV-CVG-08525",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-305561",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0109",
+    "invoice_number": "HES/2026/5513",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-385795",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+284.79 (+14.09%)"
+  },
+  {
+    "doc_id": "DOC-0110",
+    "invoice_number": "QEL26-3334",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-895940",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+37.77 (+0.17%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0111",
+    "invoice_number": "HES/2026/5375",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-974995",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0112",
+    "invoice_number": "INV-TDC-04113",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-626380",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0113",
+    "invoice_number": "006761",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-432762",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-24.94 (-0.55%); tolerance \u00a345.64"
+  },
+  {
+    "doc_id": "DOC-0114",
+    "invoice_number": "SI-0007887",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-738606",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0115",
+    "invoice_number": "000555",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-268240",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 15% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0116",
+    "invoice_number": "008240",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-519105",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0117",
+    "invoice_number": "RSL26-5885",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-957431",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0118",
+    "invoice_number": "RSL26-5833",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-575842",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+35.90 (+0.13%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0119",
+    "invoice_number": "MFL26-8013",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-613024",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0120",
+    "invoice_number": "INV-BIT-04740",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-210612",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0121",
+    "invoice_number": "SI-0007052",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-987180",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 57 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0122",
+    "invoice_number": "WFL/2026/5031",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-966144",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 9"
+  },
+  {
+    "doc_id": "DOC-0123",
+    "invoice_number": "SI-0007790/1",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-805214",
+    "duplicate_of": "DOC-0035",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of SI-0007790 (2026-03-27), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0124",
+    "invoice_number": "INV-SRL-07354",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-868161",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0125",
+    "invoice_number": "INV-MOS-04472",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-980134",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0126",
+    "invoice_number": "000635",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-847721",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0127",
+    "invoice_number": "INV-ACL-04074",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-236113",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0128",
+    "invoice_number": "INV-SML-06022",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-254690",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0129",
+    "invoice_number": "INV-BIT-04825",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-025906",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0130",
+    "invoice_number": "008122",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-644687",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 0% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0131",
+    "invoice_number": "008327",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0132",
+    "invoice_number": "008161",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-730988",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0133",
+    "invoice_number": "INV-MOS-04601",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-233665",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-2.10 (-0.22%); tolerance \u00a39.71"
+  },
+  {
+    "doc_id": "DOC-0134",
+    "invoice_number": "WFL/2026/5149",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-917664",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 1"
+  },
+  {
+    "doc_id": "DOC-0135",
+    "invoice_number": "INV-CVG-08693",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-136367",
+    "duplicate_of": null,
+    "variant": "arithmetic_slip",
+    "edge_cases": [],
+    "notes": "Header tax \u00a3307.88 vs \u00a31307.88 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0136",
+    "invoice_number": "PFF26-3928",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0137",
+    "invoice_number": "HES/2026/5307",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-186679",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-22.86 (-0.87%); tolerance \u00a326.19"
+  },
+  {
+    "doc_id": "DOC-0138",
+    "invoice_number": "INV-ACL-03993",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-757379",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+941.51 (+10.78%)"
+  },
+  {
+    "doc_id": "DOC-0139",
+    "invoice_number": "INV-ACL-04029",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-807519",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+9.45 (+0.66%); tolerance \u00a314.33"
+  },
+  {
+    "doc_id": "DOC-0140",
+    "invoice_number": "008158",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-317613",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Brightwater Print & Media Limited' is a formatting variant of 'Brightwater Print & Media Ltd'"
+  },
+  {
+    "doc_id": "DOC-0141",
+    "invoice_number": "006763",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-469127",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0142",
+    "invoice_number": "000863",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-569154",
+    "duplicate_of": null,
+    "variant": "subsidiary",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Harrowgate Stationery Co (Yorkshire) Ltd' vs PO supplier 'Harrowgate Stationery Co Ltd'"
+  },
+  {
+    "doc_id": "DOC-0143",
+    "invoice_number": "CCS26-7925",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-336209",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [],
+    "notes": "PO reference 'N/A'; true PO PO-2026-336209"
+  },
+  {
+    "doc_id": "DOC-0144",
+    "invoice_number": "SI-0007944",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-032734",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3-308.88 (-6.89%)"
+  },
+  {
+    "doc_id": "DOC-0145",
+    "invoice_number": "SI-0006703",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-127516",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0146",
+    "invoice_number": "007970",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-065758",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0147",
+    "invoice_number": "INV-MOS-04944",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-399619",
+    "duplicate_of": null,
+    "variant": "parent",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Meridian Group Holdings plc' vs PO supplier 'Meridian Office Supplies Ltd'"
+  },
+  {
+    "doc_id": "DOC-0148",
+    "invoice_number": "MFL26-7836",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-368121",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Marlow & Finch Legal Services' is a formatting variant of 'Marlow & Finch Legal Services LLP'"
+  },
+  {
+    "doc_id": "DOC-0149",
+    "invoice_number": "INV-BIT-05068",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-611805",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0150",
+    "invoice_number": "INV-SML-05702",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-691855",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0151",
+    "invoice_number": "INV-ACL-04329",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-625540",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0152",
+    "invoice_number": "WFL/2026/5209",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-003973",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0153",
+    "invoice_number": "INV-CVG-08506",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-126152",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [],
+    "notes": "PO reference 'TBC'; true PO PO-2026-126152"
+  },
+  {
+    "doc_id": "DOC-0154",
+    "invoice_number": "INV-SML-05994",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-856653",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0155",
+    "invoice_number": "SI-0006731",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-673324",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0156",
+    "invoice_number": "000542",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-024572",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+62.56 (+12.18%)"
+  },
+  {
+    "doc_id": "DOC-0157",
+    "invoice_number": "INV-CVG-08644",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-172746",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [
+      "ambiguous_candidates"
+    ],
+    "notes": "PO reference 'N/A'; true PO PO-2026-172746; competing PO PO-2026-352709 has same supplier and items, total within 8%"
+  },
+  {
+    "doc_id": "DOC-0158",
+    "invoice_number": "MFL26-7973",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-569458",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0159",
+    "invoice_number": "PFF26-4101",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-309823",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0160",
+    "invoice_number": "RSL26-6011",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-545153",
+    "duplicate_of": null,
+    "variant": "trading_name",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Redmere Cloud' vs PO supplier 'Redmere Software Ltd'"
+  },
+  {
+    "doc_id": "DOC-0161",
+    "invoice_number": "OKA/2026/8798",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-125870",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0162",
+    "invoice_number": "PFF26-3889",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-562654",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'PENNINE FRESH FOODS LTD' is a formatting variant of 'Pennine Fresh Foods Ltd'"
+  },
+  {
+    "doc_id": "DOC-0163",
+    "invoice_number": "LCA/2026/3747",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-876126",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [],
+    "notes": "PO reference 'N/A'; true PO PO-2026-876126"
+  },
+  {
+    "doc_id": "DOC-0164",
+    "invoice_number": "002741",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-102414",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0165",
+    "invoice_number": "000410",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-266641",
+    "duplicate_of": null,
+    "variant": "gr_notes_only",
+    "edge_cases": [
+      "gr_notes_only"
+    ],
+    "notes": "GR structured quantities show full receipt, but notes record 2 units returned"
+  },
+  {
+    "doc_id": "DOC-0166",
+    "invoice_number": "INV-SML-05954",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-106428",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0167",
+    "invoice_number": "INV-MOS-04666",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-808788",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0168",
+    "invoice_number": "002634",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-509947",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+3.80 (+0.85%); tolerance \u00a34.49"
+  },
+  {
+    "doc_id": "DOC-0169",
+    "invoice_number": "INV-ACL-04112",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-975146",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0170",
+    "invoice_number": "INV-SRL-07147",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-279937",
+    "duplicate_of": null,
+    "variant": "vat_on_gross",
+    "edge_cases": [],
+    "notes": "Header tax \u00a31336.25 vs \u00a31113.54 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0171",
+    "invoice_number": "008080",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-769538",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0172",
+    "invoice_number": "MFL26-7936",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-910613",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0173",
+    "invoice_number": "INV-BIT-05113",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-136215",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0174",
+    "invoice_number": "NFM/2026/0516",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-612922",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0175",
+    "invoice_number": "INV-BIT-04771",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-679526",
+    "duplicate_of": null,
+    "variant": "line_omitted",
+    "edge_cases": [],
+    "notes": "Header tax \u00a32008.62 vs \u00a33429.23 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0176",
+    "invoice_number": "002744",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-249658",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'po-2026-249658' is a formatting variant of PO-2026-249658"
+  },
+  {
+    "doc_id": "DOC-0177",
+    "invoice_number": "002769",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-902922",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0178",
+    "invoice_number": "007935",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-512540",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+4.42 (+0.39%); tolerance \u00a311.21"
+  },
+  {
+    "doc_id": "DOC-0179",
+    "invoice_number": "SI-0006778",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-613353",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0180",
+    "invoice_number": "INV-TDC-04120",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-907141",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Thistledown Consulting L.L.P.' is a formatting variant of 'Thistledown Consulting LLP'"
+  },
+  {
+    "doc_id": "DOC-0181",
+    "invoice_number": "007011",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-642390",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0182",
+    "invoice_number": "006820",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-024682",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0183",
+    "invoice_number": "001626",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-370082",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Brackenfield Packaging Limited' is a formatting variant of 'Brackenfield Packaging Ltd'"
+  },
+  {
+    "doc_id": "DOC-0184",
+    "invoice_number": "000760",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-944881",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0185",
+    "invoice_number": "WFL/2026/5178",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-925603",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Wychwood Furniture Ltd.' is a formatting variant of 'Wychwood Furniture Ltd'"
+  },
+  {
+    "doc_id": "DOC-0186",
+    "invoice_number": "SI-0006652",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-313687",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0187",
+    "invoice_number": "SI-0007820",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-267776",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+355.30 (+5.41%)"
+  },
+  {
+    "doc_id": "DOC-0188",
+    "invoice_number": "SI-0006815",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-958089",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0189",
+    "invoice_number": "QEL26-3391",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-221073",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Quayside Events Ltd.' is a formatting variant of 'Quayside Events Ltd'"
+  },
+  {
+    "doc_id": "DOC-0190",
+    "invoice_number": "INV-SML-05740",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-438020",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0191",
+    "invoice_number": "INV-SML-05915",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-329930",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0192",
+    "invoice_number": "007097",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-117587",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0193",
+    "invoice_number": "OKA/2026/8642",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-898594",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0194",
+    "invoice_number": "QEL26-3392",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0195",
+    "invoice_number": "CCS26-8354",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0196",
+    "invoice_number": "MFL26-8010",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-504164",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 0% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0197",
+    "invoice_number": "PFF26-4030",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-071966",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0198",
+    "invoice_number": "007932",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-729205",
+    "duplicate_of": null,
+    "variant": "trading_name",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Brightwater Print' vs PO supplier 'Brightwater Print & Media Ltd'"
+  },
+  {
+    "doc_id": "DOC-0199",
+    "invoice_number": "LCA/2026/3599",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-759729",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+21.70 (+0.16%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0200",
+    "invoice_number": "008150",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-760359",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'BRIGHTWATER PRINT & MEDIA LTD' is a formatting variant of 'Brightwater Print & Media Ltd'"
+  },
+  {
+    "doc_id": "DOC-0201",
+    "invoice_number": "INV-CVG-08525",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-305561",
+    "duplicate_of": "DOC-0108",
+    "variant": "resubmitted_date_shift",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-CVG-08525 (2026-02-27), date shift -1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0202",
+    "invoice_number": "CCS26-8251",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-093055",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0203",
+    "invoice_number": "SI-0007085",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-253415",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-44.88 (-0.19%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0204",
+    "invoice_number": "INV-MOS-04928",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-380481",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 4, line 2 by 34"
+  },
+  {
+    "doc_id": "DOC-0205",
+    "invoice_number": "007150",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-528778",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0206",
+    "invoice_number": "WFL/2026/5133",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-036695",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 2"
+  },
+  {
+    "doc_id": "DOC-0207",
+    "invoice_number": "INV-TDC-04135",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-675734",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0208",
+    "invoice_number": "002975",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-863043",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0209",
+    "invoice_number": "INV-BIT-05024",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-509205",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+44.29 (+0.64%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0210",
+    "invoice_number": "CCS26-7895",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-406116",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0211",
+    "invoice_number": "SI-0006780",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-806572",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 5% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0212",
+    "invoice_number": "000873",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-381941",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0213",
+    "invoice_number": "INV-MOS-04513",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-768180",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 2 by 11"
+  },
+  {
+    "doc_id": "DOC-0214",
+    "invoice_number": "000312",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-455582",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Harrowgate Stationery Co' is a formatting variant of 'Harrowgate Stationery Co Ltd'"
+  },
+  {
+    "doc_id": "DOC-0215",
+    "invoice_number": "000415",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-180130",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'HARROWGATE STATIONERY CO LTD' is a formatting variant of 'Harrowgate Stationery Co Ltd'"
+  },
+  {
+    "doc_id": "DOC-0216",
+    "invoice_number": "QEL26-3619",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-385123",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0217",
+    "invoice_number": "INV-TDC-04079",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-602969",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+1067.04 (+4.70%)"
+  },
+  {
+    "doc_id": "DOC-0218",
+    "invoice_number": "SI-0006717",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-129725",
+    "duplicate_of": null,
+    "variant": "corrupted_dropped_digit",
+    "edge_cases": [
+      "ambiguous_candidates"
+    ],
+    "notes": "PO reference 'PO-2026-12972'; true PO PO-2026-129725; competing PO PO-2026-293438 has same supplier and items, total within 8%"
+  },
+  {
+    "doc_id": "DOC-0219",
+    "invoice_number": "LCA/2026/3652",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-138064",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0220",
+    "invoice_number": "007910",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-509149",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0221",
+    "invoice_number": "OKA/2026/8560",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-763760",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0222",
+    "invoice_number": "INV-SML-05877",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-287814",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0223",
+    "invoice_number": "INV-ACL-04250",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-631193",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0224",
+    "invoice_number": "000297",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-472579",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0225",
+    "invoice_number": "SI-0006896",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-440898",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0226",
+    "invoice_number": "PFF26-3862",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-882202",
+    "duplicate_of": null,
+    "variant": "corrupted_transposed",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2026-882220'; true PO PO-2026-882202"
+  },
+  {
+    "doc_id": "DOC-0227",
+    "invoice_number": "INV-TDC-03967",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-707357",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+34.20 (+0.12%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0228",
+    "invoice_number": "RSL26-5868",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-878633",
+    "duplicate_of": "DOC-0027",
+    "variant": "exact_resubmission",
+    "edge_cases": [],
+    "notes": "Duplicate of RSL26-5868 (2026-03-12), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0229",
+    "invoice_number": "INV-SML-05828",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-090318",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0230",
+    "invoice_number": "MFL26-7815",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-524879",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0231",
+    "invoice_number": "LCA/2026/3811",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-697781",
+    "duplicate_of": null,
+    "variant": "initialism",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'LCA Ltd' vs PO supplier 'Larkspur Creative Agency Ltd'"
+  },
+  {
+    "doc_id": "DOC-0232",
+    "invoice_number": "000651",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-666620",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0233",
+    "invoice_number": "006800",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-063535",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0234",
+    "invoice_number": "PFF26-3958",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-791075",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0235",
+    "invoice_number": "SI-0007782",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-687837",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0236",
+    "invoice_number": "PFF26-3900",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-147740",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 8"
+  },
+  {
+    "doc_id": "DOC-0237",
+    "invoice_number": "007160",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-010231",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0238",
+    "invoice_number": "HES/2026/5341",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-573967",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+5.10 (+0.37%); tolerance \u00a313.86"
+  },
+  {
+    "doc_id": "DOC-0239",
+    "invoice_number": "RSL26-5914",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-509136",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0240",
+    "invoice_number": "QEL26-3305",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-778493",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Quayside Events LTD' is a formatting variant of 'Quayside Events Ltd'"
+  },
+  {
+    "doc_id": "DOC-0241",
+    "invoice_number": "INV-ACL-03880",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-545973",
+    "duplicate_of": null,
+    "variant": "corrupted_dropped_digit",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2026-45973'; true PO PO-2026-545973"
+  },
+  {
+    "doc_id": "DOC-0242",
+    "invoice_number": "008314",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-082874",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+821.58 (+10.97%)"
+  },
+  {
+    "doc_id": "DOC-0243",
+    "invoice_number": "NFM/2026/0326",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-637129",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Northvale Facilities Management' is a formatting variant of 'Northvale Facilities Management plc'"
+  },
+  {
+    "doc_id": "DOC-0244",
+    "invoice_number": "INV-MOS-04483",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-133915",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0245",
+    "invoice_number": "INV-BIT-04989",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-098874",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0246",
+    "invoice_number": "000554",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-647781",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 7"
+  },
+  {
+    "doc_id": "DOC-0247",
+    "invoice_number": "CCS26-8099",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-859160",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0248",
+    "invoice_number": "INV-ACL-04396",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-633829",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 15% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0249",
+    "invoice_number": "NFM/2026/0307",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-185654",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0250",
+    "invoice_number": "008202",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-639221",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0251",
+    "invoice_number": "RSL26-5834",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-585413",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-40.92 (-0.22%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0252",
+    "invoice_number": "002621",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-170868",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-20.24 (-0.61%); tolerance \u00a332.96"
+  },
+  {
+    "doc_id": "DOC-0253",
+    "invoice_number": "INV-BIT-05171",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-170078",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0254",
+    "invoice_number": "INV-MOS-04405",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-660868",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+159.99 (+9.76%)"
+  },
+  {
+    "doc_id": "DOC-0255",
+    "invoice_number": "NFM/2026/0321",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-695799",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+843.52 (+11.33%)"
+  },
+  {
+    "doc_id": "DOC-0256",
+    "invoice_number": "000454",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-809577",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0257",
+    "invoice_number": "000587",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-730884",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0258",
+    "invoice_number": "INV-MOS-04881",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-103463",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'MERIDIAN OFFICE SUPPLIES LTD' is a formatting variant of 'Meridian Office Supplies Ltd'"
+  },
+  {
+    "doc_id": "DOC-0259",
+    "invoice_number": "001586",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-617146",
+    "duplicate_of": null,
+    "variant": "corrupted_wrong_year",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2025-617146'; true PO PO-2026-617146"
+  },
+  {
+    "doc_id": "DOC-0260",
+    "invoice_number": "LCA/2026/3689",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-729449",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0261",
+    "invoice_number": "INV-BIT-04929",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-515290",
+    "duplicate_of": null,
+    "variant": "gr_notes_only",
+    "edge_cases": [
+      "gr_notes_only"
+    ],
+    "notes": "GR structured quantities show full receipt, but notes record 17 units returned"
+  },
+  {
+    "doc_id": "DOC-0262",
+    "invoice_number": "INV-BIT-05196",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-289946",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO/2026/289946' is a formatting variant of PO-2026-289946"
+  },
+  {
+    "doc_id": "DOC-0263",
+    "invoice_number": "INV-TDC-04170",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-995595",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO#2026-995595' is a formatting variant of PO-2026-995595"
+  },
+  {
+    "doc_id": "DOC-0264",
+    "invoice_number": "002761",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-068348",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0265",
+    "invoice_number": "002679",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-546895",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0266",
+    "invoice_number": "CCS26-8389",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-125052",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'COBBLEFORD CLEANING SERVICES LTD' is a formatting variant of 'Cobbleford Cleaning Services Ltd'"
+  },
+  {
+    "doc_id": "DOC-0267",
+    "invoice_number": "INV-MOS-04564",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-053727",
+    "duplicate_of": "DOC-0022",
+    "variant": "resubmitted_date_shift",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-MOS-04564 (2026-03-18), date shift -1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0268",
+    "invoice_number": "MFL26-7997",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-801319",
+    "duplicate_of": null,
+    "variant": "corrupted_truncated",
+    "edge_cases": [
+      "ambiguous_candidates"
+    ],
+    "notes": "PO reference 'PO-2026-8013'; true PO PO-2026-801319; competing PO PO-2026-195118 has same supplier and items, total within 8%"
+  },
+  {
+    "doc_id": "DOC-0269",
+    "invoice_number": "NFM/2026/0304",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-894647",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0270",
+    "invoice_number": "SI-0007847",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-996473",
+    "duplicate_of": null,
+    "variant": "initialism",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'FMF Ltd' vs PO supplier 'Fenmoor Freight Ltd'"
+  },
+  {
+    "doc_id": "DOC-0271",
+    "invoice_number": "SI-0006931",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-177324",
+    "duplicate_of": null,
+    "variant": "trading_name",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Kestrel Managed IT' vs PO supplier 'Kestrel Digital Services Ltd'"
+  },
+  {
+    "doc_id": "DOC-0272",
+    "invoice_number": "LCA/2026/3652/1",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-138064",
+    "duplicate_of": "DOC-0219",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of LCA/2026/3652 (2026-03-12), date shift +1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0273",
+    "invoice_number": "INV-CVG-08726",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-511856",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0274",
+    "invoice_number": "INV-MOS-04651",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-117970",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0275",
+    "invoice_number": "INV-ACL-03967",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-721184",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO 2026 721184' is a formatting variant of PO-2026-721184"
+  },
+  {
+    "doc_id": "DOC-0276",
+    "invoice_number": "INV-TDC-03962",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-550857",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0277",
+    "invoice_number": "HES/2026/5366",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-374023",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0278",
+    "invoice_number": "WFL/2026/5316",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-669507",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0279",
+    "invoice_number": "MFL26-7893",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-836012",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0280",
+    "invoice_number": "000375",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-971733",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'HARROWGATE STATIONERY CO LTD' is a formatting variant of 'Harrowgate Stationery Co Ltd'"
+  },
+  {
+    "doc_id": "DOC-0281",
+    "invoice_number": "INV-TDC-04223",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-318534",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0282",
+    "invoice_number": "INV-ACL-03873",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-763400",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0283",
+    "invoice_number": "INV-SRL-07398",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-547781",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0284",
+    "invoice_number": "QEL26-3427",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0285",
+    "invoice_number": "INV-TDC-04000",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-755717",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0286",
+    "invoice_number": "QEL26-3233",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-901400",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0287",
+    "invoice_number": "QEL26-3588",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-608275",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0288",
+    "invoice_number": "SI-0006863",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-440001",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0289",
+    "invoice_number": "SI-0006690",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-028172",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0290",
+    "invoice_number": "002892",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-286037",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Elmstead Waste Solutions Ltd.' is a formatting variant of 'Elmstead Waste Solutions Ltd'"
+  },
+  {
+    "doc_id": "DOC-0291",
+    "invoice_number": "INV-ACL-03948",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-686280",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0292",
+    "invoice_number": "007983",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-342699",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+615.48 (+11.57%)"
+  },
+  {
+    "doc_id": "DOC-0293",
+    "invoice_number": "INV-SRL-07404",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-776414",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0294",
+    "invoice_number": "SI-0006638",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-281989",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0295",
+    "invoice_number": "002609",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-419233",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 0% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0296",
+    "invoice_number": "LCA/2026/3761",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-103664",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0297",
+    "invoice_number": "RSL26-5811",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-527883",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0298",
+    "invoice_number": "INV-TDC-04139",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-497520",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'PO#2026-497520' is a formatting variant of PO-2026-497520"
+  },
+  {
+    "doc_id": "DOC-0299",
+    "invoice_number": "CCS26-8043",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-673875",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0300",
+    "invoice_number": "INV-SML-05872",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-443372",
+    "duplicate_of": null,
+    "variant": "vat_on_gross",
+    "edge_cases": [],
+    "notes": "Header tax \u00a3318.21 vs \u00a3265.18 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0301",
+    "invoice_number": "INV-SML-05996",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-504704",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0302",
+    "invoice_number": "OKA/2026/8656",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-401099",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+2836.21 (+11.54%)"
+  },
+  {
+    "doc_id": "DOC-0303",
+    "invoice_number": "QEL26-3204",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-433424",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0304",
+    "invoice_number": "CCS26-8122",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-997729",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0305",
+    "invoice_number": "INV-BIT-04892",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-150044",
+    "duplicate_of": null,
+    "variant": "parent",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Blackthorn Group Holdings plc' vs PO supplier 'Blackthorn IT Solutions Ltd'"
+  },
+  {
+    "doc_id": "DOC-0306",
+    "invoice_number": "PFF26-3982",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-794612",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0307",
+    "invoice_number": "NFM/2026/0335",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-407945",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0308",
+    "invoice_number": "002639",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-801581",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0309",
+    "invoice_number": "WFL/2026/5065",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-045770",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0310",
+    "invoice_number": "HES/2026/5327",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-290346",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 5"
+  },
+  {
+    "doc_id": "DOC-0311",
+    "invoice_number": "OKA/2026/8662",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-552231",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0312",
+    "invoice_number": "INV-ACL-04139",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-198955",
+    "duplicate_of": null,
+    "variant": "corrupted_truncated",
+    "edge_cases": [
+      "ambiguous_candidates"
+    ],
+    "notes": "PO reference 'PO-2026-198'; true PO PO-2026-198955; competing PO PO-2026-090135 has same supplier and items, total within 8%"
+  },
+  {
+    "doc_id": "DOC-0313",
+    "invoice_number": "HES/2026/5544",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-834048",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 12"
+  },
+  {
+    "doc_id": "DOC-0314",
+    "invoice_number": "001572",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-466230",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0315",
+    "invoice_number": "SI-0007801",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-519927",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0316",
+    "invoice_number": "002848",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-383746",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0317",
+    "invoice_number": "008100",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-388345",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0318",
+    "invoice_number": "HES/2026/5370",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-324869",
+    "duplicate_of": "DOC-0019",
+    "variant": "exact_resubmission",
+    "edge_cases": [],
+    "notes": "Duplicate of HES/2026/5370 (2026-04-24), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0319",
+    "invoice_number": "CCS26-8010",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-143723",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0320",
+    "invoice_number": "INV-CVG-08589",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-386709",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Calder Valley Guarding' is a formatting variant of 'Calder Valley Guarding Ltd'"
+  },
+  {
+    "doc_id": "DOC-0321",
+    "invoice_number": "SI-0006910",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-985796",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0322",
+    "invoice_number": "INV-SML-05788",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-695180",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+16.87 (+0.33%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0323",
+    "invoice_number": "RSL26-5938",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-316568",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0324",
+    "invoice_number": "INV-BIT-04936",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-108197",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0325",
+    "invoice_number": "LCA/2026/3567",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-710570",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0326",
+    "invoice_number": "INV-MOS-04791",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-942748",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'MERIDIAN OFFICE SUPPLIES LTD' is a formatting variant of 'Meridian Office Supplies Ltd'"
+  },
+  {
+    "doc_id": "DOC-0327",
+    "invoice_number": "OKA/2026/8720",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-255367",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0328",
+    "invoice_number": "WFL/2026/5184",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-950178",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0329",
+    "invoice_number": "INV-MOS-04638",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-732963",
+    "duplicate_of": null,
+    "variant": "gr_notes_only",
+    "edge_cases": [
+      "gr_notes_only"
+    ],
+    "notes": "GR structured quantities show full receipt, but notes record 10 units returned"
+  },
+  {
+    "doc_id": "DOC-0330",
+    "invoice_number": "CCS26-8306",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-612218",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 95 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0331",
+    "invoice_number": "INV-CVG-08647",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-080721",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0332",
+    "invoice_number": "INV-SML-05994",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-856653",
+    "duplicate_of": "DOC-0154",
+    "variant": "exact_resubmission",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-SML-05994 (2026-06-20), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0333",
+    "invoice_number": "003004",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-595587",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+4.62 (+0.27%); tolerance \u00a317.32"
+  },
+  {
+    "doc_id": "DOC-0334",
+    "invoice_number": "002952",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-905816",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 99 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0335",
+    "invoice_number": "008084",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-465687",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-32.50 (-0.37%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0336",
+    "invoice_number": "LCA/2026/3718",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-236765",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0337",
+    "invoice_number": "008271",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-613553",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 2 by 4"
+  },
+  {
+    "doc_id": "DOC-0338",
+    "invoice_number": "INV-TDC-03955",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-197694",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0339",
+    "invoice_number": "002798",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-329486",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 81 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0340",
+    "invoice_number": "INV-ACL-04196",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-799625",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Ashdown Catering Ltd.' is a formatting variant of 'Ashdown Catering Ltd'"
+  },
+  {
+    "doc_id": "DOC-0341",
+    "invoice_number": "INV-MOS-04825",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-043675",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 2"
+  },
+  {
+    "doc_id": "DOC-0342",
+    "invoice_number": "INV-ACL-03909",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-974555",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0343",
+    "invoice_number": "002574",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-816572",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+115.59 (+4.35%)"
+  },
+  {
+    "doc_id": "DOC-0344",
+    "invoice_number": "001677",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-647908",
+    "duplicate_of": null,
+    "variant": "corrupted_transposed",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2026-649708'; true PO PO-2026-647908"
+  },
+  {
+    "doc_id": "DOC-0345",
+    "invoice_number": "QEL26-3487",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-910313",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0346",
+    "invoice_number": "002965",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-457526",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0347",
+    "invoice_number": "HES/2026/5276",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-364625",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+3.65 (+0.37%); tolerance \u00a39.77"
+  },
+  {
+    "doc_id": "DOC-0348",
+    "invoice_number": "INV-ACL-04364",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-474639",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+23.70 (+0.29%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0349",
+    "invoice_number": "NFM/2026/0368",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-364251",
+    "duplicate_of": null,
+    "variant": "po_ref_format_variant",
+    "edge_cases": [
+      "po_ref_format_variant"
+    ],
+    "notes": "PO reference 'po-2026-364251' is a formatting variant of PO-2026-364251"
+  },
+  {
+    "doc_id": "DOC-0350",
+    "invoice_number": "000708",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-641051",
+    "duplicate_of": null,
+    "variant": "transposed_digits",
+    "edge_cases": [],
+    "notes": "Header tax \u00a3800.38 vs \u00a3803.08 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0351",
+    "invoice_number": "QEL26-3610",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-325745",
+    "duplicate_of": null,
+    "variant": "typo",
+    "edge_cases": [
+      "ambiguous_name_typo"
+    ],
+    "notes": "Invoice supplier 'Quayside Eevents Ltd' vs PO supplier 'Quayside Events Ltd'"
+  },
+  {
+    "doc_id": "DOC-0352",
+    "invoice_number": "CCS26-7981",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-601727",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+7.36 (+0.17%); tolerance \u00a343.32"
+  },
+  {
+    "doc_id": "DOC-0353",
+    "invoice_number": "INV-BIT-05170",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-039479",
+    "duplicate_of": "DOC-0095",
+    "variant": "exact_resubmission",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-BIT-05170 (2026-06-28), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0354",
+    "invoice_number": "007124",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-641967",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0355",
+    "invoice_number": "CCS26-7960",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-095578",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+4.78 (+0.18%); tolerance \u00a326.31"
+  },
+  {
+    "doc_id": "DOC-0356",
+    "invoice_number": "SI-0006816",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-877960",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0357",
+    "invoice_number": "LCA/2026/3547",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-872776",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0358",
+    "invoice_number": "QEL26-3258",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-606393",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0359",
+    "invoice_number": "QEL26-3257",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-098573",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'QUAYSIDE EVENTS LTD' is a formatting variant of 'Quayside Events Ltd'"
+  },
+  {
+    "doc_id": "DOC-0360",
+    "invoice_number": "SI-0006782",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-206438",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0361",
+    "invoice_number": "QEL26-3371",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0362",
+    "invoice_number": "000627",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-536205",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0363",
+    "invoice_number": "INV-CVG-08692",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-557639",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0364",
+    "invoice_number": "SI-0008011",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-501296",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 17.5% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0365",
+    "invoice_number": "CCS26-8263",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-399468",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0366",
+    "invoice_number": "INV-TDC-04227",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-503381",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+7001.49 (+13.01%)"
+  },
+  {
+    "doc_id": "DOC-0367",
+    "invoice_number": "WFL/2026/5096",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-035385",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [],
+    "notes": "PO reference 'N/A'; true PO PO-2026-035385"
+  },
+  {
+    "doc_id": "DOC-0368",
+    "invoice_number": "SI-0006638",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-281989",
+    "duplicate_of": "DOC-0294",
+    "variant": "exact_resubmission",
+    "edge_cases": [],
+    "notes": "Duplicate of SI-0006638 (2026-02-09), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0369",
+    "invoice_number": "INV-SRL-07313",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-130827",
+    "duplicate_of": null,
+    "variant": "subsidiary",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Silverbirch Recruitment (Southern) Ltd' vs PO supplier 'Silverbirch Recruitment Ltd'"
+  },
+  {
+    "doc_id": "DOC-0370",
+    "invoice_number": "006973",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-562147",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0371",
+    "invoice_number": "INV-CVG-08586",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-249235",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0372",
+    "invoice_number": "000717",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-118955",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 68 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0373",
+    "invoice_number": "INV-TDC-04027",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-747221",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0374",
+    "invoice_number": "INV-ACL-04089",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-966264",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0375",
+    "invoice_number": "RSL26-5875",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-917043",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0376",
+    "invoice_number": "INV-SRL-07398A",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-547781",
+    "duplicate_of": "DOC-0283",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-SRL-07398 (2026-07-10), date shift +1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0377",
+    "invoice_number": "INV-SML-05964",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-581828",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0378",
+    "invoice_number": "QEL26-3538",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-900924",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0379",
+    "invoice_number": "INV-CVG-08619",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-634039",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0380",
+    "invoice_number": "002711",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-357871",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0381",
+    "invoice_number": "INV-TDC-03992",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-528835",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [
+      "ambiguous_candidates"
+    ],
+    "notes": "PO reference ''; true PO PO-2026-528835; competing PO PO-2026-725619 has same supplier and items, total within 8%"
+  },
+  {
+    "doc_id": "DOC-0382",
+    "invoice_number": "SI-0007764",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-722469",
+    "duplicate_of": null,
+    "variant": "missing",
+    "edge_cases": [],
+    "notes": "PO reference None; true PO PO-2026-722469"
+  },
+  {
+    "doc_id": "DOC-0383",
+    "invoice_number": "000278",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-802280",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0384",
+    "invoice_number": "WFL/2026/5162",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-645718",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0385",
+    "invoice_number": "INV-MOS-04773",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-279428",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0386",
+    "invoice_number": "SI-0008010",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-776232",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0387",
+    "invoice_number": "INV-TDC-04096",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-952312",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0388",
+    "invoice_number": "SI-0007964",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-378685",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+3.20 (+0.33%); tolerance \u00a39.74"
+  },
+  {
+    "doc_id": "DOC-0389",
+    "invoice_number": "003029",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-759931",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Elmstead Waste Solutions Ltd.' is a formatting variant of 'Elmstead Waste Solutions Ltd'"
+  },
+  {
+    "doc_id": "DOC-0390",
+    "invoice_number": "INV-BIT-05141",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-256570",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0391",
+    "invoice_number": "007012",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-589730",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0392",
+    "invoice_number": "LCA/2026/3861",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-712444",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0393",
+    "invoice_number": "001647",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-872002",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0394",
+    "invoice_number": "INV-SML-06033",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-495312",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0395",
+    "invoice_number": "008160",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-973858",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+100.64 (+7.03%)"
+  },
+  {
+    "doc_id": "DOC-0396",
+    "invoice_number": "INV-ACL-04012",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-732105",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0397",
+    "invoice_number": "SI-0007727",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-293477",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0398",
+    "invoice_number": "RSL26-5901",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-664311",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0399",
+    "invoice_number": "SI-0006665",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-640098",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0400",
+    "invoice_number": "PFF26-3860",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-261735",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0401",
+    "invoice_number": "INV-ACL-04178",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-871300",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0402",
+    "invoice_number": "PFF26-4082",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-246011",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 3"
+  },
+  {
+    "doc_id": "DOC-0403",
+    "invoice_number": "002987",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-827965",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0404",
+    "invoice_number": "INV-BIT-04751",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-560381",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0405",
+    "invoice_number": "OKA/2026/8681",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-440486",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0406",
+    "invoice_number": "INV-CVG-08605",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-015892",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+695.65 (+6.29%)"
+  },
+  {
+    "doc_id": "DOC-0407",
+    "invoice_number": "INV-SRL-07237",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-872415",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0408",
+    "invoice_number": "LCA/2026/3758",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-928675",
+    "duplicate_of": null,
+    "variant": "corrupted_truncated",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2026-928'; true PO PO-2026-928675"
+  },
+  {
+    "doc_id": "DOC-0409",
+    "invoice_number": "MFL26-7995",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-759705",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0410",
+    "invoice_number": "QEL26-3558",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-860793",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0411",
+    "invoice_number": "000835",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-137878",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 2"
+  },
+  {
+    "doc_id": "DOC-0412",
+    "invoice_number": "002834",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-460392",
+    "duplicate_of": null,
+    "variant": "arithmetic_slip",
+    "edge_cases": [],
+    "notes": "Header tax \u00a3769.68 vs \u00a3869.68 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0413",
+    "invoice_number": "CCS26-8359",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-668578",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 68 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0414",
+    "invoice_number": "007144",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-720064",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 67 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0415",
+    "invoice_number": "SI-0007125",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-055629",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 96 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0416",
+    "invoice_number": "PFF26-4067",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-937389",
+    "duplicate_of": null,
+    "variant": "subsidiary",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Pennine Fresh Foods (Yorkshire) Ltd' vs PO supplier 'Pennine Fresh Foods Ltd'"
+  },
+  {
+    "doc_id": "DOC-0417",
+    "invoice_number": "INV-SML-05863",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-869726",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0418",
+    "invoice_number": "INV-MOS-04600",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-805150",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0419",
+    "invoice_number": "QEL26-3671",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-566136",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+38.79 (+0.23%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0420",
+    "invoice_number": "INV-MOS-04744",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-726990",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 4"
+  },
+  {
+    "doc_id": "DOC-0421",
+    "invoice_number": "007037",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-794820",
+    "duplicate_of": null,
+    "variant": "parent",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'Tamarind Group Holdings plc' vs PO supplier 'Tamarind Telecoms Ltd'"
+  },
+  {
+    "doc_id": "DOC-0422",
+    "invoice_number": "INV-SRL-07366",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-675567",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0423",
+    "invoice_number": "INV-BIT-04865",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-010363",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+27.72 (+0.20%); tolerance \u00a350.00"
+  },
+  {
+    "doc_id": "DOC-0424",
+    "invoice_number": "006930",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-522530",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0425",
+    "invoice_number": "PFF26-4009",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-748362",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0426",
+    "invoice_number": "006889",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-216154",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3-579.40 (-9.19%)"
+  },
+  {
+    "doc_id": "DOC-0427",
+    "invoice_number": "SI-0007901",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-112090",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0428",
+    "invoice_number": "000679",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-354729",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 5"
+  },
+  {
+    "doc_id": "DOC-0429",
+    "invoice_number": "INV-BIT-04998",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-280570",
+    "duplicate_of": null,
+    "variant": "corrupted_wrong_year",
+    "edge_cases": [
+      "ambiguous_candidates"
+    ],
+    "notes": "PO reference 'PO-2025-280570'; true PO PO-2026-280570; competing PO PO-2026-725423 has same supplier and items, total within 8%"
+  },
+  {
+    "doc_id": "DOC-0430",
+    "invoice_number": "INV-BIT-05234",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-221861",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0431",
+    "invoice_number": "NFM/2026/0354",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-774337",
+    "duplicate_of": null,
+    "variant": "initialism",
+    "edge_cases": [],
+    "notes": "Invoice supplier 'NFM Ltd' vs PO supplier 'Northvale Facilities Management plc'"
+  },
+  {
+    "doc_id": "DOC-0432",
+    "invoice_number": "INV-MOS-04443",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-776507",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+20.16 (+0.75%); tolerance \u00a326.76"
+  },
+  {
+    "doc_id": "DOC-0433",
+    "invoice_number": "006900",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-084667",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0434",
+    "invoice_number": "RINV-SML-05863",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-869726",
+    "duplicate_of": "DOC-0417",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-SML-05863 (2026-04-15), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0435",
+    "invoice_number": "006941",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-265955",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0436",
+    "invoice_number": "WFL/2026/5289",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0437",
+    "invoice_number": "MFL26-7826",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-488546",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+3.72 (+0.26%); tolerance \u00a314.28"
+  },
+  {
+    "doc_id": "DOC-0438",
+    "invoice_number": "INV-MOS-04705",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-510713",
+    "duplicate_of": null,
+    "variant": "arithmetic_slip",
+    "edge_cases": [],
+    "notes": "Header tax \u00a31036.85 vs \u00a31136.85 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0439",
+    "invoice_number": "WFL/2026/5234",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-849343",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0440",
+    "invoice_number": "008005",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-156457",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+2.82 (+0.54%); tolerance \u00a35.25"
+  },
+  {
+    "doc_id": "DOC-0441",
+    "invoice_number": "INV-BIT-04825A",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-025906",
+    "duplicate_of": "DOC-0129",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-BIT-04825 (2026-03-15), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0442",
+    "invoice_number": "SI-0006765",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-862574",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0443",
+    "invoice_number": "INV-SML-05746",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-176526",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0444",
+    "invoice_number": "INV-SRL-07281",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-345625",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0445",
+    "invoice_number": "SI-0006985",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-570902",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+22.54 (+0.71%); tolerance \u00a331.60"
+  },
+  {
+    "doc_id": "DOC-0446",
+    "invoice_number": "RINV-MOS-04635",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-824481",
+    "duplicate_of": "DOC-0031",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-MOS-04635 (2026-04-13), date shift -1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0447",
+    "invoice_number": "SI-0007922",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-411954",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+219.81 (+3.65%)"
+  },
+  {
+    "doc_id": "DOC-0448",
+    "invoice_number": "007176",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-605570",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+38.40 (+0.86%); tolerance \u00a344.75"
+  },
+  {
+    "doc_id": "DOC-0449",
+    "invoice_number": "INV-CVG-08559",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-777909",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0450",
+    "invoice_number": "000343",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-848312",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0451",
+    "invoice_number": "006959",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-809634",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Tamarind Telecoms LTD' is a formatting variant of 'Tamarind Telecoms Ltd'"
+  },
+  {
+    "doc_id": "DOC-0452",
+    "invoice_number": "001615",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0453",
+    "invoice_number": "INV-BIT-05075",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-503550",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 2"
+  },
+  {
+    "doc_id": "DOC-0454",
+    "invoice_number": "002913",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-424831",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+345.53 (+10.34%)"
+  },
+  {
+    "doc_id": "DOC-0455",
+    "invoice_number": "006949",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-856413",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0456",
+    "invoice_number": "NFM/2026/0328",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-511626",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0457",
+    "invoice_number": "001771",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-105555",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0458",
+    "invoice_number": "008059",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-940208",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+13.16 (+0.72%); tolerance \u00a318.31"
+  },
+  {
+    "doc_id": "DOC-0459",
+    "invoice_number": "007124-R",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-641967",
+    "duplicate_of": "DOC-0354",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of 007124 (2026-06-15), date shift -1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0460",
+    "invoice_number": "NFM/2026/0404",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-174148",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0461",
+    "invoice_number": "OKA/2026/8759",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-275896",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0462",
+    "invoice_number": "001756",
+    "code": "E06",
+    "action": "escalate",
+    "true_po_number": "PO-2026-408341",
+    "duplicate_of": null,
+    "variant": "late_invoice",
+    "edge_cases": [],
+    "notes": "Invoiced 71 days after receipt against a closed PO"
+  },
+  {
+    "doc_id": "DOC-0463",
+    "invoice_number": "000509",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-949560",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 4, line 3 by 2"
+  },
+  {
+    "doc_id": "DOC-0464",
+    "invoice_number": "INV-TDC-04083",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-062437",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0465",
+    "invoice_number": "SI-0007901-R",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-112090",
+    "duplicate_of": "DOC-0427",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of SI-0007901 (2026-05-06), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0466",
+    "invoice_number": "INV-SRL-07372",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-469881",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+511.01 (+7.70%)"
+  },
+  {
+    "doc_id": "DOC-0467",
+    "invoice_number": "LCA/2026/3836",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-947763",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 17.5% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0468",
+    "invoice_number": "INV-CVG-08765",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-937215",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0469",
+    "invoice_number": "LCA/2026/3636",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-032244",
+    "duplicate_of": null,
+    "variant": "recurring_retainer",
+    "edge_cases": [
+      "recurring_similar_invoice"
+    ],
+    "notes": "Legitimate monthly invoice; same supplier and amount as another invoice 30 days apart"
+  },
+  {
+    "doc_id": "DOC-0470",
+    "invoice_number": "LCA/2026/3608",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-994620",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0471",
+    "invoice_number": "SI-0006839",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": "PO-2026-257092",
+    "duplicate_of": null,
+    "variant": "corrupted_wrong_year",
+    "edge_cases": [],
+    "notes": "PO reference 'PO-2025-257092'; true PO PO-2026-257092"
+  },
+  {
+    "doc_id": "DOC-0472",
+    "invoice_number": "OKA/2026/8675",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-244118",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0473",
+    "invoice_number": "SI-0007091",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-472804",
+    "duplicate_of": null,
+    "variant": "wrong_rate",
+    "edge_cases": [],
+    "notes": "VAT charged at 0% instead of 20%"
+  },
+  {
+    "doc_id": "DOC-0474",
+    "invoice_number": "INV-SML-05940",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-082724",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0475",
+    "invoice_number": "CCS26-8096",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-458592",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0476",
+    "invoice_number": "HES/2026/5485",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-163555",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+20.40 (+0.53%); tolerance \u00a338.34"
+  },
+  {
+    "doc_id": "DOC-0477",
+    "invoice_number": "000660",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-049159",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0478",
+    "invoice_number": "CCS26-8295",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-834456",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'COBBLEFORD CLEANING SERVICES LTD' is a formatting variant of 'Cobbleford Cleaning Services Ltd'"
+  },
+  {
+    "doc_id": "DOC-0479",
+    "invoice_number": "INV-TDC-04190",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-555640",
+    "duplicate_of": null,
+    "variant": "price_error",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+356.24 (+11.76%)"
+  },
+  {
+    "doc_id": "DOC-0480",
+    "invoice_number": "OKA/2026/8720",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-255367",
+    "duplicate_of": "DOC-0327",
+    "variant": "resubmitted_date_shift",
+    "edge_cases": [],
+    "notes": "Duplicate of OKA/2026/8720 (2026-07-19), date shift -1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0481",
+    "invoice_number": "QEL26-3620",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-720916",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0482",
+    "invoice_number": "R006973",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-562147",
+    "duplicate_of": "DOC-0370",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of 006973 (2026-04-19), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0483",
+    "invoice_number": "INV-ACL-03864",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-048504",
+    "duplicate_of": null,
+    "variant": "benign_name_variant",
+    "edge_cases": [
+      "benign_name_variant"
+    ],
+    "notes": "Supplier name 'Ashdown Catering Ltd.' is a formatting variant of 'Ashdown Catering Ltd'"
+  },
+  {
+    "doc_id": "DOC-0484",
+    "invoice_number": "MFL26-7867",
+    "code": "E05",
+    "action": "escalate",
+    "true_po_number": null,
+    "duplicate_of": null,
+    "variant": "maverick",
+    "edge_cases": [
+      "no_po_exists"
+    ],
+    "notes": "Maverick spend: no PO was raised"
+  },
+  {
+    "doc_id": "DOC-0485",
+    "invoice_number": "QEL26-3487-R",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-910313",
+    "duplicate_of": "DOC-0345",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of QEL26-3487 (2026-06-08), date shift +1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0486",
+    "invoice_number": "INV-ACL-03909",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-974555",
+    "duplicate_of": "DOC-0342",
+    "variant": "resubmitted_date_shift",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-ACL-03909 (2026-02-28), date shift -1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0487",
+    "invoice_number": "RINV-SML-05940",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-082724",
+    "duplicate_of": "DOC-0474",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of INV-SML-05940 (2026-06-03), date shift +0 day(s)"
+  },
+  {
+    "doc_id": "DOC-0488",
+    "invoice_number": "CCS26-7870",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-379666",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0489",
+    "invoice_number": "INV-BIT-05048",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-569373",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0490",
+    "invoice_number": "INV-BIT-05224",
+    "code": "E07",
+    "action": "escalate",
+    "true_po_number": "PO-2026-640270",
+    "duplicate_of": null,
+    "variant": "transposed_digits",
+    "edge_cases": [],
+    "notes": "Header tax \u00a31470.43 vs \u00a34170.43 recalculated from lines"
+  },
+  {
+    "doc_id": "DOC-0491",
+    "invoice_number": "006846",
+    "code": "E02",
+    "action": "escalate",
+    "true_po_number": "PO-2026-287929",
+    "duplicate_of": null,
+    "variant": "price_error_no_gr",
+    "edge_cases": [
+      "no_goods_receipt"
+    ],
+    "notes": "Subtotal differs from PO by \u00a3+223.66 (+6.27%)"
+  },
+  {
+    "doc_id": "DOC-0492",
+    "invoice_number": "WFL/2026/5234-R",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-849343",
+    "duplicate_of": "DOC-0439",
+    "variant": "renumbered",
+    "edge_cases": [],
+    "notes": "Duplicate of WFL/2026/5234 (2026-07-06), date shift +1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0493",
+    "invoice_number": "NFM/2026/0416",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-058701",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0494",
+    "invoice_number": "SI-0006765",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-862574",
+    "duplicate_of": "DOC-0442",
+    "variant": "resubmitted_date_shift",
+    "edge_cases": [],
+    "notes": "Duplicate of SI-0006765 (2026-03-04), date shift +1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0495",
+    "invoice_number": "002975",
+    "code": "E04",
+    "action": "auto_reject",
+    "true_po_number": "PO-2026-863043",
+    "duplicate_of": "DOC-0208",
+    "variant": "resubmitted_date_shift",
+    "edge_cases": [],
+    "notes": "Duplicate of 002975 (2026-07-04), date shift -1 day(s)"
+  },
+  {
+    "doc_id": "DOC-0496",
+    "invoice_number": "INV-MOS-04891",
+    "code": "E08",
+    "action": "escalate",
+    "true_po_number": "PO-2026-525741",
+    "duplicate_of": null,
+    "variant": "typo",
+    "edge_cases": [
+      "ambiguous_name_typo"
+    ],
+    "notes": "Invoice supplier 'Mreidian Offiice Supplies Ltd' vs PO supplier 'Meridian Office Supplies Ltd'"
+  },
+  {
+    "doc_id": "DOC-0497",
+    "invoice_number": "OKA/2026/8704",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-617118",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0498",
+    "invoice_number": "LCA/2026/3783",
+    "code": "E01",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-409024",
+    "duplicate_of": null,
+    "variant": "price_adjustment",
+    "edge_cases": [],
+    "notes": "Subtotal differs from PO by \u00a3+3.23 (+0.69%); tolerance \u00a34.70"
+  },
+  {
+    "doc_id": "DOC-0499",
+    "invoice_number": "NFM/2026/0444",
+    "code": "clean",
+    "action": "auto_approve",
+    "true_po_number": "PO-2026-145564",
+    "duplicate_of": null,
+    "variant": null,
+    "edge_cases": [],
+    "notes": ""
+  },
+  {
+    "doc_id": "DOC-0500",
+    "invoice_number": "008047",
+    "code": "E03",
+    "action": "escalate",
+    "true_po_number": "PO-2026-680658",
+    "duplicate_of": null,
+    "variant": "partial_delivery",
+    "edge_cases": [],
+    "notes": "GR short on line 1 by 6"
+  }
+]

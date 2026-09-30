@@ -1,0 +1,11 @@
+Invoice | Harrowgate Stationery Co
+Ref: 000312   Issued: 2026-02-27   Due: 2026-03-29
+Purchase Order Ref: PO-2026-455582
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Desk organiser set | qty 9 | unit 27.65 | net 248.85 | vat 49.77
+2. Whiteboard markers, assorted, pack of 12 | qty 26 | unit 8.10 | net 210.60 | vat 42.12
+3. Envelopes C4 self-seal, box of 250 | qty 28 | unit 37.62 | net 1053.36 | vat 210.67
+
+Net 1512.81 | VAT 302.56 | Gross 1815.37

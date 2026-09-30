@@ -1,0 +1,15 @@
+From: Pennine Fresh Foods Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE PFF26-4082
+Dated 11 June 2026
+Your order reference: PO-2026-246011
+
+Supplied:
+  - 9 x Fresh fruit box, weekly delivery @ GBP 41.24 = GBP 371.16 (VAT GBP 74.23)
+
+Net amount: GBP 371.16
+VAT: GBP 74.23
+Amount payable: GBP 445.39
+
+Payment due by 11 July 2026 (Net 30).

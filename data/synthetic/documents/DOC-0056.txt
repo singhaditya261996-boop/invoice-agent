@@ -1,0 +1,10 @@
+Invoice | Northvale Facilities Management plc
+Ref: NFM/2026/0476   Issued: 2026-07-15   Due: 2026-09-13
+Purchase Order Ref: PO-2026-416032
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. HVAC filter replacement, per unit | qty 40 | unit 51.27 | net 2050.80 | vat 410.16
+2. Reactive maintenance call-out | qty 10 | unit 125.70 | net 1257.00 | vat 251.40
+
+Net 3307.80 | VAT 661.56 | Gross 3969.36

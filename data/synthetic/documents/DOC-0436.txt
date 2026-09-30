@@ -1,0 +1,21 @@
+Wychwood Furniture Ltd
+TAX INVOICE
+
+Invoice No:    WFL/2026/5289
+Invoice Date:  10/07/2026
+Due Date:      08/09/2026
+Customer PO:   See email
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Meeting table, 8-seater                           3   £1,078.94     £647.36    £3,236.82
+Height-adjustable desk 1600mm                    11     £519.14   £1,142.11    £5,710.54
+Acoustic desk screen                             38      £91.34     £694.18    £3,470.92
+Ergonomic task chair                             28     £252.64   £1,414.78    £7,073.92
+----------------------------------------------------------------------------------------
+                                                                  Subtotal    £19,492.20
+                                                                       VAT     £3,898.43
+                                                                 TOTAL DUE    £23,390.63
+
+Payment terms: Net 60. Please quote the invoice number.

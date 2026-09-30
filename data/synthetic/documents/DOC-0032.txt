@@ -1,0 +1,15 @@
+From: Brackenfield Packaging Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE 001840
+Dated 3 August 2026
+Your order reference: PO-2026-627205
+
+Supplied:
+  - 29 x Void fill paper, per roll @ GBP 40.42 = GBP 1172.18 (VAT GBP 234.44)
+
+Net amount: GBP 1172.18
+VAT: GBP 234.44
+Amount payable: GBP 1406.62
+
+Payment due by 2 September 2026 (Net 30).

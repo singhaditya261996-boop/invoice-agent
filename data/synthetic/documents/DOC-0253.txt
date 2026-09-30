@@ -1,0 +1,16 @@
+From: Blackthorn IT Solutions Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-BIT-05171
+Dated 10 July 2026
+Your order reference: PO-2026-170078
+
+Supplied:
+  - 19 x Wireless keyboard and mouse set @ GBP 50.63 = GBP 961.97 (VAT GBP 192.39)
+  - 32 x USB-C docking station @ GBP 172.27 = GBP 5512.64 (VAT GBP 1102.53)
+
+Net amount: GBP 6474.61
+VAT: GBP 1294.92
+Amount payable: GBP 7769.53
+
+Payment due by 9 August 2026 (Net 30).

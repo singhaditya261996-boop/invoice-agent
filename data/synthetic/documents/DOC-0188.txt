@@ -1,0 +1,9 @@
+Invoice | Greystone Electrical Services Ltd
+Ref: SI-0006815   Issued: 2026-06-29   Due: 2026-07-29
+Purchase Order Ref: PO-2026-958089
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. PAT testing, per appliance | qty 703 | unit 2.73 | net 1919.19 | vat 383.84
+
+Net 1919.19 | VAT 383.84 | Gross 2303.03

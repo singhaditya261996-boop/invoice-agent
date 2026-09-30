@@ -1,0 +1,9 @@
+Invoice | Tamarind Telecoms Ltd
+Ref: 006900   Issued: 2026-03-23   Due: 2026-04-22
+Purchase Order Ref: PO-2026-084667
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Mobile airtime bundle, per user, monthly | qty 31 | unit 27.21 | net 843.51 | vat 168.70
+
+Net 843.51 | VAT 168.70 | Gross 1012.21

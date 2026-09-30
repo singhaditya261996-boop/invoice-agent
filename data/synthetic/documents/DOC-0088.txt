@@ -1,0 +1,15 @@
+From: Meridian Office Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-MOS-04440
+Dated 9 February 2026
+Your order reference: PO-2026-18895
+
+Supplied:
+  - 27 x A4 copier paper 80gsm, box of 5 reams @ GBP 24.97 = GBP 674.19 (VAT GBP 134.84)
+
+Net amount: GBP 674.19
+VAT: GBP 134.84
+Amount payable: GBP 809.03
+
+Payment due by 11 March 2026 (Net 30).

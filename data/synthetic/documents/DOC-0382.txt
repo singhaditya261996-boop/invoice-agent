@@ -1,0 +1,9 @@
+Invoice | Fenmoor Freight Ltd
+Ref: SI-0007764   Issued: 2026-03-06   Due: 2026-04-05
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Pallet delivery, next day, per pallet | qty 3 | unit 100.83 | net 302.49 | vat 60.50
+2. Same-day courier, per consignment | qty 9 | unit 58.35 | net 525.15 | vat 105.03
+
+Net 827.64 | VAT 165.53 | Gross 993.17

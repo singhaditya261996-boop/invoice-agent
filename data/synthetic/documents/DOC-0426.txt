@@ -1,0 +1,10 @@
+Invoice | Tamarind Telecoms Ltd
+Ref: 006889   Issued: 2026-03-15   Due: 2026-04-14
+Purchase Order Ref: PO-2026-216154
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Leased line installation | qty 2 | unit 1012.44 | net 2024.88 | vat 404.98
+2. Desk phone handset | qty 60 | unit 61.62 | net 3697.20 | vat 739.44
+
+Net 5722.08 | VAT 1144.42 | Gross 6866.50

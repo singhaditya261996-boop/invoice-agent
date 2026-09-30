@@ -1,0 +1,20 @@
+NFM Ltd
+TAX INVOICE
+
+Invoice No:    NFM/2026/0354
+Invoice Date:  01/06/2026
+Due Date:      31/07/2026
+Customer PO:   PO-2026-774337
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+HVAC filter replacement, per unit                23      £50.65     £232.99    £1,164.95
+Planned preventative maintenance visit           12     £635.11   £1,524.26    £7,621.32
+Reactive maintenance call-out                     5     £305.73     £305.73    £1,528.65
+----------------------------------------------------------------------------------------
+                                                                  Subtotal    £10,314.92
+                                                                       VAT     £2,062.98
+                                                                 TOTAL DUE    £12,377.90
+
+Payment terms: Net 60. Please quote the invoice number.

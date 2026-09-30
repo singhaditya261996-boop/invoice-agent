@@ -1,0 +1,10 @@
+Invoice | Marlow & Finch Legal Services LLP
+Ref: MFL26-7893   Issued: 2026-04-04   Due: 2026-05-04
+Purchase Order Ref: PO-2026-836012
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Contract review, fixed fee | qty 1 | unit 2871.10 | net 2871.10 | vat 574.22
+2. Commercial contracts advice, per hour | qty 35 | unit 286.13 | net 10014.55 | vat 2002.91
+
+Net 12885.65 | VAT 2577.13 | Gross 15462.78

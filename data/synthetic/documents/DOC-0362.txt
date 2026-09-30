@@ -1,0 +1,20 @@
+Harrowgate Stationery Co Ltd
+TAX INVOICE
+
+Invoice No:    000627
+Invoice Date:  28/05/2026
+Due Date:      27/06/2026
+Customer PO:   PO-2026-536205
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Desk organiser set                               28      £24.81     £138.94      £694.68
+Whiteboard markers, assorted, pack of 12         42      £13.87     £116.51      £582.54
+Spiral notebooks A5, pack of 10                  42      £10.34      £86.86      £434.28
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £1,711.50
+                                                                       VAT       £342.31
+                                                                 TOTAL DUE     £2,053.81
+
+Payment terms: Net 30. Please quote the invoice number.

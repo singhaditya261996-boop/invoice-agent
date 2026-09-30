@@ -1,0 +1,18 @@
+Elmstead Waste Solutions Ltd
+TAX INVOICE
+
+Invoice No:    002639
+Invoice Date:  04/03/2026
+Due Date:      03/04/2026
+Customer PO:   PO-2026-801581
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Mixed recycling contract, monthly                 1     £677.87     £135.57      £677.87
+----------------------------------------------------------------------------------------
+                                                                  Subtotal       £677.87
+                                                                       VAT       £135.57
+                                                                 TOTAL DUE       £813.44
+
+Payment terms: Net 30. Please quote the invoice number.

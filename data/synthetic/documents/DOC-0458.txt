@@ -1,0 +1,19 @@
+Brightwater Print & Media Ltd
+TAX INVOICE
+
+Invoice No:    008059
+Invoice Date:  19/03/2026
+Due Date:      18/04/2026
+Customer PO:   PO-2026-940208
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Pull-up exhibition banner                         7      £74.23     £103.92      £519.61
+Printed brochures, A4 16pp, per 100              14      £94.63     £264.96    £1,324.82
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £1,844.43
+                                                                       VAT       £368.88
+                                                                 TOTAL DUE     £2,213.31
+
+Payment terms: Net 30. Please quote the invoice number.

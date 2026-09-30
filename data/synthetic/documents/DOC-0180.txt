@@ -1,0 +1,17 @@
+From: Thistledown Consulting L.L.P.
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-TDC-04120
+Dated 18 May 2026
+Your order reference: PO-2026-907141
+
+Supplied:
+  - 16 x Senior consultant, per day @ GBP 1035.77 = GBP 16572.32 (VAT GBP 3314.46)
+  - 30 x Consultant, per day @ GBP 686.77 = GBP 20603.10 (VAT GBP 4120.62)
+  - 1 x Workshop facilitation @ GBP 1626.51 = GBP 1626.51 (VAT GBP 325.30)
+
+Net amount: GBP 38801.93
+VAT: GBP 7760.38
+Amount payable: GBP 46562.31
+
+Payment due by 17 July 2026 (Net 60).

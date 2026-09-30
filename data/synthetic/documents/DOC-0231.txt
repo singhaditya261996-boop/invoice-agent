@@ -1,0 +1,15 @@
+From: LCA Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE LCA/2026/3811
+Dated 16 July 2026
+Your order reference: PO-2026-697781
+
+Supplied:
+  - 6 x Copywriting, per day @ GBP 431.26 = GBP 2587.56 (VAT GBP 517.51)
+
+Net amount: GBP 2587.56
+VAT: GBP 517.51
+Amount payable: GBP 3105.07
+
+Payment due by 14 September 2026 (Net 60).

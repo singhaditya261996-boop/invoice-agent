@@ -1,0 +1,17 @@
+From: Northvale Facilities Management
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE NFM/2026/0326
+Dated 16 April 2026
+Your order reference: PO-2026-637129
+
+Supplied:
+  - 3 x Reactive maintenance call-out @ GBP 299.04 = GBP 897.12 (VAT GBP 179.42)
+  - 14 x HVAC filter replacement, per unit @ GBP 59.18 = GBP 828.52 (VAT GBP 165.70)
+  - 8 x Planned preventative maintenance visit @ GBP 567.95 = GBP 4543.60 (VAT GBP 908.72)
+
+Net amount: GBP 6269.24
+VAT: GBP 1253.84
+Amount payable: GBP 7523.08
+
+Payment due by 15 June 2026 (Net 60).

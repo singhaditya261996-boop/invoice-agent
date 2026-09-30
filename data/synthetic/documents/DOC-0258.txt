@@ -1,0 +1,12 @@
+Invoice | MERIDIAN OFFICE SUPPLIES LTD
+Ref: INV-MOS-04881   Issued: 2026-06-28   Due: 2026-07-28
+Purchase Order Ref: PO-2026-103463
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Sticky notes 76x76mm, pack of 12 | qty 77 | unit 7.57 | net 582.89 | vat 116.58
+2. Lever arch files, pack of 10 | qty 35 | unit 22.26 | net 779.10 | vat 155.82
+3. Black ballpoint pens, box of 50 | qty 29 | unit 8.80 | net 255.20 | vat 51.04
+4. A4 copier paper 80gsm, box of 5 reams | qty 199 | unit 30.71 | net 6111.29 | vat 1222.26
+
+Net 7728.48 | VAT 1545.70 | Gross 9274.18

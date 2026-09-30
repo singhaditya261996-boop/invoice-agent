@@ -1,0 +1,10 @@
+Invoice | Tamarind Telecoms Ltd
+Ref: 006846   Issued: 2026-03-02   Due: 2026-04-01
+Purchase Order Ref: PO-2026-287929
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. SIP trunk channels, monthly | qty 46 | unit 12.03 | net 553.38 | vat 110.68
+2. Desk phone handset | qty 25 | unit 129.46 | net 3236.50 | vat 647.30
+
+Net 3789.88 | VAT 757.98 | Gross 4547.86

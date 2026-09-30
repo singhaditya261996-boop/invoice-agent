@@ -1,0 +1,15 @@
+From: Hollins Engineering Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE HES/2026/5330
+Dated 21 March 2026
+Your order reference: PO-2026-896296
+
+Supplied:
+  - 3 x Assorted fasteners kit @ GBP 42.40 = GBP 127.20 (VAT GBP 25.44)
+
+Net amount: GBP 127.20
+VAT: GBP 25.44
+Amount payable: GBP 152.64
+
+Payment due by 20 May 2026 (Net 60).

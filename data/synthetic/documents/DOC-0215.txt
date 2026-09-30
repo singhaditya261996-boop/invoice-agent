@@ -1,0 +1,21 @@
+HARROWGATE STATIONERY CO LTD
+TAX INVOICE
+
+Invoice No:    000415
+Invoice Date:  09/04/2026
+Due Date:      09/05/2026
+Customer PO:   PO-2026-180130
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Desk organiser set                                5      £25.69      £25.69      £128.45
+Spiral notebooks A5, pack of 10                  42      £17.24     £144.82      £724.08
+Whiteboard markers, assorted, pack of 12         45      £12.80     £115.20      £576.00
+Envelopes C4 self-seal, box of 250               14      £23.84      £66.75      £333.76
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £1,762.29
+                                                                       VAT       £352.46
+                                                                 TOTAL DUE     £2,114.75
+
+Payment terms: Net 30. Please quote the invoice number.

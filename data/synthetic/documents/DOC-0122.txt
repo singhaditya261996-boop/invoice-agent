@@ -1,0 +1,19 @@
+Wychwood Furniture Ltd
+TAX INVOICE
+
+Invoice No:    WFL/2026/5031
+Invoice Date:  17/02/2026
+Due Date:      18/04/2026
+Customer PO:   PO-2026-966144
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Acoustic desk screen                             24     £157.80     £757.44    £3,787.20
+Ergonomic task chair                             11     £244.42     £537.72    £2,688.62
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £6,475.82
+                                                                       VAT     £1,295.16
+                                                                 TOTAL DUE     £7,770.98
+
+Payment terms: Net 60. Please quote the invoice number.

@@ -1,0 +1,19 @@
+Elmstead Waste Solutions Ltd
+TAX INVOICE
+
+Invoice No:    002798
+Invoice Date:  18/04/2026
+Due Date:      18/05/2026
+Customer PO:   PO-2026-329486
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+General waste collection, per lift               50      £74.06     £740.60    £3,703.00
+WEEE disposal, per item                         120       £8.69     £208.56    £1,042.80
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £4,745.80
+                                                                       VAT       £949.16
+                                                                 TOTAL DUE     £5,694.96
+
+Payment terms: Net 30. Please quote the invoice number.

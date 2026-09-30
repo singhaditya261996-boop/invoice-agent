@@ -1,0 +1,20 @@
+Wychwood Furniture Ltd
+TAX INVOICE
+
+Invoice No:    WFL/2026/5149
+Invoice Date:  22/03/2026
+Due Date:      21/05/2026
+Customer PO:   PO-2026-917664
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Four-drawer steel filing cabinet                  2     £183.35      £73.34      £366.70
+Height-adjustable desk 1600mm                    23     £460.22   £2,117.01   £10,585.06
+Acoustic desk screen                             33     £145.79     £962.21    £4,811.07
+----------------------------------------------------------------------------------------
+                                                                  Subtotal    £15,762.83
+                                                                       VAT     £3,152.56
+                                                                 TOTAL DUE    £18,915.39
+
+Payment terms: Net 60. Please quote the invoice number.

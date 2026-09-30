@@ -1,0 +1,9 @@
+Invoice | Northvale Facilities Management plc
+Ref: NFM/2026/0368   Issued: 2026-06-16   Due: 2026-08-15
+Purchase Order Ref: po-2026-364251
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Planned preventative maintenance visit | qty 7 | unit 294.82 | net 2063.74 | vat 412.75
+
+Net 2063.74 | VAT 412.75 | Gross 2476.49

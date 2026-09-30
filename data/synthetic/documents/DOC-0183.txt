@@ -1,0 +1,19 @@
+Brackenfield Packaging Limited
+TAX INVOICE
+
+Invoice No:    001626
+Invoice Date:  30/04/2026
+Due Date:      30/05/2026
+Customer PO:   PO-2026-370082
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Void fill paper, per roll                        43      £32.10     £276.06    £1,380.30
+Stretch wrap film, 500mm roll                    60      £16.63     £199.56      £997.80
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £2,378.10
+                                                                       VAT       £475.62
+                                                                 TOTAL DUE     £2,853.72
+
+Payment terms: Net 30. Please quote the invoice number.

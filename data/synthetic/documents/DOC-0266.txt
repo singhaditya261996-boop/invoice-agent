@@ -1,0 +1,20 @@
+COBBLEFORD CLEANING SERVICES LTD
+TAX INVOICE
+
+Invoice No:    CCS26-8389
+Invoice Date:  22/07/2026
+Due Date:      21/08/2026
+Customer PO:   PO-2026-125052
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Washroom consumables restock                      7     £259.69     £363.57    £1,817.83
+Carpet deep clean, per floor                      6     £885.34   £1,062.41    £5,312.04
+Window cleaning, external, per visit              3     £364.36     £218.62    £1,093.08
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £8,222.95
+                                                                       VAT     £1,644.60
+                                                                 TOTAL DUE     £9,867.55
+
+Payment terms: Net 30. Please quote the invoice number.

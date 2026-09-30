@@ -1,0 +1,16 @@
+From: Calder Valley Guarding Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-CVG-08586
+Dated 26 March 2026
+Your order reference: PO-2026-249235
+
+Supplied:
+  - 410 x Security guarding, per hour @ GBP 25.12 = GBP 10299.20 (VAT GBP 2059.84)
+  - 2 x Keyholding and alarm response, per call-out @ GBP 148.74 = GBP 297.48 (VAT GBP 59.50)
+
+Net amount: GBP 10596.68
+VAT: GBP 2119.34
+Amount payable: GBP 12716.02
+
+Payment due by 25 April 2026 (Net 30).

@@ -1,0 +1,15 @@
+From: Hollins Engineering Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE HES/2026/5370
+Dated 24 April 2026
+Your order reference: PO-2026-324869
+
+Supplied:
+  - 9 x Cordless drill set 18V @ GBP 154.70 = GBP 1392.30 (VAT GBP 278.46)
+
+Net amount: GBP 1392.30
+VAT: GBP 278.46
+Amount payable: GBP 1670.76
+
+Payment due by 23 June 2026 (Net 60).

@@ -1,0 +1,20 @@
+Pennine Fresh Foods (Yorkshire) Ltd
+TAX INVOICE
+
+Invoice No:    PFF26-4067
+Invoice Date:  16/05/2026
+Due Date:      15/06/2026
+Customer PO:   PO-2026-937389
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Fresh fruit box, weekly delivery                  9      £25.95      £46.71      £233.55
+Milk, 2 litre, crate of 12                        7      £16.98      £23.77      £118.86
+Bottled spring water, case of 24                 22       £7.92      £34.85      £174.24
+----------------------------------------------------------------------------------------
+                                                                  Subtotal       £526.65
+                                                                       VAT       £105.33
+                                                                 TOTAL DUE       £631.98
+
+Payment terms: Net 30. Please quote the invoice number.

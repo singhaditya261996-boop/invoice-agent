@@ -1,0 +1,10 @@
+Invoice | Quayside Eevents Ltd
+Ref: QEL26-3610   Issued: 2026-07-07   Due: 2026-08-06
+Purchase Order Ref: PO-2026-325745
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Venue hire, per day | qty 3 | unit 3047.84 | net 9143.52 | vat 1828.70
+2. Event staffing, per hour | qty 31 | unit 25.10 | net 778.10 | vat 155.62
+
+Net 9921.62 | VAT 1984.32 | Gross 11905.94

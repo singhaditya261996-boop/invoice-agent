@@ -1,0 +1,10 @@
+Invoice | Greystone Electrical Services Ltd
+Ref: SI-0006652   Issued: 2026-02-16   Due: 2026-03-18
+Purchase Order Ref: PO-2026-313687
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Emergency lighting test and certification | qty 4 | unit 552.00 | net 2208.00 | vat 441.60
+2. PAT testing, per appliance | qty 363 | unit 1.58 | net 573.54 | vat 114.71
+
+Net 2781.54 | VAT 556.31 | Gross 3337.85

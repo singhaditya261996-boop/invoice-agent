@@ -1,0 +1,10 @@
+Invoice | Cobbleford Cleaning Services Ltd
+Ref: CCS26-8010   Issued: 2026-03-30   Due: 2026-04-29
+Purchase Order Ref: PO-2026-143723
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Window cleaning, external, per visit | qty 3 | unit 734.84 | net 2204.52 | vat 440.90
+2. Carpet deep clean, per floor | qty 2 | unit 489.62 | net 979.24 | vat 195.85
+
+Net 3183.76 | VAT 636.75 | Gross 3820.51

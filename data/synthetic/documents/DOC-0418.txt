@@ -1,0 +1,16 @@
+From: Meridian Office Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-MOS-04600
+Dated 27 March 2026
+Your order reference: PO-2026-805150
+
+Supplied:
+  - 35 x Black ballpoint pens, box of 50 @ GBP 11.36 = GBP 397.60 (VAT GBP 79.52)
+  - 37 x Sticky notes 76x76mm, pack of 12 @ GBP 7.79 = GBP 288.23 (VAT GBP 57.65)
+
+Net amount: GBP 685.83
+VAT: GBP 137.17
+Amount payable: GBP 823.00
+
+Payment due by 26 April 2026 (Net 30).

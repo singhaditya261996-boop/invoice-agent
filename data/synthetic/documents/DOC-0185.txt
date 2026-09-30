@@ -1,0 +1,17 @@
+From: Wychwood Furniture Ltd.
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE WFL/2026/5178
+Dated 11 June 2026
+Your order reference: PO-2026-925603
+
+Supplied:
+  - 1 x Four-drawer steel filing cabinet @ GBP 190.11 = GBP 190.11 (VAT GBP 38.02)
+  - 30 x Ergonomic task chair @ GBP 345.12 = GBP 10353.60 (VAT GBP 2070.72)
+  - 14 x Acoustic desk screen @ GBP 148.46 = GBP 2078.44 (VAT GBP 415.69)
+
+Net amount: GBP 12622.15
+VAT: GBP 2524.43
+Amount payable: GBP 15146.58
+
+Payment due by 10 August 2026 (Net 60).

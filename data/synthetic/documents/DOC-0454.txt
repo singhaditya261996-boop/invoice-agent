@@ -1,0 +1,19 @@
+Elmstead Waste Solutions Ltd
+TAX INVOICE
+
+Invoice No:    002913
+Invoice Date:  07/06/2026
+Due Date:      07/07/2026
+Customer PO:   PO-2026-424831
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+WEEE disposal, per item                         121      £21.67     £524.41    £2,622.07
+Confidential shredding, per console              54      £19.75     £213.30    £1,066.50
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £3,688.57
+                                                                       VAT       £737.71
+                                                                 TOTAL DUE     £4,426.28
+
+Payment terms: Net 30. Please quote the invoice number.

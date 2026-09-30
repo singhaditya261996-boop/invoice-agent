@@ -1,0 +1,18 @@
+Thistledown Consulting LLP
+TAX INVOICE
+
+Invoice No:    INV-TDC-04079
+Invoice Date:  03/04/2026
+Due Date:      02/06/2026
+Customer PO:   PO-2026-602969
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Senior consultant, per day                       19   £1,251.38   £4,755.24   £23,776.22
+----------------------------------------------------------------------------------------
+                                                                  Subtotal    £23,776.22
+                                                                       VAT     £4,755.24
+                                                                 TOTAL DUE    £28,531.46
+
+Payment terms: Net 60. Please quote the invoice number.

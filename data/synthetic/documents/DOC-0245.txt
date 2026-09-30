@@ -1,0 +1,18 @@
+From: Blackthorn IT Solutions Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-BIT-04989
+Dated 15 April 2026
+Your order reference: PO-2026-098874
+
+Supplied:
+  - 16 x 14-inch business laptop, 16GB RAM @ GBP 720.49 = GBP 11527.84 (VAT GBP 2305.57)
+  - 4 x Rack-mount network switch, 48-port @ GBP 1243.94 = GBP 4975.76 (VAT GBP 995.15)
+  - 21 x Wireless keyboard and mouse set @ GBP 69.46 = GBP 1458.66 (VAT GBP 291.73)
+  - 21 x 27-inch QHD monitor @ GBP 220.21 = GBP 4624.41 (VAT GBP 924.88)
+
+Net amount: GBP 22586.67
+VAT: GBP 4517.33
+Amount payable: GBP 27104.00
+
+Payment due by 15 May 2026 (Net 30).

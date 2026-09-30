@@ -1,0 +1,16 @@
+From: Pennine Fresh Foods Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE PFF26-3958
+Dated 15 April 2026
+Your order reference: PO-2026-791075
+
+Supplied:
+  - 40 x Milk, 2 litre, crate of 12 @ GBP 17.80 = GBP 712.00 (VAT GBP 142.40)
+  - 4 x Fresh fruit box, weekly delivery @ GBP 58.00 = GBP 232.00 (VAT GBP 46.40)
+
+Net amount: GBP 944.00
+VAT: GBP 188.80
+Amount payable: GBP 1132.80
+
+Payment due by 15 May 2026 (Net 30).

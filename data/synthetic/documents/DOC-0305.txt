@@ -1,0 +1,12 @@
+Invoice | Blackthorn Group Holdings plc
+Ref: INV-BIT-04892   Issued: 2026-03-16   Due: 2026-04-15
+Purchase Order Ref: PO-2026-150044
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. 14-inch business laptop, 16GB RAM | qty 3 | unit 1101.63 | net 3304.89 | vat 660.98
+2. Rack-mount network switch, 48-port | qty 1 | unit 1531.49 | net 1531.49 | vat 306.30
+3. 27-inch QHD monitor | qty 25 | unit 247.62 | net 6190.50 | vat 1238.10
+4. USB-C docking station | qty 33 | unit 113.64 | net 3750.12 | vat 750.02
+
+Net 14777.00 | VAT 2955.40 | Gross 17732.40

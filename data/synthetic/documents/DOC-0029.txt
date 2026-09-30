@@ -1,0 +1,9 @@
+Invoice | Cobbleford Cleaning Services Ltd
+Ref: CCS26-8325   Issued: 2026-06-24   Due: 2026-07-24
+Purchase Order Ref: PO-2026-870693
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Office cleaning service, monthly | qty 1 | unit 5959.47 | net 5959.47 | vat 1191.89
+
+Net 5959.47 | VAT 1191.89 | Gross 7151.36

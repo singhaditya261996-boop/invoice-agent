@@ -1,0 +1,18 @@
+Harrowgate Stationery Co Ltd
+TAX INVOICE
+
+Invoice No:    000679
+Invoice Date:  08/06/2026
+Due Date:      08/07/2026
+Customer PO:   PO-2026-354729
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Spiral notebooks A5, pack of 10                  68      £14.95     £203.32    £1,016.60
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £1,016.60
+                                                                       VAT       £203.32
+                                                                 TOTAL DUE     £1,219.92
+
+Payment terms: Net 30. Please quote the invoice number.

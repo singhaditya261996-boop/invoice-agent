@@ -1,0 +1,15 @@
+From: Mierdian Office Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-MOS-04633
+Dated 7 April 2026
+Your order reference: PO-2026-825974
+
+Supplied:
+  - 33 x Sticky notes 76x76mm, pack of 12 @ GBP 10.77 = GBP 355.41 (VAT GBP 71.08)
+
+Net amount: GBP 355.41
+VAT: GBP 71.08
+Amount payable: GBP 426.49
+
+Payment due by 7 May 2026 (Net 30).

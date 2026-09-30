@@ -1,0 +1,21 @@
+Mreidian Offiice Supplies Ltd
+TAX INVOICE
+
+Invoice No:    INV-MOS-04891
+Invoice Date:  29/06/2026
+Due Date:      29/07/2026
+Customer PO:   PO-2026-525741
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Black ballpoint pens, box of 50                  20      £12.10      £48.40      £242.00
+A4 copier paper 80gsm, box of 5 reams           176      £28.99   £1,020.45    £5,102.24
+Sticky notes 76x76mm, pack of 12                 48       £8.41      £80.74      £403.68
+Lever arch files, pack of 10                     33      £13.09      £86.39      £431.97
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £6,179.89
+                                                                       VAT     £1,235.98
+                                                                 TOTAL DUE     £7,415.87
+
+Payment terms: Net 30. Please quote the invoice number.

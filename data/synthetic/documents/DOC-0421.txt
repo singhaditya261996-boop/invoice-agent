@@ -1,0 +1,18 @@
+Tamarind Group Holdings plc
+TAX INVOICE
+
+Invoice No:    007037
+Invoice Date:  08/05/2026
+Due Date:      07/06/2026
+Customer PO:   PO-2026-794820
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Desk phone handset                               40      £84.98     £679.84    £3,399.20
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £3,399.20
+                                                                       VAT       £679.84
+                                                                 TOTAL DUE     £4,079.04
+
+Payment terms: Net 30. Please quote the invoice number.

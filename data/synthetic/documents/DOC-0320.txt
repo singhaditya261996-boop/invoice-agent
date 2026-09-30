@@ -1,0 +1,19 @@
+Calder Valley Guarding
+TAX INVOICE
+
+Invoice No:    INV-CVG-08589
+Invoice Date:  31/03/2026
+Due Date:      30/04/2026
+Customer PO:   PO-2026-386709
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Security guarding, per hour                     356      £31.52   £2,244.22   £11,221.12
+Keyholding and alarm response, per call-out       8     £141.84     £226.94    £1,134.72
+----------------------------------------------------------------------------------------
+                                                                  Subtotal    £12,355.84
+                                                                       VAT     £2,471.16
+                                                                 TOTAL DUE    £14,827.00
+
+Payment terms: Net 30. Please quote the invoice number.

@@ -1,0 +1,19 @@
+Oakridge Advisory Partners LLP
+TAX INVOICE
+
+Invoice No:    OKA/2026/8704
+Invoice Date:  17/07/2026
+Due Date:      15/09/2026
+Customer PO:   PO-2026-617118
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Analyst, per day                                 18     £564.54   £2,032.34   £10,161.72
+Process review engagement, fixed fee              1  £20,157.91   £4,031.58   £20,157.91
+----------------------------------------------------------------------------------------
+                                                                  Subtotal    £30,319.63
+                                                                       VAT     £6,063.92
+                                                                 TOTAL DUE    £36,383.55
+
+Payment terms: Net 60. Please quote the invoice number.

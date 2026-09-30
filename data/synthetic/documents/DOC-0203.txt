@@ -1,0 +1,11 @@
+Invoice | Kestrel Digital Services Ltd
+Ref: SI-0007085   Issued: 2026-07-10   Due: 2026-08-09
+Purchase Order Ref: PO-2026-253415
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Network cabling installation, per point | qty 78 | unit 159.88 | net 12470.64 | vat 2494.13
+2. Laptop imaging and deployment, per device | qty 61 | unit 67.67 | net 4127.87 | vat 825.57
+3. On-site engineer, per day | qty 11 | unit 665.95 | net 7325.45 | vat 1465.09
+
+Net 23923.96 | VAT 4784.79 | Gross 28708.75

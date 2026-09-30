@@ -1,0 +1,11 @@
+Invoice | PENNINE FRESH FOODS LTD
+Ref: PFF26-3889   Issued: 2026-03-02   Due: 2026-04-01
+Purchase Order Ref: PO-2026-562654
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Milk, 2 litre, crate of 12 | qty 19 | unit 16.55 | net 314.45 | vat 62.89
+2. Fresh fruit box, weekly delivery | qty 14 | unit 47.63 | net 666.82 | vat 133.36
+3. Bottled spring water, case of 24 | qty 67 | unit 11.08 | net 742.36 | vat 148.47
+
+Net 1723.63 | VAT 344.72 | Gross 2068.35

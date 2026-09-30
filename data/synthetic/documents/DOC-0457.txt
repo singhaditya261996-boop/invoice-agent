@@ -1,0 +1,17 @@
+From: Brackenfield Packaging Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE 001771
+Dated 25 May 2026
+Your order reference: PO-2026-105555
+
+Supplied:
+  - 42 x Double-wall cardboard boxes, pack of 25 @ GBP 30.05 = GBP 1262.10 (VAT GBP 252.42)
+  - 85 x Stretch wrap film, 500mm roll @ GBP 13.32 = GBP 1132.20 (VAT GBP 226.44)
+  - 11 x Void fill paper, per roll @ GBP 44.73 = GBP 492.03 (VAT GBP 98.41)
+
+Net amount: GBP 2886.33
+VAT: GBP 577.27
+Amount payable: GBP 3463.60
+
+Payment due by 24 June 2026 (Net 30).

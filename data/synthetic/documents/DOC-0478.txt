@@ -1,0 +1,19 @@
+COBBLEFORD CLEANING SERVICES LTD
+TAX INVOICE
+
+Invoice No:    CCS26-8295
+Invoice Date:  15/06/2026
+Due Date:      15/07/2026
+Customer PO:   PO-2026-834456
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Washroom consumables restock                      4     £351.35     £281.08    £1,405.40
+Window cleaning, external, per visit              2     £886.14     £354.46    £1,772.28
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £3,177.68
+                                                                       VAT       £635.54
+                                                                 TOTAL DUE     £3,813.22
+
+Payment terms: Net 30. Please quote the invoice number.

@@ -1,0 +1,15 @@
+From: Meridian Office Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-MOS-04651
+Dated 3 May 2026
+Your order reference: PO-2026-117970
+
+Supplied:
+  - 44 x Sticky notes 76x76mm, pack of 12 @ GBP 9.61 = GBP 422.84 (VAT GBP 84.57)
+
+Net amount: GBP 422.84
+VAT: GBP 84.57
+Amount payable: GBP 507.41
+
+Payment due by 2 June 2026 (Net 30).

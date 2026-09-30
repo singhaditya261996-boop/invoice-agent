@@ -1,0 +1,72 @@
+{
+  "generator_version": "1.0",
+  "seed": 42,
+  "counts": {
+    "invoices": 500,
+    "purchase_orders": 501,
+    "goods_receipts": 476
+  },
+  "by_code": {
+    "E01": 40,
+    "E02": 25,
+    "E03": 30,
+    "E04": 25,
+    "E05": 30,
+    "E06": 15,
+    "E07": 20,
+    "E08": 15,
+    "clean": 300
+  },
+  "by_action": {
+    "auto_approve": 340,
+    "auto_reject": 25,
+    "escalate": 135
+  },
+  "by_variant": {
+    "E01/price_adjustment": 40,
+    "E02/price_error": 15,
+    "E02/price_error_no_gr": 10,
+    "E03/gr_notes_only": 5,
+    "E03/partial_delivery": 25,
+    "E04/exact_resubmission": 6,
+    "E04/renumbered": 13,
+    "E04/resubmitted_date_shift": 6,
+    "E05/corrupted_dropped_digit": 4,
+    "E05/corrupted_transposed": 2,
+    "E05/corrupted_truncated": 3,
+    "E05/corrupted_wrong_year": 3,
+    "E05/maverick": 10,
+    "E05/missing": 8,
+    "E06/late_invoice": 15,
+    "E07/arithmetic_slip": 4,
+    "E07/line_omitted": 2,
+    "E07/transposed_digits": 2,
+    "E07/vat_on_gross": 2,
+    "E07/wrong_rate": 10,
+    "E08/initialism": 3,
+    "E08/parent": 3,
+    "E08/subsidiary": 3,
+    "E08/trading_name": 3,
+    "E08/typo": 3,
+    "clean/benign_name_variant": 25,
+    "clean/po_ref_format_variant": 10,
+    "clean/recurring_retainer": 10
+  },
+  "edge_cases": {
+    "ambiguous_candidates": 6,
+    "ambiguous_name_typo": 3,
+    "benign_name_variant": 25,
+    "gr_notes_only": 5,
+    "no_goods_receipt": 10,
+    "no_po_exists": 10,
+    "po_ref_format_variant": 10,
+    "recurring_similar_invoice": 10
+  },
+  "assumptions": {
+    "vat_rate": "0.20",
+    "tolerance_pct": "0.01",
+    "tolerance_abs_gbp": "50.00",
+    "amount_comparison": "invoice subtotal (pre-tax) vs PO total_amount (pre-tax)",
+    "invoice_line_total": "net (quantity x unit_price), excl. tax"
+  }
+}

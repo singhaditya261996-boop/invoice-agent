@@ -1,0 +1,15 @@
+From: Hollins Engineering Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE HES/2026/5366
+Dated 3 April 2026
+Your order reference: PO-2026-374023
+
+Supplied:
+  - 103 x Hi-vis vest, class 2 @ GBP 3.89 = GBP 400.67 (VAT GBP 80.13)
+
+Net amount: GBP 400.67
+VAT: GBP 80.13
+Amount payable: GBP 480.80
+
+Payment due by 2 June 2026 (Net 60).

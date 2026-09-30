@@ -1,0 +1,9 @@
+Invoice | Marlow & Finch Legal Services LLP
+Ref: MFL26-7867   Issued: 2026-04-03   Due: 2026-05-03
+Purchase Order Ref: 
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Commercial contracts advice, per hour | qty 28 | unit 291.00 | net 8148.00 | vat 1629.60
+
+Net 8148.00 | VAT 1629.60 | Gross 9777.60

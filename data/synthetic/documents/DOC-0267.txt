@@ -1,0 +1,15 @@
+From: Meridian Office Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-MOS-04564
+Dated 17 March 2026
+Your order reference: PO-2026-053727
+
+Supplied:
+  - 13 x Lever arch files, pack of 10 @ GBP 23.27 = GBP 302.51 (VAT GBP 60.50)
+
+Net amount: GBP 302.51
+VAT: GBP 60.50
+Amount payable: GBP 363.01
+
+Payment due by 16 April 2026 (Net 30).

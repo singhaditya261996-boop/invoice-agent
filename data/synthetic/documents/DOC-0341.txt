@@ -1,0 +1,16 @@
+From: Meridian Office Supplies Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-MOS-04825
+Dated 12 June 2026
+Your order reference: PO-2026-043675
+
+Supplied:
+  - 5 x Laser toner cartridge, black, high yield @ GBP 65.54 = GBP 327.70 (VAT GBP 65.54)
+  - 116 x A4 copier paper 80gsm, box of 5 reams @ GBP 20.35 = GBP 2360.60 (VAT GBP 472.12)
+
+Net amount: GBP 2688.30
+VAT: GBP 537.66
+Amount payable: GBP 3225.96
+
+Payment due by 12 July 2026 (Net 30).

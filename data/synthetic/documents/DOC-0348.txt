@@ -1,0 +1,17 @@
+From: Ashdown Catering Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-ACL-04364
+Dated 3 July 2026
+Your order reference: PO-2026-474639
+
+Supplied:
+  - 2 x Hot beverage supplies @ GBP 398.44 = GBP 796.88 (VAT GBP 159.38)
+  - 246 x Working lunch platter, per head @ GBP 11.05 = GBP 2718.30 (VAT GBP 543.66)
+  - 93 x Hospitality catering, client event, per head @ GBP 49.68 = GBP 4620.24 (VAT GBP 924.05)
+
+Net amount: GBP 8135.42
+VAT: GBP 1627.09
+Amount payable: GBP 9762.51
+
+Payment due by 2 August 2026 (Net 30).

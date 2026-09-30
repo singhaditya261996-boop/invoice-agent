@@ -1,0 +1,15 @@
+From: Blackthorn IT Solutions Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-BIT-05024
+Dated 4 May 2026
+Your order reference: PO-2026-509205
+
+Supplied:
+  - 43 x USB-C docking station @ GBP 161.28 = GBP 6935.04 (VAT GBP 1387.01)
+
+Net amount: GBP 6935.04
+VAT: GBP 1387.01
+Amount payable: GBP 8322.05
+
+Payment due by 3 June 2026 (Net 30).

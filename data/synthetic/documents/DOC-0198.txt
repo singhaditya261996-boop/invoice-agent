@@ -1,0 +1,11 @@
+Invoice | Brightwater Print
+Ref: 007932   Issued: 2026-02-18   Due: 2026-03-20
+Purchase Order Ref: PO-2026-729205
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Pull-up exhibition banner | qty 10 | unit 79.62 | net 796.20 | vat 159.24
+2. Printed brochures, A4 16pp, per 100 | qty 50 | unit 155.95 | net 7797.50 | vat 1559.50
+3. Business cards, per 500 | qty 37 | unit 41.31 | net 1528.47 | vat 305.69
+
+Net 10122.17 | VAT 2024.43 | Gross 12146.60

@@ -1,0 +1,18 @@
+Harrowgate Stationery Co Ltd
+TAX INVOICE
+
+Invoice No:    000278
+Invoice Date:  23/02/2026
+Due Date:      25/03/2026
+Customer PO:   PO-2026-802280
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Envelopes C4 self-seal, box of 250               21      £39.96     £167.83      £839.16
+----------------------------------------------------------------------------------------
+                                                                  Subtotal       £839.16
+                                                                       VAT       £167.83
+                                                                 TOTAL DUE     £1,006.99
+
+Payment terms: Net 30. Please quote the invoice number.

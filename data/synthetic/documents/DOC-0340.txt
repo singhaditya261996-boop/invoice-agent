@@ -1,0 +1,19 @@
+Ashdown Catering Ltd.
+TAX INVOICE
+
+Invoice No:    INV-ACL-04196
+Invoice Date:  05/06/2026
+Due Date:      05/07/2026
+Customer PO:   PO-2026-799625
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Hot beverage supplies                             2     £302.93     £121.17      £605.86
+Hospitality catering, client event, per head    147      £49.90   £1,467.06    £7,335.30
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £7,941.16
+                                                                       VAT     £1,588.23
+                                                                 TOTAL DUE     £9,529.39
+
+Payment terms: Net 30. Please quote the invoice number.

@@ -1,0 +1,17 @@
+From: Brackenfield Packaging Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE 001774
+Dated 3 June 2026
+Your order reference: PO-2026-236391
+
+Supplied:
+  - 20 x Stretch wrap film, 500mm roll @ GBP 14.39 = GBP 287.80 (VAT GBP 57.56)
+  - 16 x Void fill paper, per roll @ GBP 32.23 = GBP 515.68 (VAT GBP 103.14)
+  - 106 x Double-wall cardboard boxes, pack of 25 @ GBP 40.67 = GBP 4311.02 (VAT GBP 862.20)
+
+Net amount: GBP 5114.50
+VAT: GBP 1022.90
+Amount payable: GBP 6137.40
+
+Payment due by 3 July 2026 (Net 30).

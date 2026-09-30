@@ -1,0 +1,19 @@
+Saltmarsh Logistics Ltd
+TAX INVOICE
+
+Invoice No:    RINV-SML-05940
+Invoice Date:  03/06/2026
+Due Date:      03/07/2026
+Customer PO:   PO-2026-082724
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Warehouse storage, per pallet per week          355       £3.55     £252.05    £1,260.25
+Pick and pack, per order line                   589       £0.60      £70.68      £353.40
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £1,613.65
+                                                                       VAT       £322.73
+                                                                 TOTAL DUE     £1,936.38
+
+Payment terms: Net 30. Please quote the invoice number.

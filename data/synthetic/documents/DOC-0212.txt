@@ -1,0 +1,19 @@
+Harrowgate Stationery Co Ltd
+TAX INVOICE
+
+Invoice No:    000873
+Invoice Date:  23/07/2026
+Due Date:      22/08/2026
+Customer PO:   PO-2026-381941
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Desk organiser set                               40      £34.19     £273.52    £1,367.60
+Envelopes C4 self-seal, box of 250               40      £30.99     £247.92    £1,239.60
+----------------------------------------------------------------------------------------
+                                                                  Subtotal     £2,607.20
+                                                                       VAT       £521.44
+                                                                 TOTAL DUE     £3,128.64
+
+Payment terms: Net 30. Please quote the invoice number.

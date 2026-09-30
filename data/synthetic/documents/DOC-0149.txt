@@ -1,0 +1,15 @@
+From: Blackthorn IT Solutions Ltd
+To: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+INVOICE INV-BIT-05068
+Dated 15 May 2026
+Your order reference: PO-2026-611805
+
+Supplied:
+  - 36 x 27-inch QHD monitor @ GBP 196.85 = GBP 7086.60 (VAT GBP 1417.32)
+
+Net amount: GBP 7086.60
+VAT: GBP 1417.32
+Amount payable: GBP 8503.92
+
+Payment due by 14 June 2026 (Net 30).

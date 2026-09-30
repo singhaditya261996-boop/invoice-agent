@@ -1,0 +1,205 @@
+{
+  "run": "live-gemini3-documents-n8",
+  "args": {
+    "mode": "live",
+    "input": "documents",
+    "limit": 8,
+    "workers": 2,
+    "provider": "google",
+    "model": "gemini-3-flash-preview",
+    "effort": "medium",
+    "max_cost_usd": 40.0,
+    "estimate": false,
+    "simulate_extraction_errors": null,
+    "fit_calibration": false,
+    "no_calibration": false,
+    "seed": 0,
+    "name": "live-gemini3-documents-n8"
+  },
+  "elapsed_s": 269.7,
+  "metrics": {
+    "invoices": 11,
+    "extraction_accuracy": 0.933,
+    "match_accuracy": 1.0,
+    "classification_accuracy": 0.9091,
+    "action_accuracy": 0.9091,
+    "calibration_error": 0.0626,
+    "auto_resolution_precision": 1.0,
+    "auto_reject_precision": 1.0,
+    "escalation_recall": 1.0,
+    "median_latency_s": 42.944,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "pass": {
+    "extraction_accuracy": false,
+    "match_accuracy": true,
+    "classification_accuracy": true,
+    "calibration_error": false,
+    "auto_resolution_precision": true,
+    "escalation_recall": true,
+    "median_latency_s": false,
+    "cost_per_invoice_gbp": true
+  },
+  "product": {
+    "auto_resolution_rate": 0.4286,
+    "straight_through_rate": 0.5455,
+    "false_approvals": [],
+    "by_action": {
+      "auto_approve": 4,
+      "auto_reject": 2,
+      "escalate": 5
+    }
+  },
+  "extraction": {
+    "field_accuracy": 0.933,
+    "field_accuracy_when_extracted": 1.0,
+    "manual_entry_rate": 0.0909,
+    "invoices_with_errors": 1,
+    "wrong_fields": {
+      "<not extracted>": 1
+    }
+  },
+  "calibration": {
+    "buckets": [
+      {
+        "range": "0.0-0.1",
+        "n": 1,
+        "mean_confidence": 0.0,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 2,
+        "mean_confidence": 0.8373,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 8,
+        "mean_confidence": 0.975,
+        "accuracy": 1.0
+      }
+    ],
+    "ece_weighted": 0.0478,
+    "raw_buckets": [
+      {
+        "range": "0.0-0.1",
+        "n": 1,
+        "mean_confidence": 0.0,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 2,
+        "mean_confidence": 0.8373,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 8,
+        "mean_confidence": 0.975,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "latency_ms": {
+    "median": 42944,
+    "p90": 88788,
+    "max": 90429
+  },
+  "llm": {
+    "calls": 24,
+    "cached_calls": 0,
+    "failed_calls": 2,
+    "input_tokens": 8496,
+    "output_tokens": 19959,
+    "cost_usd": 0.0,
+    "cost_gbp": 0.0,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "per_code": {
+    "E01": {
+      "n": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E02": {
+      "n": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E03": {
+      "n": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E04": {
+      "n": 3,
+      "precision": 1.0,
+      "recall": 0.6667
+    },
+    "clean": {
+      "n": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "confusion": {
+    "E01": {
+      "E01": 1
+    },
+    "E02": {
+      "E02": 2
+    },
+    "E03": {
+      "E03": 2
+    },
+    "E04": {
+      "E04": 2,
+      "unclassified": 1
+    },
+    "clean": {
+      "clean": 3
+    }
+  },
+  "edge_cases": {
+    "gr_notes_only": {
+      "n": 1,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "no_goods_receipt": {
+      "n": 1,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    }
+  },
+  "failures": [
+    {
+      "doc_id": "DOC-0201",
+      "expected": "E04/auto_reject",
+      "variant": "resubmitted_date_shift",
+      "got": "unclassified/escalate",
+      "confidence": 0.0,
+      "detail": "LLM extraction unavailable"
+    }
+  ],
+  "calibration_cross_fitted": {
+    "error": 0.1273,
+    "buckets": [
+      {
+        "range": "0.7-0.8",
+        "n": 2,
+        "mean_confidence": 0.7808,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 9,
+        "mean_confidence": 0.8535,
+        "accuracy": 0.8889
+      }
+    ]
+  },
+  "robustness": null
+}

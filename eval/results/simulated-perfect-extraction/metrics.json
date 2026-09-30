@@ -1,0 +1,649 @@
+{
+  "run": "simulated-perfect-extraction",
+  "args": {
+    "mode": "offline",
+    "input": "documents",
+    "limit": null,
+    "workers": 8,
+    "model": "claude-opus-5",
+    "effort": "medium",
+    "max_cost_usd": 40.0,
+    "estimate": false,
+    "simulate_extraction_errors": 0.0,
+    "fit_calibration": false,
+    "no_calibration": false,
+    "seed": 0,
+    "name": "simulated-perfect-extraction"
+  },
+  "elapsed_s": 0.1,
+  "metrics": {
+    "invoices": 500,
+    "extraction_accuracy": 1.0,
+    "match_accuracy": 1.0,
+    "classification_accuracy": 1.0,
+    "action_accuracy": 0.9,
+    "calibration_error": 0.1421,
+    "auto_resolution_precision": 1.0,
+    "auto_reject_precision": 1.0,
+    "escalation_recall": 1.0,
+    "median_latency_s": 0.0,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "pass": {
+    "extraction_accuracy": true,
+    "match_accuracy": true,
+    "classification_accuracy": true,
+    "calibration_error": false,
+    "auto_resolution_precision": true,
+    "escalation_recall": true,
+    "median_latency_s": true,
+    "cost_per_invoice_gbp": true
+  },
+  "product": {
+    "auto_resolution_rate": 0.125,
+    "straight_through_rate": 0.63,
+    "false_approvals": [],
+    "by_action": {
+      "auto_approve": 290,
+      "auto_reject": 25,
+      "escalate": 185
+    }
+  },
+  "extraction": {
+    "field_accuracy": 1.0,
+    "field_accuracy_when_extracted": 1.0,
+    "manual_entry_rate": 0.0,
+    "invoices_with_errors": 0,
+    "wrong_fields": {}
+  },
+  "calibration": {
+    "buckets": [
+      {
+        "range": "0.7-0.8",
+        "n": 15,
+        "mean_confidence": 0.7597,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 28,
+        "mean_confidence": 0.8754,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 457,
+        "mean_confidence": 0.9386,
+        "accuracy": 1.0
+      }
+    ],
+    "ece_weighted": 0.0703,
+    "raw_buckets": [
+      {
+        "range": "0.7-0.8",
+        "n": 15,
+        "mean_confidence": 0.7597,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 28,
+        "mean_confidence": 0.8754,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 457,
+        "mean_confidence": 0.9386,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "latency_ms": {
+    "median": 0,
+    "p90": 0,
+    "max": 24
+  },
+  "llm": {
+    "calls": 1001,
+    "cached_calls": 0,
+    "failed_calls": 501,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "cost_gbp": 0.0,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "per_code": {
+    "E01": {
+      "n": 40,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E02": {
+      "n": 25,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E03": {
+      "n": 30,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E04": {
+      "n": 25,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E05": {
+      "n": 30,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E06": {
+      "n": 15,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E07": {
+      "n": 20,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E08": {
+      "n": 15,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "clean": {
+      "n": 300,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "confusion": {
+    "E01": {
+      "E01": 40
+    },
+    "E02": {
+      "E02": 25
+    },
+    "E03": {
+      "E03": 30
+    },
+    "E04": {
+      "E04": 25
+    },
+    "E05": {
+      "E05": 30
+    },
+    "E06": {
+      "E06": 15
+    },
+    "E07": {
+      "E07": 20
+    },
+    "E08": {
+      "E08": 15
+    },
+    "clean": {
+      "clean": 300
+    }
+  },
+  "edge_cases": {
+    "ambiguous_candidates": {
+      "n": 6,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "ambiguous_name_typo": {
+      "n": 3,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "benign_name_variant": {
+      "n": 25,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "gr_notes_only": {
+      "n": 5,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "no_goods_receipt": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "no_po_exists": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "po_ref_format_variant": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 0.0
+    },
+    "recurring_similar_invoice": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    }
+  },
+  "failures": [
+    {
+      "doc_id": "DOC-0009",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3941.28 vs PO total \u00a3935.98: difference +\u00a35.30 (+0.57%), tolerance \u00a39.36"
+    },
+    {
+      "doc_id": "DOC-0011",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3729.91 vs PO total \u00a3736.03: difference -\u00a36.12 (-0.83%), tolerance \u00a37.36"
+    },
+    {
+      "doc_id": "DOC-0034",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0038",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,018.28 vs PO total \u00a32,025.55: difference -\u00a37.27 (-0.36%), tolerance \u00a320.26"
+    },
+    {
+      "doc_id": "DOC-0039",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0043",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0054",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,713.81 vs PO total \u00a31,702.29: difference +\u00a311.52 (+0.68%), tolerance \u00a317.02"
+    },
+    {
+      "doc_id": "DOC-0061",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0085",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3264.82 vs PO total \u00a3262.62: difference +\u00a32.20 (+0.84%), tolerance \u00a32.63"
+    },
+    {
+      "doc_id": "DOC-0090",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,027.39 vs PO total \u00a31,021.15: difference +\u00a36.24 (+0.61%), tolerance \u00a310.21"
+    },
+    {
+      "doc_id": "DOC-0105",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,394.60 vs PO total \u00a32,381.28: difference +\u00a313.32 (+0.56%), tolerance \u00a323.81"
+    },
+    {
+      "doc_id": "DOC-0110",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a322,091.42 vs PO total \u00a322,053.65: difference +\u00a337.77 (+0.17%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0113",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a34,539.03 vs PO total \u00a34,563.97: difference -\u00a324.94 (-0.55%), tolerance \u00a345.64"
+    },
+    {
+      "doc_id": "DOC-0118",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a327,639.45 vs PO total \u00a327,603.55: difference +\u00a335.90 (+0.13%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0133",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3968.52 vs PO total \u00a3970.62: difference -\u00a32.10 (-0.22%), tolerance \u00a39.71"
+    },
+    {
+      "doc_id": "DOC-0137",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,596.60 vs PO total \u00a32,619.46: difference -\u00a322.86 (-0.87%), tolerance \u00a326.19"
+    },
+    {
+      "doc_id": "DOC-0139",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,442.70 vs PO total \u00a31,433.25: difference +\u00a39.45 (+0.66%), tolerance \u00a314.33"
+    },
+    {
+      "doc_id": "DOC-0168",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3453.26 vs PO total \u00a3449.46: difference +\u00a33.80 (+0.85%), tolerance \u00a34.49"
+    },
+    {
+      "doc_id": "DOC-0176",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0178",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,125.80 vs PO total \u00a31,121.38: difference +\u00a34.42 (+0.39%), tolerance \u00a311.21"
+    },
+    {
+      "doc_id": "DOC-0199",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a313,718.90 vs PO total \u00a313,697.20: difference +\u00a321.70 (+0.16%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0203",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a323,923.96 vs PO total \u00a323,968.84: difference -\u00a344.88 (-0.19%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0209",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a36,935.04 vs PO total \u00a36,890.75: difference +\u00a344.29 (+0.64%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0227",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a328,752.12 vs PO total \u00a328,717.92: difference +\u00a334.20 (+0.12%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0238",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,391.10 vs PO total \u00a31,386.00: difference +\u00a35.10 (+0.37%), tolerance \u00a313.86"
+    },
+    {
+      "doc_id": "DOC-0251",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a318,463.44 vs PO total \u00a318,504.36: difference -\u00a340.92 (-0.22%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0252",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a33,275.40 vs PO total \u00a33,295.64: difference -\u00a320.24 (-0.61%), tolerance \u00a332.96"
+    },
+    {
+      "doc_id": "DOC-0262",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0263",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0275",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0298",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0322",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a35,061.31 vs PO total \u00a35,044.44: difference +\u00a316.87 (+0.33%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0333",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,736.18 vs PO total \u00a31,731.56: difference +\u00a34.62 (+0.27%), tolerance \u00a317.32"
+    },
+    {
+      "doc_id": "DOC-0335",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a38,822.72 vs PO total \u00a38,855.22: difference -\u00a332.50 (-0.37%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0347",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3980.39 vs PO total \u00a3976.74: difference +\u00a33.65 (+0.37%), tolerance \u00a39.77"
+    },
+    {
+      "doc_id": "DOC-0348",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a38,135.42 vs PO total \u00a38,111.72: difference +\u00a323.70 (+0.29%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0349",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0352",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a34,339.36 vs PO total \u00a34,332.00: difference +\u00a37.36 (+0.17%), tolerance \u00a343.32"
+    },
+    {
+      "doc_id": "DOC-0355",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,635.79 vs PO total \u00a32,631.01: difference +\u00a34.78 (+0.18%), tolerance \u00a326.31"
+    },
+    {
+      "doc_id": "DOC-0388",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3977.65 vs PO total \u00a3974.45: difference +\u00a33.20 (+0.33%), tolerance \u00a39.74"
+    },
+    {
+      "doc_id": "DOC-0419",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a317,262.39 vs PO total \u00a317,223.60: difference +\u00a338.79 (+0.23%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0423",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a314,129.87 vs PO total \u00a314,102.15: difference +\u00a327.72 (+0.20%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0432",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,696.58 vs PO total \u00a32,676.42: difference +\u00a320.16 (+0.75%), tolerance \u00a326.76"
+    },
+    {
+      "doc_id": "DOC-0437",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,432.14 vs PO total \u00a31,428.42: difference +\u00a33.72 (+0.26%), tolerance \u00a314.28"
+    },
+    {
+      "doc_id": "DOC-0440",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3528.29 vs PO total \u00a3525.47: difference +\u00a32.82 (+0.54%), tolerance \u00a35.25"
+    },
+    {
+      "doc_id": "DOC-0445",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a33,182.41 vs PO total \u00a33,159.87: difference +\u00a322.54 (+0.71%), tolerance \u00a331.60"
+    },
+    {
+      "doc_id": "DOC-0448",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a34,513.50 vs PO total \u00a34,475.10: difference +\u00a338.40 (+0.86%), tolerance \u00a344.75"
+    },
+    {
+      "doc_id": "DOC-0458",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,844.43 vs PO total \u00a31,831.27: difference +\u00a313.16 (+0.72%), tolerance \u00a318.31"
+    },
+    {
+      "doc_id": "DOC-0476",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a33,854.72 vs PO total \u00a33,834.32: difference +\u00a320.40 (+0.53%), tolerance \u00a338.34"
+    },
+    {
+      "doc_id": "DOC-0498",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3472.94 vs PO total \u00a3469.71: difference +\u00a33.23 (+0.69%), tolerance \u00a34.70"
+    }
+  ],
+  "calibration_cross_fitted": {
+    "error": 0.004,
+    "buckets": [
+      {
+        "range": "0.9-1.0",
+        "n": 500,
+        "mean_confidence": 0.996,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "robustness": null
+}

@@ -1,0 +1,370 @@
+{
+  "06cda0b5967b79b23bed547f3602bf09": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-21",
+      "invoice_date": "2026-02-19",
+      "invoice_number": "INV-SRL-07184",
+      "line_items": [
+        {
+          "description": "Temporary AP clerk, per hour",
+          "quantity": "265",
+          "tax": "1138.97",
+          "total": "5694.85",
+          "unit_price": "21.49"
+        },
+        {
+          "description": "Permanent placement fee",
+          "quantity": "1",
+          "tax": "2731.32",
+          "total": "13656.62",
+          "unit_price": "13656.62"
+        }
+      ],
+      "po_reference": "PO-2026-557127",
+      "subtotal": "19351.47",
+      "supplier_name": "Silverbirch Recruitment Ltd",
+      "tax_amount": "3870.29",
+      "total_amount": "23221.76",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "076799702d490905994cd8ea1823bd38": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-06-20",
+      "invoice_date": "2026-05-21",
+      "invoice_number": "SI-0007944",
+      "line_items": [
+        {
+          "description": "Same-day courier, per consignment",
+          "quantity": "13",
+          "tax": "262.55",
+          "total": "1312.74",
+          "unit_price": "100.98"
+        },
+        {
+          "description": "Pallet delivery, next day, per pallet",
+          "quantity": "44",
+          "tax": "571.65",
+          "total": "2858.24",
+          "unit_price": "64.96"
+        }
+      ],
+      "po_reference": "PO-2026-032734",
+      "subtotal": "4170.98",
+      "supplier_name": "Fenmoor Freight Ltd",
+      "tax_amount": "834.20",
+      "total_amount": "5005.18",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "083244b9b4b5fbafb3a9b519db8de033": {
+    "response": {
+      "explanation": "The note only specifies the delivery location and does not indicate any missing, damaged, or rejected items.",
+      "indicates_shortfall": false,
+      "units_not_received": null
+    },
+    "task": "gr_notes"
+  },
+  "2dd38da539a47c1e19186245be299303": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-07-18",
+      "invoice_date": "2026-06-18",
+      "invoice_number": "000731",
+      "line_items": [
+        {
+          "description": "Envelopes C4 self-seal, box of 250",
+          "quantity": "24",
+          "tax": "187.49",
+          "total": "937.44",
+          "unit_price": "39.06"
+        },
+        {
+          "description": "Whiteboard markers, assorted, pack of 12",
+          "quantity": "37",
+          "tax": "99.46",
+          "total": "497.28",
+          "unit_price": "13.44"
+        },
+        {
+          "description": "Spiral notebooks A5, pack of 10",
+          "quantity": "40",
+          "tax": "76.32",
+          "total": "381.60",
+          "unit_price": "9.54"
+        },
+        {
+          "description": "Desk organiser set",
+          "quantity": "28",
+          "tax": "132.33",
+          "total": "661.64",
+          "unit_price": "23.63"
+        }
+      ],
+      "po_reference": "PO-2026-712257",
+      "subtotal": "2477.96",
+      "supplier_name": "Harrowgate Stationery Co Ltd",
+      "tax_amount": "495.60",
+      "total_amount": "2973.56",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "5d1d5411cfc55036a689aed223a8ff86": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-05-07",
+      "invoice_date": "2026-04-07",
+      "invoice_number": "INV-ACL-04059",
+      "line_items": [
+        {
+          "description": "Working lunch platter, per head",
+          "quantity": "106",
+          "tax": "188.26",
+          "total": "941.28",
+          "unit_price": "8.88"
+        }
+      ],
+      "po_reference": "PO-2026-090211",
+      "subtotal": "941.28",
+      "supplier_name": "Ashdown Catering Ltd",
+      "tax_amount": "188.26",
+      "total_amount": "1129.54",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "98a44edeed07d4b6ebe1786dd750d0c1": {
+    "response": {
+      "recommended_action": "Please verify if this is a distinct charge and reject it as a duplicate unless the supplier provides evidence of a separate transaction.",
+      "summary": "Invoice INV-SRL-07184-R from Silverbirch Recruitment Ltd is a suspected duplicate of invoice INV-SRL-07184 for \u00a323,221.76.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-557127 and goods receipt GR-2026-880562, but it shares the same date and amount as a previously recorded invoice. I am uncertain if the '-R' suffix on the invoice number signifies a unique charge or a duplicate submission."
+    },
+    "task": "brief"
+  },
+  "9af862e4d2ead3561692acdd65a06f28": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-21",
+      "invoice_date": "2026-02-19",
+      "invoice_number": "INV-SRL-07184-R",
+      "line_items": [
+        {
+          "description": "Temporary AP clerk, per hour",
+          "quantity": "265",
+          "tax": "1138.97",
+          "total": "5694.85",
+          "unit_price": "21.49"
+        },
+        {
+          "description": "Permanent placement fee",
+          "quantity": "1",
+          "tax": "2731.32",
+          "total": "13656.62",
+          "unit_price": "13656.62"
+        }
+      ],
+      "po_reference": "PO-2026-557127",
+      "subtotal": "19351.47",
+      "supplier_name": "Silverbirch Recruitment Ltd",
+      "tax_amount": "3870.29",
+      "total_amount": "23221.76",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "a19b1b5180e4ea652d305c4aadb9d706": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-06-10",
+      "invoice_date": "2026-05-11",
+      "invoice_number": "MFL26-7941",
+      "line_items": [
+        {
+          "description": "Commercial contracts advice, per hour",
+          "quantity": "41",
+          "tax": "3194.80",
+          "total": "15974.01",
+          "unit_price": "389.61"
+        },
+        {
+          "description": "Contract review, fixed fee",
+          "quantity": "2",
+          "tax": "656.64",
+          "total": "3283.22",
+          "unit_price": "1641.61"
+        }
+      ],
+      "po_reference": "PO-2026-394468",
+      "subtotal": "19257.23",
+      "supplier_name": "Marlow & Finch Legal Services LLP",
+      "tax_amount": "3851.44",
+      "total_amount": "23108.67",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "ba77e0e7c39ebd21884fe5c6de5d9be2": {
+    "response": {
+      "recommended_action": "Confirm the final accepted quantity with K. Brennan and pay only for the goods kept. Hold the balance of the invoice until the replacement delivery is successfully booked in.",
+      "summary": "Invoice 000731 from Harrowgate Stationery Co Ltd for \u00a32,973.56 shows a quantity discrepancy involving 8 rejected units.",
+      "what_i_could_not_resolve": "I matched the subtotal to PO-2026-712257, but the goods receipt notes by K. Brennan state that 8 units were rejected as faulty. While the structured data indicates a full receipt, the written notes indicate a shortfall that I cannot reconcile against the invoiced amount."
+    },
+    "task": "brief"
+  },
+  "c55451a597d3e678db0e6427a34c2f5e": {
+    "response": {
+      "explanation": "The note explicitly states that the delivery was received in full, indicating no items were missing or rejected.",
+      "indicates_shortfall": false,
+      "units_not_received": null
+    },
+    "task": "gr_notes"
+  },
+  "c747e27687871fe5352d3171dadb9ec8": {
+    "response": {
+      "recommended_action": "Please confirm the price discrepancy with J. Reynolds or determine if a credit note is required to resolve the difference.",
+      "summary": "Invoice SI-0007944 from Fenmoor Freight Ltd shows a subtotal mismatch of \u00a3308.88 against PO-2026-032734.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-032734, but the invoice subtotal of \u00a34,170.98 is \u00a3308.88 lower than the PO total of \u00a34,479.86. I also could not confirm quantities as there is no goods receipt currently on file for this order."
+    },
+    "task": "brief"
+  },
+  "cc389fa1a07b7ec62811c42cd684d3f1": {
+    "response": {
+      "recommended_action": "Confirm the delivered quantity with E. Lindqvist and pay only for the 23 boxes received. Hold the remaining balance until the backordered items are delivered and booked in.",
+      "summary": "Invoice 000884 from Harrowgate Stationery Co Ltd contains a quantity variance of 7 boxes of envelopes.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-943012 but found that 30 boxes of C4 envelopes were billed while only 23 were recorded as received on GR-2026-774584. Notes on the goods receipt indicate that 7 boxes are currently on backorder, which creates a discrepancy with the total amount requested."
+    },
+    "task": "brief"
+  },
+  "ce6a65bdaa38011d5d6843281aa24423": {
+    "response": {
+      "explanation": "The note specifies a partial delivery with 7 units on backorder.",
+      "indicates_shortfall": true,
+      "units_not_received": 7
+    },
+    "task": "gr_notes"
+  },
+  "d9b1ed17e63e28504286cd516e34b7e4": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-29",
+      "invoice_date": "2026-02-27",
+      "invoice_number": "INV-CVG-08525",
+      "line_items": [
+        {
+          "description": "Keyholding and alarm response, per call-out",
+          "quantity": "7",
+          "tax": "188.38",
+          "total": "941.92",
+          "unit_price": "134.56"
+        }
+      ],
+      "po_reference": "PO-2026-305561",
+      "subtotal": "941.92",
+      "supplier_name": "Calder Valley Guarding Ltd",
+      "tax_amount": "188.38",
+      "total_amount": "1130.30",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "dc2c38b3563bef5297ffd4c4e615a4ec": {
+    "response": {
+      "explanation": "The note indicates that the goods were verified against the delivery documentation but does not mention any discrepancies, damages, or missing items.",
+      "indicates_shortfall": false,
+      "units_not_received": null
+    },
+    "task": "gr_notes"
+  },
+  "dee59b41aa8afe99b0aa44d6b52db04b": {
+    "response": {
+      "explanation": "8 units were rejected at goods-in because they were faulty.",
+      "indicates_shortfall": true,
+      "units_not_received": 8
+    },
+    "task": "gr_notes"
+  },
+  "e7dbe3e4511161cff55605e1fb84e683": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-06-13",
+      "invoice_date": "2026-05-14",
+      "invoice_number": "001682",
+      "line_items": [
+        {
+          "description": "Void fill paper, per roll",
+          "quantity": "40",
+          "tax": "357.92",
+          "total": "1789.60",
+          "unit_price": "44.74"
+        },
+        {
+          "description": "Stretch wrap film, 500mm roll",
+          "quantity": "28",
+          "tax": "59.36",
+          "total": "296.80",
+          "unit_price": "10.60"
+        },
+        {
+          "description": "Double-wall cardboard boxes, pack of 25",
+          "quantity": "11",
+          "tax": "69.85",
+          "total": "349.25",
+          "unit_price": "31.75"
+        }
+      ],
+      "po_reference": "PO-2026-564244",
+      "subtotal": "2435.65",
+      "supplier_name": "Brackenfield Packaging Ltd",
+      "tax_amount": "487.13",
+      "total_amount": "2922.78",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "e81fa24ddaa288e5833451489d1b5d55": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-08-25",
+      "invoice_date": "2026-07-26",
+      "invoice_number": "000884",
+      "line_items": [
+        {
+          "description": "Envelopes C4 self-seal, box of 250",
+          "quantity": "30",
+          "tax": "199.56",
+          "total": "997.80",
+          "unit_price": "33.26"
+        }
+      ],
+      "po_reference": "PO-2026-943012",
+      "subtotal": "997.80",
+      "supplier_name": "Harrowgate Stationery Co Ltd",
+      "tax_amount": "199.56",
+      "total_amount": "1197.36",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "fe16d4268871f2ae7b2e5957a587ca85": {
+    "response": {
+      "recommended_action": "Please verify the price increase with the PO approver, L. Nowak, or request a credit note for the \u00a32,228.69 difference.",
+      "summary": "Invoice MFL26-7941 from Marlow & Finch Legal Services LLP contains a subtotal that exceeds the purchase order by \u00a32,228.69.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-394468, but the subtotal of \u00a319,257.23 is 13.09% higher than the authorized PO total of \u00a317,028.54. I am uncertain why this discrepancy exists as the goods receipt notes the order was delivered in full."
+    },
+    "task": "brief"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "run": "offline-structured",
+  "args": {
+    "mode": "offline",
+    "input": "structured",
+    "limit": null,
+    "workers": 8,
+    "model": "claude-opus-5",
+    "effort": "medium",
+    "max_cost_usd": 40.0,
+    "estimate": false,
+    "simulate_extraction_errors": null,
+    "fit_calibration": false,
+    "no_calibration": false,
+    "seed": 0,
+    "name": null
+  },
+  "elapsed_s": 0.1,
+  "metrics": {
+    "invoices": 500,
+    "extraction_accuracy": null,
+    "match_accuracy": 1.0,
+    "classification_accuracy": 1.0,
+    "action_accuracy": 1.0,
+    "calibration_error": 0.1449,
+    "auto_resolution_precision": 1.0,
+    "auto_reject_precision": 1.0,
+    "escalation_recall": 1.0,
+    "median_latency_s": 0.0,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "pass": {
+    "extraction_accuracy": null,
+    "match_accuracy": true,
+    "classification_accuracy": true,
+    "calibration_error": false,
+    "auto_resolution_precision": true,
+    "escalation_recall": true,
+    "median_latency_s": true,
+    "cost_per_invoice_gbp": true
+  },
+  "product": {
+    "auto_resolution_rate": 0.325,
+    "straight_through_rate": 0.73,
+    "false_approvals": [],
+    "by_action": {
+      "auto_approve": 340,
+      "auto_reject": 25,
+      "escalate": 135
+    }
+  },
+  "extraction": null,
+  "calibration": {
+    "buckets": [
+      {
+        "range": "0.7-0.8",
+        "n": 5,
+        "mean_confidence": 0.75,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 13,
+        "mean_confidence": 0.8304,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 482,
+        "mean_confidence": 0.985,
+        "accuracy": 1.0
+      }
+    ],
+    "ece_weighted": 0.0214,
+    "raw_buckets": [
+      {
+        "range": "0.7-0.8",
+        "n": 5,
+        "mean_confidence": 0.75,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 13,
+        "mean_confidence": 0.8304,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 482,
+        "mean_confidence": 0.985,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "latency_ms": {
+    "median": 0,
+    "p90": 0,
+    "max": 18
+  },
+  "llm": {
+    "calls": 0,
+    "cached_calls": 0,
+    "failed_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "cost_gbp": 0.0,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "per_code": {
+    "E01": {
+      "n": 40,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E02": {
+      "n": 25,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E03": {
+      "n": 30,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E04": {
+      "n": 25,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E05": {
+      "n": 30,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E06": {
+      "n": 15,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E07": {
+      "n": 20,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E08": {
+      "n": 15,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "clean": {
+      "n": 300,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "confusion": {
+    "E01": {
+      "E01": 40
+    },
+    "E02": {
+      "E02": 25
+    },
+    "E03": {
+      "E03": 30
+    },
+    "E04": {
+      "E04": 25
+    },
+    "E05": {
+      "E05": 30
+    },
+    "E06": {
+      "E06": 15
+    },
+    "E07": {
+      "E07": 20
+    },
+    "E08": {
+      "E08": 15
+    },
+    "clean": {
+      "clean": 300
+    }
+  },
+  "edge_cases": {
+    "ambiguous_candidates": {
+      "n": 6,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "ambiguous_name_typo": {
+      "n": 3,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "benign_name_variant": {
+      "n": 25,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "gr_notes_only": {
+      "n": 5,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "no_goods_receipt": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "no_po_exists": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "po_ref_format_variant": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "recurring_similar_invoice": {
+      "n": 10,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    }
+  },
+  "failures": [],
+  "calibration_cross_fitted": {
+    "error": 0.004,
+    "buckets": [
+      {
+        "range": "0.9-1.0",
+        "n": 500,
+        "mean_confidence": 0.996,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "robustness": null
+}

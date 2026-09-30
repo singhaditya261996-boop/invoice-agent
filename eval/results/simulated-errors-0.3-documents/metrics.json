@@ -1,0 +1,1630 @@
+{
+  "run": "simulated-errors-0.3-documents",
+  "args": {
+    "mode": "offline",
+    "input": "documents",
+    "limit": null,
+    "workers": 8,
+    "model": "claude-opus-5",
+    "effort": "medium",
+    "max_cost_usd": 40.0,
+    "estimate": false,
+    "simulate_extraction_errors": 0.3,
+    "fit_calibration": false,
+    "no_calibration": false,
+    "seed": 0,
+    "name": null
+  },
+  "elapsed_s": 0.1,
+  "metrics": {
+    "invoices": 500,
+    "extraction_accuracy": 0.9843,
+    "match_accuracy": 0.9885,
+    "classification_accuracy": 0.78,
+    "action_accuracy": 0.736,
+    "calibration_error": 0.3524,
+    "auto_resolution_precision": 1.0,
+    "auto_reject_precision": 1.0,
+    "escalation_recall": 1.0,
+    "median_latency_s": 0.0,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "pass": {
+    "extraction_accuracy": true,
+    "match_accuracy": true,
+    "classification_accuracy": false,
+    "calibration_error": false,
+    "auto_resolution_precision": true,
+    "escalation_recall": true,
+    "median_latency_s": true,
+    "cost_per_invoice_gbp": true
+  },
+  "product": {
+    "auto_resolution_rate": 0.0622,
+    "straight_through_rate": 0.466,
+    "false_approvals": [],
+    "by_action": {
+      "auto_approve": 220,
+      "auto_reject": 13,
+      "escalate": 267
+    }
+  },
+  "extraction": {
+    "field_accuracy": 0.9843,
+    "field_accuracy_when_extracted": 0.9843,
+    "manual_entry_rate": 0.128,
+    "invoices_with_errors": 152,
+    "wrong_fields": {
+      "po_reference": 31,
+      "supplier_name": 22,
+      "invoice_date": 22,
+      "unit_price": 20,
+      "quantity": 16,
+      "tax": 13,
+      "total": 11,
+      "total_amount": 7,
+      "subtotal": 6,
+      "tax_amount": 4
+    }
+  },
+  "calibration": {
+    "buckets": [
+      {
+        "range": "0.4-0.5",
+        "n": 17,
+        "mean_confidence": 0.4655,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.6-0.7",
+        "n": 52,
+        "mean_confidence": 0.6671,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.7-0.8",
+        "n": 27,
+        "mean_confidence": 0.7557,
+        "accuracy": 0.8148
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 56,
+        "mean_confidence": 0.8659,
+        "accuracy": 0.3571
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 348,
+        "mean_confidence": 0.9386,
+        "accuracy": 1.0
+      }
+    ],
+    "ece_weighted": 0.1881,
+    "raw_buckets": [
+      {
+        "range": "0.0-0.1",
+        "n": 64,
+        "mean_confidence": 0.0,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.6-0.7",
+        "n": 5,
+        "mean_confidence": 0.6864,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.7-0.8",
+        "n": 27,
+        "mean_confidence": 0.7557,
+        "accuracy": 0.8148
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 56,
+        "mean_confidence": 0.8659,
+        "accuracy": 0.3571
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 348,
+        "mean_confidence": 0.9386,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "latency_ms": {
+    "median": 0,
+    "p90": 0,
+    "max": 41
+  },
+  "llm": {
+    "calls": 986,
+    "cached_calls": 0,
+    "failed_calls": 486,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "cost_gbp": 0.0,
+    "cost_per_invoice_gbp": 0.0
+  },
+  "per_code": {
+    "E01": {
+      "n": 40,
+      "precision": 1.0,
+      "recall": 0.775
+    },
+    "E02": {
+      "n": 25,
+      "precision": 1.0,
+      "recall": 0.72
+    },
+    "E03": {
+      "n": 30,
+      "precision": 1.0,
+      "recall": 0.7
+    },
+    "E04": {
+      "n": 25,
+      "precision": 1.0,
+      "recall": 0.88
+    },
+    "E05": {
+      "n": 30,
+      "precision": 0.4727,
+      "recall": 0.8667
+    },
+    "E06": {
+      "n": 15,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "E07": {
+      "n": 20,
+      "precision": 1.0,
+      "recall": 0.9
+    },
+    "E08": {
+      "n": 15,
+      "precision": 0.4138,
+      "recall": 0.8
+    },
+    "clean": {
+      "n": 300,
+      "precision": 1.0,
+      "recall": 0.7567
+    }
+  },
+  "confusion": {
+    "E01": {
+      "E01": 31,
+      "unclassified": 6,
+      "E08": 2,
+      "E05": 1
+    },
+    "E02": {
+      "E08": 1,
+      "E02": 18,
+      "unclassified": 1,
+      "E05": 5
+    },
+    "E03": {
+      "E03": 21,
+      "E05": 3,
+      "unclassified": 5,
+      "E08": 1
+    },
+    "E04": {
+      "E04": 22,
+      "unclassified": 3
+    },
+    "E05": {
+      "E05": 26,
+      "unclassified": 4
+    },
+    "E06": {
+      "E06": 15
+    },
+    "E07": {
+      "E07": 18,
+      "E08": 1,
+      "unclassified": 1
+    },
+    "E08": {
+      "E08": 12,
+      "unclassified": 3
+    },
+    "clean": {
+      "clean": 227,
+      "E05": 20,
+      "unclassified": 41,
+      "E08": 12
+    }
+  },
+  "edge_cases": {
+    "ambiguous_candidates": {
+      "n": 6,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "ambiguous_name_typo": {
+      "n": 3,
+      "classification_accuracy": 0.6667,
+      "action_accuracy": 1.0
+    },
+    "benign_name_variant": {
+      "n": 25,
+      "classification_accuracy": 0.88,
+      "action_accuracy": 0.88
+    },
+    "gr_notes_only": {
+      "n": 5,
+      "classification_accuracy": 1.0,
+      "action_accuracy": 1.0
+    },
+    "no_goods_receipt": {
+      "n": 10,
+      "classification_accuracy": 0.7,
+      "action_accuracy": 1.0
+    },
+    "no_po_exists": {
+      "n": 10,
+      "classification_accuracy": 0.8,
+      "action_accuracy": 1.0
+    },
+    "po_ref_format_variant": {
+      "n": 10,
+      "classification_accuracy": 0.7,
+      "action_accuracy": 0.0
+    },
+    "recurring_similar_invoice": {
+      "n": 10,
+      "classification_accuracy": 0.4,
+      "action_accuracy": 0.4
+    }
+  },
+  "failures": [
+    {
+      "doc_id": "DOC-0002",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-113526' does not exist; closest PO by supplier, amount and lines is PO-2026-713526 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0004",
+      "expected": "E02/escalate",
+      "variant": "price_error",
+      "got": "E08/escalate",
+      "confidence": 0.6864,
+      "detail": "Invoice supplier 'Marlow & Finh Legal Services LLP' vs PO supplier 'Marlow & Finch Legal Services LLP' (similarity 0.98); Invoice subtotal \u00a319,257.23 vs PO total \u00a317,028.54: difference +\u00a32,228.69 (+13.09%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0005",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 2: 19 x \u00a337.63 != \u00a371.50"
+    },
+    {
+      "doc_id": "DOC-0008",
+      "expected": "clean/auto_approve",
+      "variant": "recurring_retainer",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-131389' does not exist; closest PO by supplier, amount and lines is PO-2026-131889 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0009",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3941.28 vs PO total \u00a3935.98: difference +\u00a35.30 (+0.57%), tolerance \u00a39.36"
+    },
+    {
+      "doc_id": "DOC-0010",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 7 x \u00a32428.11 != \u00a32428.11"
+    },
+    {
+      "doc_id": "DOC-0011",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3729.91 vs PO total \u00a3736.03: difference -\u00a36.12 (-0.83%), tolerance \u00a37.36"
+    },
+    {
+      "doc_id": "DOC-0021",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 328 x \u00a379.41 != \u00a36366.48"
+    },
+    {
+      "doc_id": "DOC-0029",
+      "expected": "clean/auto_approve",
+      "variant": "recurring_retainer",
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 1: 1 x \u00a35959.47 != \u00a3595.95"
+    },
+    {
+      "doc_id": "DOC-0031",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-874481' does not exist; closest PO by supplier, amount and lines is PO-2026-824481 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0034",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0038",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,018.28 vs PO total \u00a32,025.55: difference -\u00a37.27 (-0.36%), tolerance \u00a320.26"
+    },
+    {
+      "doc_id": "DOC-0039",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0043",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0046",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2826-147566' does not exist; closest PO by supplier, amount and lines is PO-2026-147566 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0050",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Ashdown Cateing Ltd' vs PO supplier 'Ashdown Catering Ltd' (similarity 0.97)"
+    },
+    {
+      "doc_id": "DOC-0054",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,713.81 vs PO total \u00a31,702.29: difference +\u00a311.52 (+0.68%), tolerance \u00a317.02"
+    },
+    {
+      "doc_id": "DOC-0059",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 2: 200 x \u00a38.69 != \u00a3173.80"
+    },
+    {
+      "doc_id": "DOC-0061",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0064",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 4: 48 x \u00a3374.95 != \u00a319797.60"
+    },
+    {
+      "doc_id": "DOC-0065",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 74 x \u00a3115.48 != \u00a32771.52"
+    },
+    {
+      "doc_id": "DOC-0066",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "E05/escalate",
+      "confidence": 0.751,
+      "detail": "PO reference 'PO-2026-100731' does not exist; closest PO by supplier, amount and lines is PO-2026-700731 (score 1.00); Bottled spring water, case of 24: invoiced 17, goods receipt shows 15 received"
+    },
+    {
+      "doc_id": "DOC-0082",
+      "expected": "E05/escalate",
+      "variant": "maverick",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 3: 12 x \u00a353.57 != \u00a3426.84"
+    },
+    {
+      "doc_id": "DOC-0085",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 2 x \u00a313.24 != \u00a3264.82"
+    },
+    {
+      "doc_id": "DOC-0087",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 4: 25 x \u00a3158.55 != \u00a34122.30"
+    },
+    {
+      "doc_id": "DOC-0089",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0090",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,027.39 vs PO total \u00a31,021.15: difference +\u00a36.24 (+0.61%), tolerance \u00a310.21"
+    },
+    {
+      "doc_id": "DOC-0092",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line totals do not sum to the subtotal"
+    },
+    {
+      "doc_id": "DOC-0094",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-672399' does not exist; closest PO by supplier, amount and lines is PO-2026-672394 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0096",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Northvale Facilities Managment plc' vs PO supplier 'Northvale Facilities Management plc' (similarity 0.98)"
+    },
+    {
+      "doc_id": "DOC-0105",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,394.60 vs PO total \u00a32,381.28: difference +\u00a313.32 (+0.56%), tolerance \u00a323.81"
+    },
+    {
+      "doc_id": "DOC-0106",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-523665' does not exist; closest PO by supplier, amount and lines is PO-2026-623665 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0109",
+      "expected": "E02/escalate",
+      "variant": "price_error",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 8 x \u00a3188.40 != \u00a3565.20"
+    },
+    {
+      "doc_id": "DOC-0110",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 3: 3 x \u00a354927.40 != \u00a316478.22"
+    },
+    {
+      "doc_id": "DOC-0113",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0116",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2025-519105' does not exist; closest PO by supplier, amount and lines is PO-2026-519105 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0118",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a327,639.45 vs PO total \u00a327,603.55: difference +\u00a335.90 (+0.13%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0120",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2826-210612' does not exist; closest PO by supplier, amount and lines is PO-2026-210612 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0124",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0125",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Meridian Office SuppliesLtd' vs PO supplier 'Meridian Office Supplies Ltd' (similarity 0.94)"
+    },
+    {
+      "doc_id": "DOC-0127",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Ashdown atering Ltd' vs PO supplier 'Ashdown Catering Ltd' (similarity 0.97)"
+    },
+    {
+      "doc_id": "DOC-0133",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3968.52 vs PO total \u00a3970.62: difference -\u00a32.10 (-0.22%), tolerance \u00a39.71"
+    },
+    {
+      "doc_id": "DOC-0134",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "E08/escalate",
+      "confidence": 0.6864,
+      "detail": "Invoice supplier 'Wychwood Furniure Ltd' vs PO supplier 'Wychwood Furniture Ltd' (similarity 0.97); Four-drawer steel filing cabinet: invoiced 2, goods receipt shows 1 received"
+    },
+    {
+      "doc_id": "DOC-0137",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 38 x \u00a346.32 != \u00a31528.56"
+    },
+    {
+      "doc_id": "DOC-0139",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,442.70 vs PO total \u00a31,433.25: difference +\u00a39.45 (+0.66%), tolerance \u00a314.33"
+    },
+    {
+      "doc_id": "DOC-0143",
+      "expected": "E05/escalate",
+      "variant": "missing",
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 3: 3 x \u00a3329.40 != \u00a3898.20"
+    },
+    {
+      "doc_id": "DOC-0146",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 3: 3 x \u00a317.05 != \u00a3511.44"
+    },
+    {
+      "doc_id": "DOC-0151",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Asdown Catering Ltd' vs PO supplier 'Ashdown Catering Ltd' (similarity 0.97)"
+    },
+    {
+      "doc_id": "DOC-0153",
+      "expected": "E05/escalate",
+      "variant": "missing",
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line totals do not sum to the subtotal"
+    },
+    {
+      "doc_id": "DOC-0159",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Pennine Freh Foods Ltd' vs PO supplier 'Pennine Fresh Foods Ltd' (similarity 0.97)"
+    },
+    {
+      "doc_id": "DOC-0161",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line totals do not sum to the subtotal"
+    },
+    {
+      "doc_id": "DOC-0166",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 71 x \u00a35.84 != \u00a3389.08"
+    },
+    {
+      "doc_id": "DOC-0168",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3453.26 vs PO total \u00a3449.46: difference +\u00a33.80 (+0.85%), tolerance \u00a34.49"
+    },
+    {
+      "doc_id": "DOC-0176",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'po-2026-249558' does not exist; closest PO by supplier, amount and lines is PO-2026-249658 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0177",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-7026-902922' does not exist; closest PO by supplier, amount and lines is PO-2026-902922 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0178",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0179",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 11 x \u00a3497.74 != \u00a38461.58"
+    },
+    {
+      "doc_id": "DOC-0180",
+      "expected": "clean/auto_approve",
+      "variant": "benign_name_variant",
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 1: 16 x \u00a31035.77 != \u00a315672.32"
+    },
+    {
+      "doc_id": "DOC-0182",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2076-024682' does not exist; closest PO by supplier, amount and lines is PO-2026-024682 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0184",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 3: 34 x \u00a318.52 != \u00a3722.28"
+    },
+    {
+      "doc_id": "DOC-0190",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 230 x \u00a30.66 != \u00a3184.80"
+    },
+    {
+      "doc_id": "DOC-0197",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-071965' does not exist; closest PO by supplier, amount and lines is PO-2026-071966 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0199",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a313,718.90 vs PO total \u00a313,697.20: difference +\u00a321.70 (+0.16%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0201",
+      "expected": "E04/auto_reject",
+      "variant": "resubmitted_date_shift",
+      "got": "E04/escalate",
+      "confidence": 0.7913,
+      "detail": "Invoice supplier 'Calder Valley Guarding td' vs PO supplier 'Calder Valley Guarding Ltd' (similarity 0.94); Matches prior invoice INV-CVG-08525 (2026-02-27, \u00a31,130.30): same supplier and amount, same invoice number, same PO"
+    },
+    {
+      "doc_id": "DOC-0202",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 3: 4 x \u00a36071.90 != \u00a32428.76"
+    },
+    {
+      "doc_id": "DOC-0203",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a323,923.96 vs PO total \u00a323,968.84: difference -\u00a344.88 (-0.19%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0209",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a36,935.04 vs PO total \u00a36,890.75: difference +\u00a344.29 (+0.64%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0217",
+      "expected": "E02/escalate",
+      "variant": "price_error_no_gr",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-502969' does not exist"
+    },
+    {
+      "doc_id": "DOC-0223",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-531193' does not exist; closest PO by supplier, amount and lines is PO-2026-631193 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0225",
+      "expected": "clean/auto_approve",
+      "variant": "recurring_retainer",
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Kestrel Digital Servics Ltd' vs PO supplier 'Kestrel Digital Services Ltd' (similarity 0.98)"
+    },
+    {
+      "doc_id": "DOC-0227",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a328,752.12 vs PO total \u00a328,717.92: difference +\u00a334.20 (+0.12%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0228",
+      "expected": "E04/auto_reject",
+      "variant": "exact_resubmission",
+      "got": "E04/escalate",
+      "confidence": 0.76,
+      "detail": "Same PO PO-2026-878633 and amount (\u00a35,894.81) as prior invoice RSL26-5868, dated 266 days apart"
+    },
+    {
+      "doc_id": "DOC-0237",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 2 x \u00a37227.67 != \u00a32455.34"
+    },
+    {
+      "doc_id": "DOC-0238",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,391.10 vs PO total \u00a31,386.00: difference +\u00a35.10 (+0.37%), tolerance \u00a313.86"
+    },
+    {
+      "doc_id": "DOC-0239",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 4: 80 x \u00a3207.53 != \u00a316202.40"
+    },
+    {
+      "doc_id": "DOC-0240",
+      "expected": "clean/auto_approve",
+      "variant": "benign_name_variant",
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Quaside Events LTD' vs PO supplier 'Quayside Events Ltd' (similarity 0.97)"
+    },
+    {
+      "doc_id": "DOC-0244",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line totals do not sum to the subtotal"
+    },
+    {
+      "doc_id": "DOC-0251",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a318,463.44 vs PO total \u00a318,504.36: difference -\u00a340.92 (-0.22%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0252",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a33,275.40 vs PO total \u00a33,295.64: difference -\u00a320.24 (-0.61%), tolerance \u00a332.96"
+    },
+    {
+      "doc_id": "DOC-0254",
+      "expected": "E02/escalate",
+      "variant": "price_error",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-668868' does not exist"
+    },
+    {
+      "doc_id": "DOC-0262",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO/2026/284946' does not exist; closest PO by supplier, amount and lines is PO-2026-289946 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0263",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0266",
+      "expected": "clean/auto_approve",
+      "variant": "benign_name_variant",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 3: 8 x \u00a3364.36 != \u00a31093.08"
+    },
+    {
+      "doc_id": "DOC-0270",
+      "expected": "E08/escalate",
+      "variant": "initialism",
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 1: 34 x \u00a3114.00 != \u00a338760.00"
+    },
+    {
+      "doc_id": "DOC-0271",
+      "expected": "E08/escalate",
+      "variant": "trading_name",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0272",
+      "expected": "E04/auto_reject",
+      "variant": "renumbered",
+      "got": "E04/escalate",
+      "confidence": 0.751,
+      "detail": "Invoice supplier 'Larkspur Creative Agecy Ltd' vs PO supplier 'Larkspur Creative Agency Ltd' (similarity 0.98); Matches prior invoice LCA/2026/3652 (2026-03-12, \u00a311,683.40): same supplier and amount, same PO"
+    },
+    {
+      "doc_id": "DOC-0275",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0278",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 1: 1 x \u00a3737.25 != \u00a373.72"
+    },
+    {
+      "doc_id": "DOC-0294",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 583 x \u00a31.88 != \u00a31284.04"
+    },
+    {
+      "doc_id": "DOC-0298",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "E08/escalate",
+      "confidence": 0.7994,
+      "detail": "Invoice supplier 'Thistledown Conslting LLP' vs PO supplier 'Thistledown Consulting LLP' (similarity 0.98)"
+    },
+    {
+      "doc_id": "DOC-0300",
+      "expected": "E07/escalate",
+      "variant": "vat_on_gross",
+      "got": "E08/escalate",
+      "confidence": 0.6864,
+      "detail": "Invoice supplier 'Salmarsh Logistics Ltd' vs PO supplier 'Saltmarsh Logistics Ltd' (similarity 0.97); Stated VAT \u00a3318.21 vs \u00a3265.18 recalculated at 20% (difference +\u00a353.03; stated amount implies 24.0%)"
+    },
+    {
+      "doc_id": "DOC-0306",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 3: 15 x \u00a358.52 != \u00a3873.75"
+    },
+    {
+      "doc_id": "DOC-0307",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0310",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 1: 110 x \u00a313.18 != \u00a31494.80"
+    },
+    {
+      "doc_id": "DOC-0313",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "E05/escalate",
+      "confidence": 0.751,
+      "detail": "PO reference 'PO-2076-834048' does not exist; closest PO by supplier, amount and lines is PO-2026-834048 (score 1.00); Assorted fasteners kit: invoiced 24, goods receipt shows 12 received"
+    },
+    {
+      "doc_id": "DOC-0314",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-466730' does not exist; closest PO by supplier, amount and lines is PO-2026-466230 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0315",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Fenmor Freight Ltd' vs PO supplier 'Fenmoor Freight Ltd' (similarity 0.97)"
+    },
+    {
+      "doc_id": "DOC-0322",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 285 x \u00a38.79 != \u00a32513.94"
+    },
+    {
+      "doc_id": "DOC-0325",
+      "expected": "clean/auto_approve",
+      "variant": "recurring_retainer",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 7 x \u00a32003.56 != \u00a32003.56"
+    },
+    {
+      "doc_id": "DOC-0327",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 27 x \u00a3526.98 != \u00a314201.46"
+    },
+    {
+      "doc_id": "DOC-0331",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0332",
+      "expected": "E04/auto_reject",
+      "variant": "exact_resubmission",
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 2: 397 x \u00a33.21 != \u00a312743.70"
+    },
+    {
+      "doc_id": "DOC-0333",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,736.18 vs PO total \u00a31,731.56: difference +\u00a34.62 (+0.27%), tolerance \u00a317.32"
+    },
+    {
+      "doc_id": "DOC-0335",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a38,822.72 vs PO total \u00a38,855.22: difference -\u00a332.50 (-0.37%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0336",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-236766' does not exist; closest PO by supplier, amount and lines is PO-2026-236765 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0337",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 32 x \u00a3197.63 != \u00a35748.16"
+    },
+    {
+      "doc_id": "DOC-0347",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E08/escalate",
+      "confidence": 0.6864,
+      "detail": "Invoice supplier 'Hollis Engineering Supplies Ltd' vs PO supplier 'Hollins Engineering Supplies Ltd' (similarity 0.98); Invoice subtotal \u00a3980.39 vs PO total \u00a3976.74: difference +\u00a33.65 (+0.37%), tolerance \u00a39.77"
+    },
+    {
+      "doc_id": "DOC-0348",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a38,135.42 vs PO total \u00a38,111.72: difference +\u00a323.70 (+0.29%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0349",
+      "expected": "clean/auto_approve",
+      "variant": "po_ref_format_variant",
+      "got": "clean/escalate",
+      "confidence": 0.9405,
+      "detail": "no discrepancies found"
+    },
+    {
+      "doc_id": "DOC-0352",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a34,339.36 vs PO total \u00a34,332.00: difference +\u00a37.36 (+0.17%), tolerance \u00a343.32"
+    },
+    {
+      "doc_id": "DOC-0355",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,635.79 vs PO total \u00a32,631.01: difference +\u00a34.78 (+0.18%), tolerance \u00a326.31"
+    },
+    {
+      "doc_id": "DOC-0358",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 7 x \u00a31092.44 != \u00a31092.44"
+    },
+    {
+      "doc_id": "DOC-0360",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 554 x \u00a31.57 != \u00a3842.08"
+    },
+    {
+      "doc_id": "DOC-0363",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-557634' does not exist; closest PO by supplier, amount and lines is PO-2026-557639 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0368",
+      "expected": "E04/auto_reject",
+      "variant": "exact_resubmission",
+      "got": "E04/escalate",
+      "confidence": 0.76,
+      "detail": "Resembles invoice SI-0006638 (DOC-0294), which is awaiting manual data entry (same supplier and invoice number, PO reference, or amount); this may be a resubmission of it"
+    },
+    {
+      "doc_id": "DOC-0375",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 11 x \u00a3750.00 != \u00a37755.00"
+    },
+    {
+      "doc_id": "DOC-0387",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-952317' does not exist; closest PO by supplier, amount and lines is PO-2026-952312 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0388",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3977.65 vs PO total \u00a3974.45: difference +\u00a33.20 (+0.33%), tolerance \u00a39.74"
+    },
+    {
+      "doc_id": "DOC-0395",
+      "expected": "E02/escalate",
+      "variant": "price_error_no_gr",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-7026-973858' does not exist"
+    },
+    {
+      "doc_id": "DOC-0398",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line totals do not sum to the subtotal"
+    },
+    {
+      "doc_id": "DOC-0402",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "E05/escalate",
+      "confidence": 0.751,
+      "detail": "PO reference 'PO-2026-246811' does not exist; closest PO by supplier, amount and lines is PO-2026-246011 (score 1.00); Fresh fruit box, weekly delivery: invoiced 9, goods receipt shows 6 received"
+    },
+    {
+      "doc_id": "DOC-0405",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0411",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0419",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a317,262.39 vs PO total \u00a317,223.60: difference +\u00a338.79 (+0.23%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0423",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a314,129.87 vs PO total \u00a314,102.15: difference +\u00a327.72 (+0.20%), tolerance \u00a350.00"
+    },
+    {
+      "doc_id": "DOC-0428",
+      "expected": "E03/escalate",
+      "variant": "partial_delivery",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0432",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a32,696.58 vs PO total \u00a32,676.42: difference +\u00a320.16 (+0.75%), tolerance \u00a326.76"
+    },
+    {
+      "doc_id": "DOC-0433",
+      "expected": "clean/auto_approve",
+      "variant": "recurring_retainer",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 31 x \u00a327.71 != \u00a3843.51"
+    },
+    {
+      "doc_id": "DOC-0437",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,432.14 vs PO total \u00a31,428.42: difference +\u00a33.72 (+0.26%), tolerance \u00a314.28"
+    },
+    {
+      "doc_id": "DOC-0440",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3528.29 vs PO total \u00a3525.47: difference +\u00a32.82 (+0.54%), tolerance \u00a35.25"
+    },
+    {
+      "doc_id": "DOC-0442",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-362574' does not exist; closest PO by supplier, amount and lines is PO-2026-862574 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0443",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Saltmarsh Logistics Ld' vs PO supplier 'Saltmarsh Logistics Ltd' (similarity 0.93)"
+    },
+    {
+      "doc_id": "DOC-0444",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line totals do not sum to the subtotal"
+    },
+    {
+      "doc_id": "DOC-0445",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a33,182.41 vs PO total \u00a33,159.87: difference +\u00a322.54 (+0.71%), tolerance \u00a331.60"
+    },
+    {
+      "doc_id": "DOC-0446",
+      "expected": "E04/auto_reject",
+      "variant": "renumbered",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 2: 16 x \u00a38.20 != \u00a3623.20"
+    },
+    {
+      "doc_id": "DOC-0447",
+      "expected": "E02/escalate",
+      "variant": "price_error",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-411959' does not exist"
+    },
+    {
+      "doc_id": "DOC-0448",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E08/escalate",
+      "confidence": 0.6864,
+      "detail": "Invoice supplier 'Tamarind Telecom Ltd' vs PO supplier 'Tamarind Telecoms Ltd' (similarity 0.97); Invoice subtotal \u00a34,513.50 vs PO total \u00a34,475.10: difference +\u00a338.40 (+0.86%), tolerance \u00a344.75"
+    },
+    {
+      "doc_id": "DOC-0457",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-105655' does not exist; closest PO by supplier, amount and lines is PO-2026-105555 (score 1.00)"
+    },
+    {
+      "doc_id": "DOC-0458",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a31,844.43 vs PO total \u00a31,831.27: difference +\u00a313.16 (+0.72%), tolerance \u00a318.31"
+    },
+    {
+      "doc_id": "DOC-0460",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "E08/escalate",
+      "confidence": 0.8075,
+      "detail": "Invoice supplier 'Northvale FacilitiesManagement plc' vs PO supplier 'Northvale Facilities Management plc' (similarity 0.98)"
+    },
+    {
+      "doc_id": "DOC-0464",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 13 x \u00a3509.12 != \u00a37918.56"
+    },
+    {
+      "doc_id": "DOC-0465",
+      "expected": "E04/auto_reject",
+      "variant": "renumbered",
+      "got": "E04/escalate",
+      "confidence": 0.751,
+      "detail": "PO reference 'PO-2026-112040' does not exist; closest PO by supplier, amount and lines is PO-2026-112090 (score 1.00); Matches prior invoice SI-0007901 (2026-05-06, \u00a33,764.64): same supplier and amount, same PO"
+    },
+    {
+      "doc_id": "DOC-0466",
+      "expected": "E02/escalate",
+      "variant": "price_error_no_gr",
+      "got": "E05/escalate",
+      "confidence": 0.8835,
+      "detail": "PO reference 'PO-2026-464881' does not exist"
+    },
+    {
+      "doc_id": "DOC-0469",
+      "expected": "clean/auto_approve",
+      "variant": "recurring_retainer",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 1 x \u00a320035.60 != \u00a32003.56"
+    },
+    {
+      "doc_id": "DOC-0470",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.4655,
+      "detail": "Line 1: 3 x \u00a3819.61 != \u00a34258.83"
+    },
+    {
+      "doc_id": "DOC-0472",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Subtotal + VAT does not equal the total"
+    },
+    {
+      "doc_id": "DOC-0473",
+      "expected": "E07/escalate",
+      "variant": "wrong_rate",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 14 x \u00a380.70 != \u00a311209.80"
+    },
+    {
+      "doc_id": "DOC-0476",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E05/escalate",
+      "confidence": 0.7371,
+      "detail": "PO reference 'PO-2025-163555' does not exist; closest PO by supplier, amount and lines is PO-2026-163555 (score 0.98); Invoice subtotal \u00a33,854.72 vs PO total \u00a33,834.32: difference +\u00a320.40 (+0.53%), tolerance \u00a338.34"
+    },
+    {
+      "doc_id": "DOC-0480",
+      "expected": "E04/auto_reject",
+      "variant": "resubmitted_date_shift",
+      "got": "E04/escalate",
+      "confidence": 0.76,
+      "detail": "Resembles invoice OKA/2026/8720 (DOC-0327), which is awaiting manual data entry (same supplier and invoice number, PO reference, or amount); this may be a resubmission of it"
+    },
+    {
+      "doc_id": "DOC-0482",
+      "expected": "E04/auto_reject",
+      "variant": "renumbered",
+      "got": "E04/escalate",
+      "confidence": 0.751,
+      "detail": "Invoice supplier 'Tamarind Telecoms Ld' vs PO supplier 'Tamarind Telecoms Ltd' (similarity 0.92); Matches prior invoice 006973 (2026-04-19, \u00a34,060.45): same supplier and amount, same PO"
+    },
+    {
+      "doc_id": "DOC-0484",
+      "expected": "E05/escalate",
+      "variant": "maverick",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 28 x \u00a3219.00 != \u00a38148.00"
+    },
+    {
+      "doc_id": "DOC-0487",
+      "expected": "E04/auto_reject",
+      "variant": "renumbered",
+      "got": "E04/escalate",
+      "confidence": 0.751,
+      "detail": "Invoice supplier 'Saltmarh Logistics Ltd' vs PO supplier 'Saltmarsh Logistics Ltd' (similarity 0.97); Matches prior invoice INV-SML-05940 (2026-06-03, \u00a31,936.38): same supplier and amount, same PO"
+    },
+    {
+      "doc_id": "DOC-0489",
+      "expected": "clean/auto_approve",
+      "variant": null,
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 36 x \u00a32170.30 != \u00a37813.08"
+    },
+    {
+      "doc_id": "DOC-0492",
+      "expected": "E04/auto_reject",
+      "variant": "renumbered",
+      "got": "E04/escalate",
+      "confidence": 0.751,
+      "detail": "PO reference 'PO-2026-849348' does not exist; closest PO by supplier, amount and lines is PO-2026-849343 (score 1.00); Matches prior invoice WFL/2026/5234 (2026-07-06, \u00a313,131.38): same supplier and amount, same PO"
+    },
+    {
+      "doc_id": "DOC-0495",
+      "expected": "E04/auto_reject",
+      "variant": "resubmitted_date_shift",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 92 x \u00a364.71 != \u00a32717.82"
+    },
+    {
+      "doc_id": "DOC-0496",
+      "expected": "E08/escalate",
+      "variant": "typo",
+      "got": "unclassified/escalate",
+      "confidence": 0.665,
+      "detail": "Line 1: 70 x \u00a312.10 != \u00a3242.00"
+    },
+    {
+      "doc_id": "DOC-0498",
+      "expected": "E01/auto_approve",
+      "variant": "price_adjustment",
+      "got": "E01/escalate",
+      "confidence": 0.9215,
+      "detail": "Invoice subtotal \u00a3472.94 vs PO total \u00a3469.71: difference +\u00a33.23 (+0.69%), tolerance \u00a34.70"
+    }
+  ],
+  "calibration_cross_fitted": {
+    "error": 0.1488,
+    "buckets": [
+      {
+        "range": "0.0-0.1",
+        "n": 64,
+        "mean_confidence": 0.0273,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.3-0.4",
+        "n": 1,
+        "mean_confidence": 0.3956,
+        "accuracy": 0.0
+      },
+      {
+        "range": "0.4-0.5",
+        "n": 34,
+        "mean_confidence": 0.4605,
+        "accuracy": 0.5588
+      },
+      {
+        "range": "0.5-0.6",
+        "n": 10,
+        "mean_confidence": 0.5185,
+        "accuracy": 0.5
+      },
+      {
+        "range": "0.7-0.8",
+        "n": 43,
+        "mean_confidence": 0.7496,
+        "accuracy": 0.4186
+      },
+      {
+        "range": "0.8-0.9",
+        "n": 44,
+        "mean_confidence": 0.8514,
+        "accuracy": 1.0
+      },
+      {
+        "range": "0.9-1.0",
+        "n": 304,
+        "mean_confidence": 0.978,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "robustness": {
+    "perturbed_invoices": 152,
+    "material_misreads": 117,
+    "caught": 117,
+    "auto_approved_with_material_misread": [],
+    "outcomes_by_kind": {
+      "date_misread": {
+        "auto_approve": 16,
+        "escalate": 6
+      },
+      "decimal_shift": {
+        "auto_approve": 5,
+        "manual_entry": 14,
+        "escalate": 1,
+        "auto_reject": 1
+      },
+      "digit_lookalike": {
+        "manual_entry": 15,
+        "auto_approve": 2,
+        "escalate": 1
+      },
+      "digit_transposed": {
+        "manual_entry": 19,
+        "auto_approve": 1,
+        "auto_reject": 1,
+        "escalate": 1
+      },
+      "po_ref_digit": {
+        "escalate": 31
+      },
+      "quantity_misread": {
+        "manual_entry": 16
+      },
+      "supplier_typo": {
+        "escalate": 22
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "model": "claude-opus-5",
+  "effort": "medium",
+  "input": "documents",
+  "invoices": 500,
+  "by_task": {
+    "brief": {
+      "calls": 210,
+      "input_tokens": 134754,
+      "output_tokens": 54000,
+      "thinking_tokens_range": [
+        0,
+        168000
+      ],
+      "cost_usd_range": [
+        2.02,
+        6.22
+      ]
+    },
+    "extract": {
+      "calls": 500,
+      "input_tokens": 402188,
+      "output_tokens": 84252,
+      "thinking_tokens_range": [
+        0,
+        750000
+      ],
+      "cost_usd_range": [
+        4.12,
+        22.87
+      ]
+    },
+    "gr_notes": {
+      "calls": 291,
+      "input_tokens": 64248,
+      "output_tokens": 13302,
+      "thinking_tokens_range": [
+        0,
+        116400
+      ],
+      "cost_usd_range": [
+        0.65,
+        3.56
+      ]
+    }
+  },
+  "total_cost_usd_range": [
+    6.79,
+    32.65
+  ],
+  "cost_per_invoice_gbp_range": [
+    0.0107,
+    0.0516
+  ],
+  "assumptions": [
+    "3.5 characters per token",
+    "thinking tokens bracketed per task: extract 0-1500, gr_notes 0-400, classify 0-600, brief 0-800",
+    "list prices 5.0/25.0 USD per million input/output tokens",
+    "GBP at 0.79 per USD",
+    "call counts from a full pipeline run with extraction answered correctly"
+  ]
+}

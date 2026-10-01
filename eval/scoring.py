@@ -163,9 +163,10 @@ def score(results: dict[str, InvoiceResult], ds: Dataset, settings: Settings) ->
     raw_buckets = calibration_buckets([(r.classification.raw_confidence or 0.0, ok) for r, ok in zip(rs, code_ok)])
 
     usage = llm_usage([c for r in rs for c in r.llm_calls], n, settings)
-    # Latency is only meaningful for invoices whose model calls actually ran this time: an invoice
-    # served from recorded responses returns in milliseconds and would flatter the median.
-    timed = [r for r in rs if not any(c.cached for c in r.llm_calls)]
+    # Latency is only meaningful for invoices whose model calls actually ran this time, without
+    # retries: a replayed response returns in milliseconds and would flatter the median, while a
+    # retried one is mostly backoff waiting and would inflate it.
+    timed = [r for r in rs if not any(c.cached or c.attempts > 1 for c in r.llm_calls)]
     latencies = sorted(r.latency_ms for r in timed)
 
     confusion: dict[str, Counter] = defaultdict(Counter)

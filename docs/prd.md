@@ -114,9 +114,9 @@ The four modes are prioritised by value to the primary user:
 ## 8. What is not built
 
 - **Live evaluation at full scale.** The protocol requires a run over all 500 invoice documents with
-  the shipping model. Only a 19-invoice pilot on an alternative model has been run, so accuracy at
+  the shipping model. Only a 27-invoice pilot on an alternative model has been run, so accuracy at
   volume, latency and cost on Claude remain projections.
-- **Cached responses for demo mode**, beyond the 19 invoices the pilot recorded.
+- **Cached responses for demo mode**, beyond the 27 invoices the pilot recorded.
 - **The learning half of the feedback loop.** Overrides are captured with reason codes and
   reported, but nothing yet feeds them back into the agent's behaviour.
 - **Persistence.** Batches live in memory; only reviews are written to disk.

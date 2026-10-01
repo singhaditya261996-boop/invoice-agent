@@ -113,11 +113,11 @@ Full log, including the ones still open: [docs/decision-log.md](docs/decision-lo
 Two kinds of run. The first covers all 500 synthetic invoices with the rules only. The second is a
 small live pilot that actually reads invoice documents with a model.
 
-| | Rules only, 500 invoices | Live pilot, 19 invoices |
+| | Rules only, 500 invoices | Live pilot, 27 invoices |
 |---|---|---|
-| Extraction accuracy | not exercised | **100% of fields on every invoice it read** |
+| Extraction accuracy | not exercised | **100% of fields on every invoice it read** (26 of 27) |
 | Match accuracy | 100% | 100% |
-| Classification accuracy | 100% | 94.7% |
+| Classification accuracy | 100% | 96.3% |
 | Action accuracy | 100% | **100%** |
 | Auto-approval precision | 100% | 100% |
 | Escalation recall | 100% | 100% |
@@ -134,11 +134,14 @@ applies, so rule-based steps score near 100% by construction — it is a regress
 safety test, not a production accuracy estimate. The live pilot ran on **Gemini 3 Flash**, not on
 the model this product would ship with, because it was free.
 
-The gap between 94.7% classification and 100% action accuracy is the whole design in one line: the
-single miss was an invoice the daily quota cut off mid-run, so the agent could not read it — and it
-escalated for manual entry instead of guessing. Wrong category, right decision. Nineteen invoices is
-still a small sample, latency was measured on the five whose calls ran fresh, and auto-resolution
-rate on a sample this size is too noisy to report against the 40–60% target.
+The gap between 96.3% classification and 100% action accuracy is the whole design in one line: the
+only miss was an invoice the daily quota cut off mid-run, so the agent could not read it — and it
+escalated for manual entry instead of guessing. Wrong category, right decision.
+
+The pilot was built over three sittings, because the free tier allows 20 requests per model per day
+and each run reuses the responses recorded by the last. Twenty-seven invoices is still a small
+sample; latency comes from the one sitting whose calls ran without throttling (five invoices), and
+auto-resolution rate at this size is too noisy to report against the 40–60% target.
 
 Full results, including what each run does not show:
 [eval/results/SUMMARY.md](eval/results/SUMMARY.md).
@@ -146,7 +149,7 @@ Full results, including what each run does not show:
 ## Limitations and risks
 
 - **No real invoice has been through this system.** Every number above comes from synthetic data.
-- **Extraction is the weakest link** and the least tested: 19 invoices on one model.
+- **Extraction is the weakest link** and the least tested: 27 invoices on one model.
 - **Confidence scores are not yet calibrated.** The mechanism is built and measured (14.5% error
   as-is, 0.4% when fitted), but fitting it needs a live run over the full set, so the green/amber
   bands currently understate certainty.

@@ -184,9 +184,14 @@ GOOGLE_RETRIES = 4
 GOOGLE_BACKOFF_S = 5
 
 
-def _rate_limited(error: Exception) -> bool:
+def _retryable(error: Exception) -> bool:
+    """Free-tier throttling and transient server errors are expected; wait rather than falling back
+    to rules, which would silently turn an available model into an unread invoice."""
     text = str(error).lower()
-    return "429" in text or "resource_exhausted" in text or "rate limit" in text or "quota" in text
+    return any(sign in text for sign in (
+        "429", "resource_exhausted", "rate limit", "quota",          # throttling
+        "500", "502", "503", "504", "unavailable", "overloaded", "internal error",  # transient
+    ))
 
 
 class GeminiLLM(_Recorded):
@@ -227,8 +232,9 @@ class GeminiLLM(_Recorded):
                 except Exception as e:  # the SDK raises provider-specific errors; degrade to rules either way
                     call.error = f"{type(e).__name__}: {str(e)[:200]}"
                     # Free-tier throttling is expected: wait rather than silently falling back to rules.
-                    if attempt == GOOGLE_RETRIES or not _rate_limited(e):
+                    if attempt == GOOGLE_RETRIES or not _retryable(e):
                         return None
+                    call.attempts += 1
                     time.sleep(GOOGLE_BACKOFF_S * 2 ** attempt)
             call.error = None
         finally:

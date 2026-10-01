@@ -71,6 +71,52 @@
     },
     "task": "gr_notes"
   },
+  "0cdd995c601836dc9497ef9ca4b8eca3": {
+    "response": {
+      "confidence": 0.95,
+      "currency": "GBP",
+      "due_date": "2026-07-13",
+      "invoice_date": "2026-06-13",
+      "invoice_number": "000708",
+      "line_items": [
+        {
+          "description": "Spiral notebooks A5, pack of 10",
+          "quantity": "71",
+          "tax": "265.97",
+          "total": "1329.83",
+          "unit_price": "18.73"
+        },
+        {
+          "description": "Whiteboard markers, assorted, pack of 12",
+          "quantity": "31",
+          "tax": "69.56",
+          "total": "347.82",
+          "unit_price": "11.22"
+        },
+        {
+          "description": "Desk organiser set",
+          "quantity": "40",
+          "tax": "294.72",
+          "total": "1473.60",
+          "unit_price": "36.84"
+        },
+        {
+          "description": "Envelopes C4 self-seal, box of 250",
+          "quantity": "22",
+          "tax": "172.83",
+          "total": "864.16",
+          "unit_price": "39.28"
+        }
+      ],
+      "po_reference": "PO-2026-641051",
+      "subtotal": "4015.41",
+      "supplier_name": "Harrowgate Stationery Co Ltd",
+      "tax_amount": "800.38",
+      "total_amount": "4815.79",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
   "0e84960a11c587ddc0b0f6351fdf0ec1": {
     "response": {
       "confidence": 1.0,
@@ -135,11 +181,52 @@
     },
     "task": "extract"
   },
+  "22727d6e8f2fb2258108b9cee21cb62b": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-16",
+      "invoice_date": "2026-02-14",
+      "invoice_number": "INV-SRL-07147",
+      "line_items": [
+        {
+          "description": "Temporary AP clerk, per hour",
+          "quantity": "277",
+          "tax": "1113.54",
+          "total": "5567.70",
+          "unit_price": "20.10"
+        }
+      ],
+      "po_reference": "PO-2026-279937",
+      "subtotal": "5567.70",
+      "supplier_name": "Silverbirch Recruitment Ltd",
+      "tax_amount": "1336.25",
+      "total_amount": "6903.95",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "2a8da58c44d268ade1eb8135259f04ae": {
+    "response": {
+      "explanation": "The note only specifies that the delivery was signed for at reception and does not mention any missing, damaged, or rejected items.",
+      "indicates_shortfall": false,
+      "units_not_received": null
+    },
+    "task": "gr_notes"
+  },
   "2d00b46baa19d8b71afffd71a3631277": {
     "response": {
       "recommended_action": "Please confirm with M. Clarke if PO-2026-867985 is the correct reference for this invoice. Once verified, the PO number should be manually added to the record.",
       "summary": "Invoice 000493 from Harrowgate Stationery Co Ltd is missing a PO reference.",
       "what_i_could_not_resolve": "I could not locate a PO reference on the invoice, although the supplier and subtotal match PO-2026-867985 exactly. I am uncertain if this is the correct purchase order without an explicit reference on the document."
+    },
+    "task": "brief"
+  },
+  "2da629bf80253c1ff1eae67095149c84": {
+    "response": {
+      "recommended_action": "Please confirm the supplier's legal entity and bank details to ensure LCA Ltd is the authorized payee for this purchase order.",
+      "summary": "Invoice LCA/2026/3811 from LCA Ltd for \u00a33,105.07 contains a supplier name mismatch.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-697781 based on the quoted reference and identical subtotal of \u00a32,587.56, but I cannot confirm if the supplier 'LCA Ltd' is the same entity as 'Larkspur Creative Agency Ltd'. While the goods receipt and totals align, the low similarity score of 0.22 between the names prevents automated reconciliation."
     },
     "task": "brief"
   },
@@ -189,6 +276,31 @@
     },
     "task": "extract"
   },
+  "30166d41edb79b4b259d39b7784fa351": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-08-24",
+      "invoice_date": "2026-07-25",
+      "invoice_number": "INV-MOS-04944",
+      "line_items": [
+        {
+          "description": "Lever arch files, pack of 10",
+          "quantity": "22",
+          "tax": "86.99",
+          "total": "434.94",
+          "unit_price": "19.77"
+        }
+      ],
+      "po_reference": "PO-2026-399619",
+      "subtotal": "434.94",
+      "supplier_name": "Meridian Group Holdings plc",
+      "tax_amount": "86.99",
+      "total_amount": "521.93",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
   "31b6927e80c982960f3a97bc06af8b64": {
     "response": {
       "confidence": 1.0,
@@ -210,6 +322,31 @@
       "supplier_name": "Northvale Facilities Management plc",
       "tax_amount": "225.94",
       "total_amount": "855.66",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "39882d0b49bd65a0604b0416f3784c0f": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-09-14",
+      "invoice_date": "2026-07-16",
+      "invoice_number": "LCA/2026/3811",
+      "line_items": [
+        {
+          "description": "Copywriting, per day",
+          "quantity": "6",
+          "tax": "517.51",
+          "total": "2587.56",
+          "unit_price": "431.26"
+        }
+      ],
+      "po_reference": "PO-2026-697781",
+      "subtotal": "2587.56",
+      "supplier_name": "LCA Ltd",
+      "tax_amount": "517.51",
+      "total_amount": "3105.07",
       "unreadable_fields": []
     },
     "task": "extract"
@@ -252,6 +389,14 @@
       "unreadable_fields": []
     },
     "task": "extract"
+  },
+  "462df7c553d07a973b33fa17600db22a": {
+    "response": {
+      "recommended_action": "I recommend requesting a corrected invoice from the supplier with the VAT amount adjusted to the standard rate before approving the payment.",
+      "summary": "Invoice PFF26-3854 from Pennine Fresh Foods Ltd contains a tax calculation error where the stated VAT of \u00a3126.58 is \u00a3216.58 lower than expected.",
+      "what_i_could_not_resolve": "I matched the subtotal of \u00a31,715.78 to PO-2026-753485, but the provided VAT amount implies an unusual tax rate of 7.4%. I am uncertain why the tax was not calculated at the standard 20% rate, which would result in a VAT amount of \u00a3343.16."
+    },
+    "task": "brief"
   },
   "469eb288c4c8b9c23541494cddd8ff14": {
     "response": {
@@ -310,6 +455,22 @@
     },
     "task": "extract"
   },
+  "4a777ce7b7350fde5882d6f4affa8929": {
+    "response": {
+      "recommended_action": "Confirm the supplier's legal entity and bank details to ensure Redmere Cloud is the correct payee. Verify if the invoicing company is a different entity or subsidiary from the one listed on the PO.",
+      "summary": "Invoice RSL26-6011 from Redmere Cloud contains a supplier name mismatch against PO-2026-545153.",
+      "what_i_could_not_resolve": "I matched the subtotal of 33,122.08 to the purchase order, but the supplier name 'Redmere Cloud' on the invoice does not match 'Redmere Software Ltd' on the PO. I am uncertain if these are the same entity because the name similarity score is only 0.62."
+    },
+    "task": "brief"
+  },
+  "56f55a647e4cec61b84e70630007a7a4": {
+    "response": {
+      "recommended_action": "Request a corrected invoice with VAT at the standard rate before approving.",
+      "summary": "Invoice INV-CVG-08501 from Calder Valley Guarding Ltd contains a VAT calculation error of -\u00a3485.67.",
+      "what_i_could_not_resolve": "I matched the subtotal of \u00a33,237.82 to the purchase order and goods receipt, but the stated VAT of \u00a3161.89 implies a 5% rate instead of the expected 20%. I cannot reconcile the tax discrepancy of -\u00a3485.67 between the stated amount and the recalculated figure of \u00a3647.56."
+    },
+    "task": "brief"
+  },
   "5be1c7c481b837a410de98e36cf81cdc": {
     "response": {
       "explanation": "The note states that the service was completed as scheduled, indicating a full delivery with no missing items or issues.",
@@ -343,6 +504,46 @@
     },
     "task": "extract"
   },
+  "60648fc2b73f80ccc24b6eb3d8962595": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-17",
+      "invoice_date": "2026-02-15",
+      "invoice_number": "PFF26-3854",
+      "line_items": [
+        {
+          "description": "Bottled spring water, case of 24",
+          "quantity": "119",
+          "tax": "216.58",
+          "total": "1082.90",
+          "unit_price": "9.10"
+        },
+        {
+          "description": "Milk, 2 litre, crate of 12",
+          "quantity": "27",
+          "tax": "126.58",
+          "total": "632.88",
+          "unit_price": "23.44"
+        }
+      ],
+      "po_reference": "PO-2026-753485",
+      "subtotal": "1715.78",
+      "supplier_name": "Pennine Fresh Foods Ltd",
+      "tax_amount": "126.58",
+      "total_amount": "1842.36",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
+  "648a28d4de675ce6e7b17a9433fdeec3": {
+    "response": {
+      "recommended_action": "Please confirm with the requester that PO-2026-574172 is the correct purchase order and update the reference in the system.",
+      "summary": "Invoice 007119 from Tamarind Telecoms Ltd for \u00a39,410.55 cites invalid PO reference PO-2026-57472.",
+      "what_i_could_not_resolve": "I could not locate the PO reference quoted on the invoice, though I found an exact match for the supplier and subtotal on PO-2026-574172. I am uncertain if this similar reference is the intended one despite the matching goods receipt and line items."
+    },
+    "task": "brief"
+  },
   "6d445821f4b1b9e37d7c10ab9ecf3566": {
     "response": {
       "recommended_action": "Please confirm with M. Clarke that PO-2026-882202 is the correct purchase order and update the reference to allow processing.",
@@ -350,6 +551,38 @@
       "what_i_could_not_resolve": "I could not find the PO reference PO-2026-882220 in the system. While PO-2026-882202 is a perfect match for the supplier and amount, I cannot confirm it is the intended reference without manual verification."
     },
     "task": "brief"
+  },
+  "849c3a6f955a96145e9921cc0fbd01f0": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-07-09",
+      "invoice_date": "2026-06-09",
+      "invoice_number": "007119",
+      "line_items": [
+        {
+          "description": "Desk phone handset",
+          "quantity": "36",
+          "tax": "722.74",
+          "total": "3613.68",
+          "unit_price": "100.38"
+        },
+        {
+          "description": "Leased line installation",
+          "quantity": "2",
+          "tax": "845.69",
+          "total": "4228.44",
+          "unit_price": "2114.22"
+        }
+      ],
+      "po_reference": "PO-2026-57472",
+      "subtotal": "7842.12",
+      "supplier_name": "Tamarind Telecoms Ltd",
+      "tax_amount": "1568.43",
+      "total_amount": "9410.55",
+      "unreadable_fields": []
+    },
+    "task": "extract"
   },
   "889366f6c24c7b53e3a6aa021d86eebd": {
     "response": {
@@ -439,6 +672,31 @@
     },
     "task": "brief"
   },
+  "af9d5ce2d412530f7b1ff632c7225466": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-03-02",
+      "invoice_date": "2026-01-31",
+      "invoice_number": "INV-CVG-08501",
+      "line_items": [
+        {
+          "description": "Security guarding, per hour",
+          "quantity": "178",
+          "tax": "161.89",
+          "total": "3237.82",
+          "unit_price": "18.19"
+        }
+      ],
+      "po_reference": "PO-2026-730842",
+      "subtotal": "3237.82",
+      "supplier_name": "Calder Valley Guarding Ltd",
+      "tax_amount": "161.89",
+      "total_amount": "3399.71",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
   "ba77e0e7c39ebd21884fe5c6de5d9be2": {
     "response": {
       "recommended_action": "Confirm the final accepted quantity with K. Brennan and pay only for the goods kept. Hold the balance of the invoice until the replacement delivery is successfully booked in.",
@@ -452,6 +710,14 @@
       "recommended_action": "Please verify if PO-2026-236391 was already fully invoiced and, if so, reject this invoice or request a credit note.",
       "summary": "Invoice 001774 from Brackenfield Packaging Ltd for \u00a36,137.40 cannot be processed because PO-2026-236391 is already closed.",
       "what_i_could_not_resolve": "I matched the invoice to PO-2026-236391 based on the supplier name and subtotal, but the purchase order is marked as fully fulfilled and closed. I am unable to determine if a previous invoice was already settled or if the order was closed in error."
+    },
+    "task": "brief"
+  },
+  "be21de92ee3156536624b9eab77e3fe2": {
+    "response": {
+      "recommended_action": "I recommend requesting a corrected invoice from the supplier with the VAT calculated at the standard rate before approving for payment.",
+      "summary": "Invoice 000708 from Harrowgate Stationery Co Ltd contains a VAT calculation error of \u00a32.70.",
+      "what_i_could_not_resolve": "I matched the subtotal of \u00a34,015.41 to PO-2026-641051, but the stated VAT of \u00a3800.38 does not equal the expected \u00a3803.08 when calculated at 20%. The stated amount implies a tax rate of approximately 19.9% rather than the standard rate."
     },
     "task": "brief"
   },
@@ -615,6 +881,52 @@
       "units_not_received": 8
     },
     "task": "gr_notes"
+  },
+  "e186bc9434c6f7050c60923a3769da23": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-08-11",
+      "invoice_date": "2026-07-12",
+      "invoice_number": "RSL26-6011",
+      "line_items": [
+        {
+          "description": "Premium support tier, 12 months",
+          "quantity": "1",
+          "tax": "1632.76",
+          "total": "8163.82",
+          "unit_price": "8163.82"
+        },
+        {
+          "description": "Project management suite, annual licence per seat",
+          "quantity": "131",
+          "tax": "2996.49",
+          "total": "14982.47",
+          "unit_price": "114.37"
+        },
+        {
+          "description": "Implementation support, per day",
+          "quantity": "2",
+          "tax": "326.47",
+          "total": "1632.36",
+          "unit_price": "816.18"
+        },
+        {
+          "description": "Endpoint protection licence, per device, 12 months",
+          "quantity": "289",
+          "tax": "1668.69",
+          "total": "8343.43",
+          "unit_price": "28.87"
+        }
+      ],
+      "po_reference": "PO-2026-545153",
+      "subtotal": "33122.08",
+      "supplier_name": "Redmere Cloud",
+      "tax_amount": "6624.41",
+      "total_amount": "39746.49",
+      "unreadable_fields": []
+    },
+    "task": "extract"
   },
   "e7dbe3e4511161cff55605e1fb84e683": {
     "response": {

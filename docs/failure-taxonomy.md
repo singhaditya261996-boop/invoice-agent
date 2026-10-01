@@ -39,6 +39,8 @@ These were not in the original taxonomy. All three came out of the evaluation, n
   shortfall and escalates), which is safe but noisy.
 - **Cost and latency are projections.** No live run has been made, so the < 30 s and < £0.15 targets
   are unverified.
-- **No live-model failure modes have been observed at all:** refusals, truncation, malformed
-  structured output, rate limiting. Each is handled in code (the call returns nothing and rules take
-  over) and unit-tested with a stubbed client, but never seen against the real API.
+- **Live-model failure modes are now partly observed.** Throttling (429) and overloaded models (503)
+  have both occurred against a real API. Throttling was already retried; 503 was not, so five calls
+  fell through to rules and three invoices went to manual entry unnecessarily — found by a live run,
+  fixed, and covered by `test_gemini_retries_transient_errors_then_succeeds`. Refusals, truncation
+  and malformed structured output remain stub-tested only.

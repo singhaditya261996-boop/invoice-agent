@@ -76,7 +76,7 @@ detection only ever compares invoices from the same supplier, so results match a
 | Documents, perfect extraction (simulated) | 100% | 100% | 100% | 12.5% |
 | 30% of invoices misread (simulated) | 78.0% | 100% | 100% | 6.2% |
 | Every invoice misread (simulated) | 28.4% | 100% | 100% | 0.5% |
-| **Live pilot, 19 invoices, Gemini 3 Flash** | 94.7% | 100% | 100% | 26.7% |
+| **Live pilot, 27 invoices, Gemini 3 Flash** | 96.3% | 100% | 100% | 14.3% |
 
 Classification accuracy falls in the misread runs by design: the agent is classifying a different
 invoice from the one the label describes. The safety metrics are what matter there, and **369 of
@@ -120,12 +120,13 @@ The evaluation is not only a scorecard; it found defects that the tests did not:
 
 ## 7. Not yet measured
 
-The live pilot covered 19 invoices on an alternative model (Gemini 3 Flash, free tier), run over two
-sittings because the free tier allows 20 requests per model per day; the second reused the first's
-recorded responses so quota went only on new invoices. Extraction was exercised for real: field
-accuracy was 100% on every invoice it read, action accuracy 100%, and median latency 23.8 s against
-a 30 s target (measured on the invoices whose calls ran fresh). The one classification miss was an
-invoice the daily quota cut off, which the agent escalated for manual entry rather than guessing.
+The live pilot covered 27 invoices on an alternative model (Gemini 3 Flash, free tier), built over
+three sittings because the free tier allows 20 requests per model per day; each reused the earlier
+sittings' recorded responses so quota went only on new invoices. Extraction was exercised for real:
+field accuracy was 100% on every invoice it read (26 of 27), action accuracy 100%, and median
+latency 23.8 s against a 30 s target, from the sitting whose calls ran without throttling. The one
+classification miss was an invoice the daily quota cut off, which the agent escalated for manual
+entry rather than guessing.
 
 Still outstanding: everything at full scale on the shipping model — extraction accuracy over 500
 documents, goods-receipt note interpretation, root-cause choice on overlapping discrepancies, brief

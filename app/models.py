@@ -200,6 +200,7 @@ class LLMCall(BaseModel):
     output_tokens: int = 0
     cached: bool = False  # True in demo/replay mode
     latency_ms: int = 0
+    attempts: int = 1  # > 1 means the call was retried, so its latency includes backoff waiting
     error: str | None = None  # set when the call failed and a rule-based fallback was used
 
 

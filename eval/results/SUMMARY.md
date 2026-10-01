@@ -2,7 +2,7 @@
 
 Status: **partial.** The PRD protocol (§5.3) calls for a live run on all 500 invoice documents with
 the shipping model. That has not been done. What exists: a rules-only baseline over all 500, a cost
-projection, simulated extraction errors, and a 19-invoice live pilot on an alternative model
+projection, simulated extraction errors, and a 27-invoice live pilot on an alternative model
 (Gemini 3 Flash, free tier) that exercises real document extraction end to end.
 
 Per-run reports: `<run>/report.md`. Machine-readable metrics: `<run>/metrics.json`.
@@ -16,33 +16,40 @@ Per-run reports: `<run>/report.md`. Machine-readable metrics: `<run>/metrics.jso
 | `simulated-errors-0.3-documents` | 30% of invoices have one field misread, at 95% stated confidence | 78.0% | 100% | 100% | 6.2% | 46.6% |
 | `simulated-errors-1-documents` | Every invoice has one field misread | 28.4% | 100% | 100% | 0.5% | 13.8% |
 | `live-gemini3-documents-n8` | First live pilot, 11 invoices, Gemini 3 Flash | 90.9% | 100% | 100% | 42.9% | 54.5% |
-| `live-gemini3-documents-n19` | **Real extraction**, 19 invoices, same model, extends the above | 94.7% | 100% | 100% | 26.7% | 36.8% |
+| `live-gemini3-documents-n19` | Second sitting, 19 invoices | 94.7% | 100% | 100% | 26.7% | 36.8% |
+| `live-gemini3-documents-n27` | **Real extraction**, 27 invoices, third sitting | 96.3% | 100% | 100% | 14.3% | 25.9% |
 
 PRD targets: classification > 90%, auto-approve precision > 99.5%, escalation recall > 99%,
 auto-resolution 40–60%. Classification accuracy is expected to fall when fields are misread,
 because the agent is then looking at a different invoice. What matters is that none of those
 invoices is paid wrongly.
 
-## The live pilot (19 invoices, Gemini 3 Flash, £0)
+## The live pilot (27 invoices, Gemini 3 Flash, £0)
 
-Run over two sittings, ten days apart, because the free tier allows 20 requests per model per day.
-The second run replayed the first run's recorded responses (`--reuse-recorded`) and spent its quota
-only on invoices not yet measured, so the samples combine into one.
+Built over three sittings, because the free tier allows 20 requests per model per day. Each run
+replays the previous runs' recorded responses (`--reuse-recorded`) and spends its quota only on
+invoices not yet measured, so the sittings combine into one growing sample.
 
-- **Field accuracy was 100% on every invoice the model actually read** (18 of 19). Both runs lost
-  exactly one invoice to the daily quota, and both times the agent sent it to manual entry rather
-  than guessing — graceful degradation observed against a real API rather than a stub.
-- **Action accuracy was 100% while classification was 94.7%.** The single classification miss is the
+- **Field accuracy was 100% on every invoice the model actually read** (26 of 27). Each sitting lost
+  about one invoice to the daily quota, and every time the agent sent it to manual entry rather than
+  guessing — graceful degradation observed against a real API rather than a stub.
+- **Action accuracy was 100% while classification was 96.3%.** The only classification miss is the
   quota-stopped invoice: unreadable, so unclassified, so escalated — which was the correct action
-  anyway. The failure mode costs an analyst two minutes and cannot cost money.
-- **Median latency 23.8 s**, inside the 30 s target, measured on the five invoices whose calls ran
-  fresh in the second sitting. The first sitting measured 42.9 s on eleven. Both are real; the
-  spread on samples this size is wide.
-- **Calibration error 6.6%** against the < 5% target, now measured on real errors rather than none.
-- **Auto-resolution rate is not worth quoting at this size**: 42.9% on the first sample, 26.7% on
-  the larger one, entirely driven by which exception types the stratified sample happened to draw.
-- The 37 recorded responses are the demo-mode fixtures, so the UI replays real model output for
-  these 19 invoices with no API key.
+  anyway. That failure mode costs an analyst two minutes and cannot cost money.
+- **Median latency 23.8 s**, inside the 30 s target, from the second sitting's five invoices, the
+  only ones whose calls ran without throttling. The first sitting measured 42.9 s on eleven. Latency
+  now excludes replayed and retried calls, so throttling delay cannot be mistaken for model latency.
+- **Calibration error 6.8%** against the < 5% target, measured on real errors rather than none.
+- **Auto-resolution rate is not worth quoting at this size** — 42.9%, then 26.7%, then 14.3% — it
+  tracks which exception types the stratified sample happened to draw, not agent behaviour.
+- The recorded responses are the demo-mode fixtures, so the UI replays real model output for these
+  invoices with no API key.
+
+**Running live found a bug the stubbed tests could not.** The third sitting hit `503 UNAVAILABLE`
+(model overloaded), which the client did not treat as retryable — so five calls fell straight
+through to the rule-based fallback and three invoices went to manual entry that should have been
+read. The client now retries transient server errors as well as throttling, and re-running recovered
+all but one. This is the kind of failure that only appears against a real API.
 
 **These numbers describe Gemini 3 Flash, not the model this product would ship with.** They show
 the pipeline works end to end against a real API; they are not a substitute for the Claude run.

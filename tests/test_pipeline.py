@@ -311,8 +311,29 @@ def test_gemini_request_shape_and_token_accounting():
     assert llm.calls[0].input_tokens == 11 and llm.calls[0].output_tokens == 7  # thinking tokens count as output
 
 
+def test_gemini_retries_transient_errors_then_succeeds():
+    """A 503 from an overloaded model must be retried, not treated as an unreadable invoice."""
+    attempts = []
+
+    def generate_content(**kwargs):
+        attempts.append(kwargs)
+        if len(attempts) == 1:
+            raise RuntimeError("503 UNAVAILABLE. The model is overloaded")
+        return SimpleNamespace(text='{"a": 1}', usage_metadata=None)
+
+    client = SimpleNamespace(models=SimpleNamespace(generate_content=generate_content))
+    import app.agent.llm as llm_module
+    original, llm_module.GOOGLE_BACKOFF_S = llm_module.GOOGLE_BACKOFF_S, 0
+    try:
+        llm = GeminiLLM(Settings(mode=RunMode.LIVE, llm_provider="google"), client=client)
+        assert llm.json("extract", "sys", "doc", {}) == {"a": 1}
+    finally:
+        llm_module.GOOGLE_BACKOFF_S = original
+    assert len(attempts) == 2 and llm.calls[0].error is None
+
+
 def test_gemini_failure_falls_back_to_rules():
-    client, _ = _fake_google(error=RuntimeError("400 INVALID_ARGUMENT"))
+    client, _ = _fake_google(error=RuntimeError("400 INVALID_ARGUMENT"))  # not retryable
     llm = GeminiLLM(Settings(mode=RunMode.LIVE, llm_provider="google"), client=client)
     assert llm.json("extract", "sys", "doc", {}) is None
     assert "INVALID_ARGUMENT" in llm.calls[0].error

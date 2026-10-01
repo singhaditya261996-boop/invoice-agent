@@ -82,8 +82,8 @@ Measured on the synthetic set; full results in [eval/results/SUMMARY.md](../eval
 | Escalation recall | > 99% | 100% | ✅ |
 | Calibration error | < 5% | 14.5% as-is; 0.4% fitted | ❌ not installed, see [D-04](decision-log.md#d-04-confidence-scores-are-calibrated-not-raw-model-probabilities) |
 | Auto-resolution rate | 40–60% | 32.5% | ❌ ceiling under [D-01](decision-log.md#d-01-autonomy-boundary-set-at-a-conservative-threshold) |
-| Extraction accuracy | > 95% | 100% of fields on every invoice read, 19-invoice pilot | ⚠️ small sample, alternative model |
-| Median latency | < 30 s | 23.8 s in that pilot (42.9 s in an earlier sitting) | ⚠️ measured on 5 invoices |
+| Extraction accuracy | > 95% | 100% of fields on every invoice read, 27-invoice pilot | ⚠️ small sample, alternative model |
+| Median latency | < 30 s | 23.8 s (42.9 s in an earlier sitting) | ⚠️ measured on 5 unthrottled invoices |
 | Cost per invoice | < £0.15 | projected £0.011–£0.052 | projection only |
 
 **Robustness.** With misreads injected into up to 100% of invoices at 95% stated confidence, **369
@@ -93,7 +93,7 @@ no unsafe invoice was auto-approved.
 ## Limitations and risks
 
 1. **Not validated on real invoices.** Every number above comes from synthetic data.
-2. **Extraction is the weakest link and the least tested.** It has been exercised on 19 invoices
+2. **Extraction is the weakest link and the least tested.** It has been exercised on 27 invoices
    with Gemini 3 Flash, not on the shipping model and not at volume.
 3. **Confidence is under-calibrated in the shipped configuration.** Bands understate certainty; the
    calibration table should be fitted on live results before the bands are trusted.
@@ -103,8 +103,10 @@ no unsafe invoice was auto-approved.
    extraction or matching.
 6. **Single currency, standard-rated VAT only.** Zero-rated and exempt items are not modelled.
 7. **The feedback loop is half-built.** Overrides are captured but do not yet change behaviour.
-8. **No production failure modes observed:** refusals, truncation, rate limits and malformed output
-   are handled in code and unit-tested against a stub, never against the live API.
+8. **Only some production failure modes observed.** Throttling (429) and overloaded models (503)
+   have now been seen against a real API, and both are retried; the 503 handling was added *because*
+   a live run exposed it. Refusals, truncation and malformed structured output are still only
+   unit-tested against a stub.
 
 Full analysis: [failure taxonomy](failure-taxonomy.md).
 

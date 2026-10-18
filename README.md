@@ -5,6 +5,10 @@
 
 An agentic AI system for accounts-payable invoice exception triage.
 
+**[▶ Try the live demo](https://singhaditya261996-boop.github.io/invoice-agent/)** — no install and no
+API key: work the review queue on a recorded batch of 27 invoices, read the agent's briefs, and
+override its decisions.
+
 ## The problem
 
 Large AP teams process thousands of invoices a month against purchase orders, and 20–40% of them
@@ -193,7 +197,9 @@ Honest summary: [docs/model-card.md](docs/model-card.md) · how it fails:
 
 ## Try it
 
-Demo mode replays recorded model responses, so it needs no API key and costs nothing:
+The [hosted demo](https://singhaditya261996-boop.github.io/invoice-agent/) runs in the browser with
+no backend. To run the whole system locally, demo mode replays recorded model responses, so it needs
+no API key and costs nothing:
 
 ```bash
 make setup    # Python venv + frontend dependencies

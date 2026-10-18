@@ -1,5 +1,8 @@
 # InvoiceAgent
 
+[![CI](https://github.com/singhaditya261996-boop/invoice-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/singhaditya261996-boop/invoice-agent/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 An agentic AI system for accounts-payable invoice exception triage.
 
 ## The problem
@@ -43,6 +46,16 @@ Everything an analyst needs to act is on one screen: what the agent decided, how
 found, what it checked, what it could not resolve, what it suggests doing, and links to the source
 invoice, the PO and the goods receipt. The decision panel is one click, and a reason code is asked
 for only when the analyst actually overrides the agent.
+
+The queue opens on what needs review, least confident first, so an analyst starts where the agent is
+least sure rather than at the top of an arbitrary list:
+
+![The review queue](docs/images/review-queue.png)
+
+The manager's view answers a different question — where exceptions come from, how much the agent
+settles on its own, and whether analysts are quietly correcting it:
+
+![The dashboard](docs/images/dashboard.png)
 
 ## How it works
 
@@ -183,18 +196,15 @@ Honest summary: [docs/model-card.md](docs/model-card.md) · how it fails:
 Demo mode replays recorded model responses, so it needs no API key and costs nothing:
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"
-python -m data.generator.generate      # regenerate the synthetic dataset (deterministic)
-uvicorn app.api.main:app --reload      # API on :8000
-```
-
-```bash
-cd app/frontend && npm install && npm run dev    # UI on :5173
+make setup    # Python venv + frontend dependencies
+make demo     # API on :8000, UI on :5173
 ```
 
 In the UI choose **Demo** and **Documents** with 16 invoices to replay the recorded pilot, or
 **Rules only** with **Structured** input to run all 500 with no model at all.
+
+`make test` runs the suite, `make eval` scores all 500 invoices with the rules only, and `make data`
+regenerates the dataset.
 
 Evaluation runs:
 

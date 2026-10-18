@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { api, type Action, type Band, type Code, type ResultFilters } from "../api";
+import { api, STATIC_DEMO, type Action, type Band, type Code, type ResultFilters } from "../api";
 import { BarChart, Stat, StackedBar } from "../components/charts";
 import {
   ActionBadge, Button, Card, CodeBadge, ConfidenceBadge, Drawer, ErrorNote, Field, inputBase, inputClass, Loading, Segmented,
@@ -21,7 +21,7 @@ export function BatchPage({ batchId, tab }: { batchId: string; tab: "queue" | "d
   return (
     <div className="space-y-5">
       <div>
-        <a href={href()} className="text-sm text-ink-2 hover:text-ink">← All batches</a>
+        {!STATIC_DEMO && <a href={href()} className="text-sm text-ink-2 hover:text-ink">← All batches</a>}
         <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
           <div>
             <h1 className="text-2xl font-semibold tracking-tight">{b.name}</h1>
@@ -32,10 +32,12 @@ export function BatchPage({ batchId, tab }: { batchId: string; tab: "queue" | "d
             </div>
           </div>
           <div className="flex gap-2">
-            <Button variant="secondary" disabled={!complete} onClick={() => setScoring(true)}
-              title={complete ? undefined : "Available once the batch has finished"}>
-              Score an invoice
-            </Button>
+            {!STATIC_DEMO && (
+              <Button variant="secondary" disabled={!complete} onClick={() => setScoring(true)}
+                title={complete ? undefined : "Available once the batch has finished"}>
+                Score an invoice
+              </Button>
+            )}
             <a href={api.auditUrl(batchId)} download
               className="inline-flex items-center rounded-lg border border-line bg-raised px-3.5 py-2 text-sm
                 font-medium hover:bg-wash">

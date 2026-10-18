@@ -1,0 +1,1 @@
+{"default_mode":"demo","llm_model":"claude-opus-5","tolerance":{"pct":"0.01","absolute_gbp":"50.00","rule":"whichever is smaller (D-02)"},"auto_approve_confidence":0.95,"auto_reject_duplicate_confidence":0.85,"auto_resolvable":["E01","E04"],"min_match_score":0.95,"confidence_bands":{"green":"> 0.9","amber":"0.7-0.9","red":"< 0.7"},"vat_rate":"0.20","duplicate_window_days":1}

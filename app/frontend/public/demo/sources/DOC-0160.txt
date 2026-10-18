@@ -1,0 +1,12 @@
+Invoice | Redmere Cloud
+Ref: RSL26-6011   Issued: 2026-07-12   Due: 2026-08-11
+Purchase Order Ref: PO-2026-545153
+Customer: Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+Currency: GBP
+
+1. Premium support tier, 12 months | qty 1 | unit 8163.82 | net 8163.82 | vat 1632.76
+2. Project management suite, annual licence per seat | qty 131 | unit 114.37 | net 14982.47 | vat 2996.49
+3. Implementation support, per day | qty 2 | unit 816.18 | net 1632.36 | vat 326.47
+4. Endpoint protection licence, per device, 12 months | qty 289 | unit 28.87 | net 8343.43 | vat 1668.69
+
+Net 33122.08 | VAT 6624.41 | Gross 39746.49

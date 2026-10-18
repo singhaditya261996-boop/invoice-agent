@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { api, type Mode } from "../api";
+import { api, STATIC_DEMO, type Mode } from "../api";
 import { Button, Card, ErrorNote, Field, inputClass, Loading, Segmented } from "../components/ui";
 import { date, MODE_LABELS } from "../format";
 import { href, useAsync } from "../hooks";
@@ -58,7 +58,7 @@ export function BatchesPage() {
 
       {error && <ErrorNote message={error} />}
 
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className={`grid gap-6 lg:grid-cols-3 ${STATIC_DEMO ? "hidden" : ""}`}>
         <Card title="Load the synthetic dataset" className="lg:col-span-2">
           <p className="mb-5 text-sm text-ink-2">
             500 fictional UK invoices with 501 purchase orders and 476 goods receipts, covering every exception type and

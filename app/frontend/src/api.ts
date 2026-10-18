@@ -2,6 +2,9 @@
 
 const BASE: string = import.meta.env.VITE_API_BASE ?? "/api";
 
+/** The hosted build has no backend: it reads a frozen batch from public/demo instead. */
+export const STATIC_DEMO = import.meta.env.VITE_DEMO_DATA === "1";
+
 export type Mode = "demo" | "live" | "offline";
 export type Code = "clean" | "E01" | "E02" | "E03" | "E04" | "E05" | "E06" | "E07" | "E08";
 export type Action = "auto_approve" | "auto_reject" | "escalate";
@@ -224,6 +227,8 @@ const json = (body: unknown): RequestInit => ({
   body: JSON.stringify(body),
 });
 
+import { staticApi } from "./staticApi";
+
 export interface ResultFilters {
   code?: Code;
   action?: Action;
@@ -234,7 +239,7 @@ export interface ResultFilters {
   offset?: number;
 }
 
-export const api = {
+const liveApi = {
   config: () => request<AgentConfig>("/config"),
   batches: () => request<BatchSummary[]>("/batches"),
   batch: (id: string) => request<BatchSummary>(`/batches/${id}`),
@@ -268,3 +273,6 @@ export const api = {
   auditUrl: (id: string, action?: Action) =>
     `${BASE}/batches/${id}/audit?format=csv${action ? `&action=${action}` : ""}`,
 };
+
+// Chosen at build time. staticApi imports only types from this module, so there is no runtime cycle.
+export const api = (STATIC_DEMO ? staticApi : liveApi) as typeof liveApi;

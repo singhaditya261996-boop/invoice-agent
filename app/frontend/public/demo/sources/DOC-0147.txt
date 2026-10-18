@@ -1,0 +1,18 @@
+Meridian Group Holdings plc
+TAX INVOICE
+
+Invoice No:    INV-MOS-04944
+Invoice Date:  25/07/2026
+Due Date:      24/08/2026
+Customer PO:   PO-2026-399619
+Bill To:       Aldermoor Group plc, Accounts Payable, 14 Canal Street, Leeds LS1 4AB
+
+Description                                     Qty  Unit Price         VAT          Net
+----------------------------------------------------------------------------------------
+Lever arch files, pack of 10                     22      £19.77      £86.99      £434.94
+----------------------------------------------------------------------------------------
+                                                                  Subtotal       £434.94
+                                                                       VAT        £86.99
+                                                                 TOTAL DUE       £521.93
+
+Payment terms: Net 30. Please quote the invoice number.

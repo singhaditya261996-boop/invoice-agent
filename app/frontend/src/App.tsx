@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import { api } from "./api";
+import { api, STATIC_DEMO } from "./api";
 import { Drawer, ErrorNote, Loading } from "./components/ui";
 import { CODE_LABELS, pct } from "./format";
 import { href, useAsync, useRoute } from "./hooks";
@@ -13,7 +13,9 @@ export default function App() {
   const [showRules, setShowRules] = useState(false);
 
   let page;
-  if (route[0] === "batches" && route[1] && route[2] === "invoices" && route[3]) {
+  if (STATIC_DEMO && route.length === 0) {
+    page = <OpenDemoBatch />;
+  } else if (route[0] === "batches" && route[1] && route[2] === "invoices" && route[3]) {
     page = <InvoicePage batchId={route[1]} docId={route[3]} />;
   } else if (route[0] === "batches" && route[1]) {
     page = <BatchPage batchId={route[1]} tab={route[2] === "dashboard" ? "dashboard" : "queue"} />;
@@ -30,6 +32,11 @@ export default function App() {
             InvoiceAgent
             <span className="hidden text-sm font-normal text-muted sm:inline">AP exception triage</span>
           </a>
+          {STATIC_DEMO && (
+            <span className="hidden rounded-full bg-wash px-3 py-1 text-xs text-ink-2 md:inline">
+              Hosted demo · recorded batch · your decisions stay in this browser
+            </span>
+          )}
           <button onClick={() => setShowRules(true)} className="text-sm text-ink-2 underline-offset-4 hover:text-ink
             hover:underline">
             How the agent decides
@@ -41,6 +48,16 @@ export default function App() {
     </div>
   );
 }
+
+/** The hosted demo has exactly one batch, so skip the batch-setup screen and open its queue. */
+function OpenDemoBatch() {
+  const { data, error } = useAsync(api.batches, []);
+  useEffect(() => {
+    if (data?.[0]) window.location.replace(href("batches", data[0].id));
+  }, [data]);
+  return error ? <ErrorNote message={error} /> : <Loading label="Opening the demo batch…" />;
+}
+
 
 function RulesDrawer({ onClose }: { onClose: () => void }) {
   const { data: c, error } = useAsync(api.config, []);

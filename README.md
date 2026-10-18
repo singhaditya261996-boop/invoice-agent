@@ -133,10 +133,10 @@ small live pilot that actually reads invoice documents with a model.
 
 | | Rules only, 500 invoices | Live pilot, 27 invoices |
 |---|---|---|
-| Extraction accuracy | not exercised | **100% of fields on every invoice it read** (26 of 27) |
+| Extraction accuracy | not exercised | **100% of fields, all 27 invoices** |
 | Match accuracy | 100% | 100% |
-| Classification accuracy | 100% | 96.3% |
-| Action accuracy | 100% | **100%** |
+| Classification accuracy | 100% | 100% |
+| Action accuracy | 100% | 100% |
 | Auto-approval precision | 100% | 100% |
 | Escalation recall | 100% | 100% |
 | False approvals | **0** | **0** |
@@ -152,14 +152,15 @@ applies, so rule-based steps score near 100% by construction — it is a regress
 safety test, not a production accuracy estimate. The live pilot ran on **Gemini 3 Flash**, not on
 the model this product would ship with, because it was free.
 
-The gap between 96.3% classification and 100% action accuracy is the whole design in one line: the
-only miss was an invoice the daily quota cut off mid-run, so the agent could not read it — and it
-escalated for manual entry instead of guessing. Wrong category, right decision.
+A perfect score on 27 invoices is a small sample, not a claim about production accuracy — and the
+sittings that got there are more informative than the final number. The free tier allows 20 requests
+per model per day, so the pilot was built over four sittings, each replaying the last one's recorded
+responses. Along the way the quota cut off invoices mid-run and an overloaded model returned 503s.
+Every time, the agent escalated the affected invoice for manual entry instead of guessing at it —
+which is the behaviour that matters, and it was observed against a real API rather than a stub.
 
-The pilot was built over three sittings, because the free tier allows 20 requests per model per day
-and each run reuses the responses recorded by the last. Twenty-seven invoices is still a small
-sample; latency comes from the one sitting whose calls ran without throttling (five invoices), and
-auto-resolution rate at this size is too noisy to report against the 40–60% target.
+Latency comes from the one sitting whose calls ran without throttling (five invoices), and
+auto-resolution rate at this sample size is too noisy to report against the 40–60% target.
 
 Full results, including what each run does not show:
 [eval/results/SUMMARY.md](eval/results/SUMMARY.md).

@@ -17,7 +17,7 @@ Per-run reports: `<run>/report.md`. Machine-readable metrics: `<run>/metrics.jso
 | `simulated-errors-1-documents` | Every invoice has one field misread | 28.4% | 100% | 100% | 0.5% | 13.8% |
 | `live-gemini3-documents-n8` | First live pilot, 11 invoices, Gemini 3 Flash | 90.9% | 100% | 100% | 42.9% | 54.5% |
 | `live-gemini3-documents-n19` | Second sitting, 19 invoices | 94.7% | 100% | 100% | 26.7% | 36.8% |
-| `live-gemini3-documents-n27` | **Real extraction**, 27 invoices, third sitting | 96.3% | 100% | 100% | 14.3% | 25.9% |
+| `live-gemini3-documents-n27` | **Real extraction**, 27 invoices, final sitting | 100% | 100% | 100% | 16.7% | 25.9% |
 
 PRD targets: classification > 90%, auto-approve precision > 99.5%, escalation recall > 99%,
 auto-resolution 40–60%. Classification accuracy is expected to fall when fields are misread,
@@ -26,21 +26,23 @@ invoices is paid wrongly.
 
 ## The live pilot (27 invoices, Gemini 3 Flash, £0)
 
-Built over three sittings, because the free tier allows 20 requests per model per day. Each run
-replays the previous runs' recorded responses (`--reuse-recorded`) and spends its quota only on
-invoices not yet measured, so the sittings combine into one growing sample.
+Built over four sittings, because the free tier allows 20 requests per model per day. Each run
+replays the previous runs' recorded responses (`--reuse-recorded`) and spends its quota only on what
+is not yet recorded, so the sittings combine into one growing sample.
 
-- **Field accuracy was 100% on every invoice the model actually read** (26 of 27). Each sitting lost
-  about one invoice to the daily quota, and every time the agent sent it to manual entry rather than
-  guessing — graceful degradation observed against a real API rather than a stub.
-- **Action accuracy was 100% while classification was 96.3%.** The only classification miss is the
-  quota-stopped invoice: unreadable, so unclassified, so escalated — which was the correct action
-  anyway. That failure mode costs an analyst two minutes and cannot cost money.
+- **Field accuracy 100% across all 27 invoices**, with classification and action accuracy also at
+  100% once every invoice had been read.
+- **The route there matters more than the final number.** Earlier sittings lost invoices to the
+  daily quota and to `503` from an overloaded model. Every time, the affected invoice was escalated
+  for manual entry rather than guessed at, so the failures cost an analyst two minutes and could not
+  cost money. That is graceful degradation observed against a real API, not a stub.
 - **Median latency 23.8 s**, inside the 30 s target, from the second sitting's five invoices, the
   only ones whose calls ran without throttling. The first sitting measured 42.9 s on eleven. Latency
   now excludes replayed and retried calls, so throttling delay cannot be mistaken for model latency.
-- **Calibration error 6.8%** against the < 5% target, measured on real errors rather than none.
-- **Auto-resolution rate is not worth quoting at this size** — 42.9%, then 26.7%, then 14.3% — it
+- **Calibration error 10.2%** (6.5% cross-fitted) against the < 5% target. With no errors left in
+  the sample it now measures pure under-confidence: every bucket is 100% accurate while the agent
+  claims less. Fitting a calibration table needs a sample that contains real mistakes.
+- **Auto-resolution rate is not worth quoting at this size** — 42.9%, then 26.7%, then 16.7% — it
   tracks which exception types the stratified sample happened to draw, not agent behaviour.
 - The recorded responses are the demo-mode fixtures, so the UI replays real model output for these
   invoices with no API key.

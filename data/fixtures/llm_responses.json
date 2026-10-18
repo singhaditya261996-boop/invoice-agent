@@ -181,6 +181,30 @@
     },
     "task": "extract"
   },
+  "0ee0ecb9fd792570d8b956c4f8861641": {
+    "response": {
+      "recommended_action": "Request a corrected invoice with VAT at the standard rate before approving.",
+      "summary": "Invoice 000708 from Harrowgate Stationery Co Ltd contains a VAT calculation error of -\u00a32.70.",
+      "what_i_could_not_resolve": "I matched the subtotal of \u00a34,015.41 to PO-2026-641051, but the stated VAT of \u00a3800.38 does not match the \u00a3803.08 total expected at the 20% rate. The provided figure implies an incorrect tax rate of 19.9%."
+    },
+    "task": "brief"
+  },
+  "0fd36f447e7fb86cd0eba21b198271c2": {
+    "response": {
+      "recommended_action": "Please request a corrected invoice from the supplier with the VAT adjusted to the standard rate.",
+      "summary": "Invoice NFM/2026/0473 from Northvale Facilities Management plc contains a VAT calculation error of +\u00a3100.00.",
+      "what_i_could_not_resolve": "I matched the \u00a3629.72 subtotal to PO-2026-167309 and found a corresponding goods receipt, but the stated VAT of \u00a3225.94 implies an incorrect rate of 35.9%. I cannot reconcile this against the standard 20% rate which would result in \u00a3125.94."
+    },
+    "task": "brief"
+  },
+  "162f7d1e20bd04265858e042ba761edc": {
+    "response": {
+      "recommended_action": "Confirm the quantity received with E. Lindqvist and pay only for the 23 items delivered. Hold the remaining balance until the backordered items are received and booked into the system.",
+      "summary": "Invoice 000884 from Harrowgate Stationery Co Ltd shows a quantity variance where 30 boxes were invoiced but only 23 were received.",
+      "what_i_could_not_resolve": "I found a discrepancy between the 30 boxes of C4 self-seal envelopes invoiced and the 23 units recorded on goods receipt GR-2026-774584. Notes from E. Lindqvist indicate that 7 units are on backorder, leaving the purchase order partially fulfilled."
+    },
+    "task": "brief"
+  },
   "22727d6e8f2fb2258108b9cee21cb62b": {
     "response": {
       "confidence": 1.0,
@@ -326,6 +350,14 @@
     },
     "task": "extract"
   },
+  "38dc628b7d088fd945cc68533ffa959a": {
+    "response": {
+      "recommended_action": "Verify the supplier's legal entity and bank details before paying to ensure the invoicing company is correct. Check if Meridian Group Holdings plc is the parent company or a legal successor to the entity on the PO.",
+      "summary": "Invoice INV-MOS-04944 from Meridian Group Holdings plc has a supplier name mismatch against PO-2026-399619.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-399619 based on the reference and confirmed the subtotal of 434.94, but the supplier names show only 0.64 similarity. The invoice identifies Meridian Group Holdings plc, whereas the purchase order names Meridian Office Supplies Ltd."
+    },
+    "task": "brief"
+  },
   "39882d0b49bd65a0604b0416f3784c0f": {
     "response": {
       "confidence": 1.0,
@@ -350,6 +382,22 @@
       "unreadable_fields": []
     },
     "task": "extract"
+  },
+  "3e45c9074be80b9dab24cb429e67aee4": {
+    "response": {
+      "recommended_action": "Please confirm the supplier's legal entity and bank details to ensure the invoicing company is authorized to receive payment for this purchase order. You should verify if the vendor record needs to be updated to match the name on the invoice.",
+      "summary": "Invoice RSL26-6011 from Redmere Cloud presents a supplier name mismatch against the purchase order recorded for Redmere Software Ltd.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-545153 based on the provided reference and identical subtotal of 33,122.08, but the supplier name 'Redmere Cloud' differs from 'Redmere Software Ltd' on the PO. I cannot determine if these names refer to the same legal entity or if the invoice was issued by a different company."
+    },
+    "task": "brief"
+  },
+  "444dc7f43cfb693805d653f4f26be4de": {
+    "response": {
+      "recommended_action": "Please confirm with the requester that PO-2026-574172 is the correct purchase order. Once verified, update the reference to allow the invoice to be processed.",
+      "summary": "Invoice 007119 from Tamarind Telecoms Ltd contains an invalid PO reference PO-2026-57472.",
+      "what_i_could_not_resolve": "I could not validate the PO reference quoted on the invoice as PO-2026-57472 does not exist in the system. While PO-2026-574172 matches the supplier and subtotal of 7842.12, I am uncertain if this is the intended document."
+    },
+    "task": "brief"
   },
   "4605e96d604bcb29f781706f37333aca": {
     "response": {
@@ -463,11 +511,27 @@
     },
     "task": "brief"
   },
+  "5013c79e4d188ab0f50200de6cbc4e27": {
+    "response": {
+      "recommended_action": "Please confirm whether this is a distinct billable event; if it is a duplicate, follow the auto-rejection path unless the supplier disputes the action.",
+      "summary": "Invoice INV-SRL-07184-R from Silverbirch Recruitment Ltd flagged as a duplicate of invoice INV-SRL-07184 for \u00a323,221.76.",
+      "what_i_could_not_resolve": "I matched this document to PO-2026-557127 and goods receipt GR-2026-880562, but I identified a previously processed invoice with the same amount and supplier. I am uncertain if the 'INV-SRL-07184-R' reference denotes a unique charge or a duplicate submission of 'INV-SRL-07184'."
+    },
+    "task": "brief"
+  },
   "56f55a647e4cec61b84e70630007a7a4": {
     "response": {
       "recommended_action": "Request a corrected invoice with VAT at the standard rate before approving.",
       "summary": "Invoice INV-CVG-08501 from Calder Valley Guarding Ltd contains a VAT calculation error of -\u00a3485.67.",
       "what_i_could_not_resolve": "I matched the subtotal of \u00a33,237.82 to the purchase order and goods receipt, but the stated VAT of \u00a3161.89 implies a 5% rate instead of the expected 20%. I cannot reconcile the tax discrepancy of -\u00a3485.67 between the stated amount and the recalculated figure of \u00a3647.56."
+    },
+    "task": "brief"
+  },
+  "5a2f20406d1fe69608ab8048848549fb": {
+    "response": {
+      "recommended_action": "Please confirm with the requester if PO-2026-882202 is the correct order for this invoice. If confirmed, update the reference to allow the invoice to proceed.",
+      "summary": "Invoice PFF26-3862 from Pennine Fresh Foods Ltd quotes invalid PO reference PO-2026-882220.",
+      "what_i_could_not_resolve": "I was unable to find purchase order PO-2026-882220 in the system. I matched the invoice to PO-2026-882202 based on an identical subtotal of \u00a31,008.28, matching line items, and the same supplier."
     },
     "task": "brief"
   },
@@ -552,6 +616,14 @@
     },
     "task": "brief"
   },
+  "83a97046fcb6d956d5651df577a49065": {
+    "response": {
+      "recommended_action": "Please verify if PO-2026-236391 was already fully invoiced. If it has been fulfilled, reject this invoice or request a credit note from the supplier.",
+      "summary": "Invoice 001774 from Brackenfield Packaging Ltd where PO-2026-236391 is already closed for \u00a36,137.40.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-236391 and confirmed the subtotal matches the PO and goods receipt, but I cannot process it because the purchase order is closed. I am uncertain whether a prior invoice was already settled or if the PO was closed prematurely."
+    },
+    "task": "brief"
+  },
   "849c3a6f955a96145e9921cc0fbd01f0": {
     "response": {
       "confidence": 1.0,
@@ -592,11 +664,43 @@
     },
     "task": "brief"
   },
+  "8e3657e8c2940b3bb9ffc76f954bee34": {
+    "response": {
+      "recommended_action": "Review the historical record for INV-CVG-08525 to confirm it is a duplicate and reject this invoice unless the supplier provides evidence of a separate charge.",
+      "summary": "Invoice INV-CVG-08525 from Calder Valley Guarding Ltd is flagged as a duplicate of an existing record for \u00a31,130.30.",
+      "what_i_could_not_resolve": "I identified this document as a duplicate because the invoice number, supplier, and total match a previously processed entry from February 2026. While the subtotal matches the PO and the goods were received in full, I cannot determine if this is a legitimate distinct charge or a resubmission of the same invoice."
+    },
+    "task": "brief"
+  },
+  "94a467fac57c8659d59c69039b3e5e76": {
+    "response": {
+      "recommended_action": "Please confirm the supplier's legal entity and bank details to ensure the invoicing company is the correct recipient for this payment. You should verify if the entity on the invoice is a subsidiary or a separate business from the one listed on the purchase order.",
+      "summary": "Invoice 000863 from Harrowgate Stationery Co (Yorkshire) Ltd contains a supplier name mismatch against the purchase order records.",
+      "what_i_could_not_resolve": "I am unable to confirm the supplier identity because the name Harrowgate Stationery Co (Yorkshire) Ltd on the invoice differs from Harrowgate Stationery Co Ltd on PO-2026-569154. Although the invoice subtotal of 1595.14 matches the purchase order total and a goods receipt exists, I cannot verify if these are the same legal entity."
+    },
+    "task": "brief"
+  },
   "98a44edeed07d4b6ebe1786dd750d0c1": {
     "response": {
       "recommended_action": "Please verify if this is a distinct charge and reject it as a duplicate unless the supplier provides evidence of a separate transaction.",
       "summary": "Invoice INV-SRL-07184-R from Silverbirch Recruitment Ltd is a suspected duplicate of invoice INV-SRL-07184 for \u00a323,221.76.",
       "what_i_could_not_resolve": "I matched the invoice to PO-2026-557127 and goods receipt GR-2026-880562, but it shares the same date and amount as a previously recorded invoice. I am uncertain if the '-R' suffix on the invoice number signifies a unique charge or a duplicate submission."
+    },
+    "task": "brief"
+  },
+  "99d13ef3bc3013cbc53d7554001f56b1": {
+    "response": {
+      "recommended_action": "Please confirm the accepted quantity with K. Brennan and pay only for the goods received, holding the remaining balance until the faulty units are replaced or credited.",
+      "summary": "Invoice 000731 from Harrowgate Stationery Co Ltd shows a quantity variance involving 8 rejected units.",
+      "what_i_could_not_resolve": "I identified a discrepancy where the goods receipt notes from K. Brennan state 8 faulty units were rejected at goods-in, while the structured receipt data shows the full order was accepted. I am uncertain if the invoice total of \u00a32,973.56 should be paid in full or reduced to account for these returned items."
+    },
+    "task": "brief"
+  },
+  "9a54b9e19f77d35c37083e159db9e10b": {
+    "response": {
+      "recommended_action": "Verify the supplier's legal entity and bank details to ensure that LCA Ltd is the correct party to receive payment.",
+      "summary": "Invoice LCA/2026/3811 from LCA Ltd for \u00a33,105.07 shows a supplier name mismatch.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-697781 via the quoted reference, but the supplier 'LCA Ltd' does not match 'Larkspur Creative Agency Ltd' listed on the PO. I am uncertain if these represent the same legal entity even though the invoice subtotal matches the PO total of \u00a32,587.56."
     },
     "task": "brief"
   },
@@ -697,6 +801,52 @@
     },
     "task": "extract"
   },
+  "b0fe37adc8ef60e07b028e17794661c4": {
+    "response": {
+      "confidence": 1.0,
+      "currency": "GBP",
+      "due_date": "2026-08-19",
+      "invoice_date": "2026-07-20",
+      "invoice_number": "000863",
+      "line_items": [
+        {
+          "description": "Whiteboard markers, assorted, pack of 12",
+          "quantity": "50",
+          "tax": "82.00",
+          "total": "410.00",
+          "unit_price": "8.20"
+        },
+        {
+          "description": "Desk organiser set",
+          "quantity": "24",
+          "tax": "139.34",
+          "total": "696.72",
+          "unit_price": "29.03"
+        },
+        {
+          "description": "Spiral notebooks A5, pack of 10",
+          "quantity": "20",
+          "tax": "61.76",
+          "total": "308.80",
+          "unit_price": "15.44"
+        },
+        {
+          "description": "Envelopes C4 self-seal, box of 250",
+          "quantity": "7",
+          "tax": "35.92",
+          "total": "179.62",
+          "unit_price": "25.66"
+        }
+      ],
+      "po_reference": "PO-2026-569154",
+      "subtotal": "1595.14",
+      "supplier_name": "Harrowgate Stationery Co (Yorkshire) Ltd",
+      "tax_amount": "319.02",
+      "total_amount": "1914.16",
+      "unreadable_fields": []
+    },
+    "task": "extract"
+  },
   "ba77e0e7c39ebd21884fe5c6de5d9be2": {
     "response": {
       "recommended_action": "Confirm the final accepted quantity with K. Brennan and pay only for the goods kept. Hold the balance of the invoice until the replacement delivery is successfully booked in.",
@@ -750,6 +900,14 @@
       "recommended_action": "Please confirm the price discrepancy with J. Reynolds or determine if a credit note is required to resolve the difference.",
       "summary": "Invoice SI-0007944 from Fenmoor Freight Ltd shows a subtotal mismatch of \u00a3308.88 against PO-2026-032734.",
       "what_i_could_not_resolve": "I matched the invoice to PO-2026-032734, but the invoice subtotal of \u00a34,170.98 is \u00a3308.88 lower than the PO total of \u00a34,479.86. I also could not confirm quantities as there is no goods receipt currently on file for this order."
+    },
+    "task": "brief"
+  },
+  "ca8307da1be4db5a2f84a61a0ecc0375": {
+    "response": {
+      "recommended_action": "I recommend requesting a corrected invoice with VAT recalculated at the standard rate before approving the payment.",
+      "summary": "Invoice INV-SRL-07147, Silverbirch Recruitment Ltd, tax calculation error of +\u00a3222.71.",
+      "what_i_could_not_resolve": "I matched the \u00a35,567.70 subtotal to PO-2026-279937 because the reference was quoted and confirmed receipt GR-2026-159975. However, I cannot resolve the stated VAT of \u00a31,336.25, as it implies a 24% tax rate rather than the expected 20% calculation of \u00a31,113.54."
     },
     "task": "brief"
   },
@@ -874,6 +1032,14 @@
     },
     "task": "gr_notes"
   },
+  "dec26dd3d834c40c975556436f8c9b63": {
+    "response": {
+      "recommended_action": "Please confirm with the requester that PO-2026-801319 is the correct purchase order and update the reference.",
+      "summary": "Invoice MFL26-7997 from Marlow & Finch Legal Services LLP lists invalid PO reference PO-2026-8013 for a total of 5,943.32.",
+      "what_i_could_not_resolve": "I could not locate the PO reference PO-2026-8013 cited on the invoice. However, I matched the supplier and subtotal of 4,952.77 to PO-2026-801319 and am uncertain if this is the intended record."
+    },
+    "task": "brief"
+  },
   "dee59b41aa8afe99b0aa44d6b52db04b": {
     "response": {
       "explanation": "8 units were rejected at goods-in because they were faulty.",
@@ -927,6 +1093,14 @@
       "unreadable_fields": []
     },
     "task": "extract"
+  },
+  "e77d2fd40b37d4d903924dafddd83059": {
+    "response": {
+      "recommended_action": "Please verify the price change with the PO approver, L. Nowak, or request a credit note from the supplier for the discrepancy.",
+      "summary": "Invoice MFL26-7941 from Marlow & Finch Legal Services LLP exceeds the PO total by \u00a32,228.69.",
+      "what_i_could_not_resolve": "I matched the invoice to PO-2026-394468, but the subtotal of \u00a319,257.23 is \u00a32,228.69 over the PO amount, exceeding the \u00a350.00 tolerance. While the goods receipt indicates the order was delivered in full, I cannot account for the 13.09% price increase."
+    },
+    "task": "brief"
   },
   "e7dbe3e4511161cff55605e1fb84e683": {
     "response": {

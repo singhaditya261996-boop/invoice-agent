@@ -4,35 +4,35 @@
 - **Input:** documents (27 of 500 invoices)
 - **Model:** gemini-3-flash-preview (google)
 - **Calibration:** none (identity)
-- **Run at:** 2026-10-01 14:00 UTC, 0.0s wall clock
+- **Run at:** 2026-10-18 19:09 UTC, 140.4s wall clock
 
 ## Results against PRD thresholds (§5.2)
 
 | Metric | Result | Target | Pass |
 |---|---|---|---|
-| extraction accuracy | 94.46% | > 95.0% | ❌ |
+| extraction accuracy | 100.00% | > 95.0% | ✅ |
 | match accuracy | 100.00% | > 98.0% | ✅ |
-| classification accuracy | 96.30% | > 90.0% | ✅ |
-| calibration error | 6.78% | < 5.0% | ❌ |
+| classification accuracy | 100.00% | > 90.0% | ✅ |
+| calibration error | 10.19% | < 5.0% | ❌ |
 | auto resolution precision | 100.00% | > 99.5% | ✅ |
 | escalation recall | 100.00% | > 99.0% | ✅ |
-| median latency s | 86.373s | < 30s | ❌ |
+| median latency s | n/a | < 30s | n/a |
 | cost per invoice gbp | £0.0000 | < £0.15 | ✅ |
 
 Also: action accuracy 100.00%, auto-reject precision 100.00%, false approvals 0.
 
 ## Product metrics (§1.6)
 
-- Auto-resolution rate: **17.4%** of exceptions (target 40–60%)
+- Auto-resolution rate: **16.7%** of exceptions (target 40–60%)
 - Straight-through rate: 25.9% of all invoices decided without a human
 - Actions: {'auto_approve': 4, 'auto_reject': 3, 'escalate': 20}
 
 ## Extraction
 
-- Field accuracy: 94.46% (on invoices extracted: 100.00%)
-- Flagged for manual entry: 3.70%
-- Invoices with any wrong field: 1
-- Most-missed fields: {'<not extracted>': 1}
+- Field accuracy: 100.00% (on invoices extracted: 100.00%)
+- Flagged for manual entry: 0.00%
+- Invoices with any wrong field: 0
+- Most-missed fields: none
 
 ## By exception category
 
@@ -45,7 +45,7 @@ Also: action accuracy 100.00%, auto-reject precision 100.00%, false approvals 0.
 | E05 | 6 | 100.00% | 100.00% |
 | E06 | 1 | 100.00% | 100.00% |
 | E07 | 5 | 100.00% | 100.00% |
-| E08 | 4 | 100.00% | 75.00% |
+| E08 | 4 | 100.00% | 100.00% |
 | clean | 3 | 100.00% | 100.00% |
 
 ## Edge cases (§5.1)
@@ -59,25 +59,22 @@ Also: action accuracy 100.00%, auto-reject precision 100.00%, false approvals 0.
 
 ## Calibration (D-04)
 
-Calibration error (PRD definition, mean gap per bucket): 6.78%; size-weighted ECE: 4.83%. After cross-fitted isotonic calibration: 8.72%.
+Calibration error (PRD definition, mean gap per bucket): 10.19%; size-weighted ECE: 5.01%. After cross-fitted isotonic calibration: 6.47%.
 
 | Confidence | n | Mean stated | Actual accuracy |
 |---|---|---|---|
-| 0.0-0.1 | 1 | 0.000 | 0.000 |
 | 0.8-0.9 | 2 | 0.837 | 1.000 |
-| 0.9-1.0 | 24 | 0.959 | 1.000 |
+| 0.9-1.0 | 25 | 0.959 | 1.000 |
 
 ## Cost and latency
 
-- LLM calls: 66 (4 fell back to rules), 1,609 input / 4,122 output tokens
+- LLM calls: 68 (0 fell back to rules), 12,454 input / 19,064 output tokens
 - Cost: $0.00 (£0.00), £0.0000 per invoice
-- Latency per invoice: median 94259 ms, p90 94259 ms (measured on the 2 invoices whose model calls ran this time, 59 calls replayed from earlier runs)
+- Latency per invoice: median None ms, p90 None ms (measured on the 0 invoices whose model calls ran this time, 51 calls replayed from earlier runs)
 
-## Failures (1)
+## Failures (0)
 
-| Doc | Expected | Got | Conf. | Detail |
-|---|---|---|---|---|
-| DOC-0142 | E08/escalate (subsidiary) | unclassified/escalate | 0.00 | LLM extraction unavailable |
+None.
 
 ## Caveats
 

@@ -69,7 +69,7 @@ Eight checks ran. Seven passed:
 - Supplier name matches the PO exactly
 - Subtotal £997.80 equals the PO total
 - Goods receipt GR-2026-774584 on file, received 2026-07-13 by E. Lindqvist
-- GR notes read: *"Partial delivery: 7 x Envelopes C4 self-seal, box of 250 on backorder"* → shortfall reported
+- GR notes *"Partial delivery: 7 x Envelopes C4 self-seal, box of 250 on backorder"* read by the AI model → shortfall reported
 - VAT £199.56 matches recalculation at 20%
 - No prior invoice from this supplier for £1,197.36 within ±1 day, or with the same invoice number
 
@@ -101,16 +101,16 @@ rules run *after* classification and cannot be overridden by the model.
 
 ## Step 5 — Report *(model writes the prose, rules supply the figures)*
 
-> **Summary.** Invoice 000884 from Harrowgate Stationery Co Ltd contains a quantity variance of 7
-> boxes of envelopes.
+> **Summary.** Invoice 000884 from Harrowgate Stationery Co Ltd shows a quantity variance where 30
+> boxes were invoiced but only 23 were received.
 >
-> **What I could not resolve.** I matched the invoice to PO-2026-943012 but found that 30 boxes of
-> C4 envelopes were billed while only 23 were recorded as received on GR-2026-774584. Notes on the
-> goods receipt indicate that 7 boxes are currently on backorder, which creates a discrepancy with
-> the total amount requested.
+> **What I could not resolve.** I found a discrepancy between the 30 boxes of C4 self-seal envelopes
+> invoiced and the 23 units recorded on goods receipt GR-2026-774584. Notes from E. Lindqvist
+> indicate that 7 units are on backorder, leaving the purchase order partially fulfilled.
 >
-> **Recommended action.** Confirm the delivered quantity with E. Lindqvist and pay only for the 23
-> boxes received. Hold the remaining balance until the backordered items are delivered and booked in.
+> **Recommended action.** Confirm the quantity received with E. Lindqvist and pay only for the 23
+> items delivered. Hold the remaining balance until the backordered items are received and booked
+> into the system.
 
 Every figure in that brief — 30, 23, the PO number, the GR number, the receiver's name — came from
 the deterministic checks and was handed to the model as facts. The model chose the wording. It is

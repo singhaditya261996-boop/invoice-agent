@@ -199,7 +199,7 @@ def _check_quantities(invoice: Invoice, po, gr: GoodsReceipt | None, llm: LLM | 
 
     if gr and gr.notes.strip():
         reading = read_gr_notes(gr.notes, llm)
-        how = "LLM" if reading.used_llm else "keyword rules"
+        how = "the AI model" if reading.used_llm else "keyword rules"
         checked.append(f"GR notes {gr.notes!r} read by {how}: "
                        f"{'shortfall reported' if reading.indicates_shortfall else 'no shortfall'}")
         if reading.indicates_shortfall and not short_lines:

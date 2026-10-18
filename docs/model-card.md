@@ -80,9 +80,9 @@ Measured on the synthetic set; full results in [eval/results/SUMMARY.md](../eval
 | Classification accuracy | > 90% | 100% | ✅ |
 | Auto-resolution precision | > 99.5% | 100% | ✅ |
 | Escalation recall | > 99% | 100% | ✅ |
-| Calibration error | < 5% | 14.5% as-is; 0.4% fitted | ❌ not installed, see [D-04](decision-log.md#d-04-confidence-scores-are-calibrated-not-raw-model-probabilities) |
+| Calibration error | < 5% | 14.5% rules-only, 10.2% on the pilot; 0.4–6.5% cross-fitted | ❌ not installed, see [D-04](decision-log.md#d-04-confidence-scores-are-calibrated-not-raw-model-probabilities) |
 | Auto-resolution rate | 40–60% | 32.5% | ❌ ceiling under [D-01](decision-log.md#d-01-autonomy-boundary-set-at-a-conservative-threshold) |
-| Extraction accuracy | > 95% | 100% of fields on every invoice read, 27-invoice pilot | ⚠️ small sample, alternative model |
+| Extraction accuracy | > 95% | 100% of fields across a 27-invoice pilot | ⚠️ small sample, alternative model |
 | Median latency | < 30 s | 23.8 s (42.9 s in an earlier sitting) | ⚠️ measured on 5 unthrottled invoices |
 | Cost per invoice | < £0.15 | projected £0.011–£0.052 | projection only |
 

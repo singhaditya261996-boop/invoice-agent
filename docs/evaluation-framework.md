@@ -76,7 +76,7 @@ detection only ever compares invoices from the same supplier, so results match a
 | Documents, perfect extraction (simulated) | 100% | 100% | 100% | 12.5% |
 | 30% of invoices misread (simulated) | 78.0% | 100% | 100% | 6.2% |
 | Every invoice misread (simulated) | 28.4% | 100% | 100% | 0.5% |
-| **Live pilot, 27 invoices, Gemini 3 Flash** | 96.3% | 100% | 100% | 14.3% |
+| **Live pilot, 27 invoices, Gemini 3 Flash** | 100% | 100% | 100% | 16.7% |
 
 Classification accuracy falls in the misread runs by design: the agent is classifying a different
 invoice from the one the label describes. The safety metrics are what matter there, and **369 of
@@ -121,12 +121,12 @@ The evaluation is not only a scorecard; it found defects that the tests did not:
 ## 7. Not yet measured
 
 The live pilot covered 27 invoices on an alternative model (Gemini 3 Flash, free tier), built over
-three sittings because the free tier allows 20 requests per model per day; each reused the earlier
-sittings' recorded responses so quota went only on new invoices. Extraction was exercised for real:
-field accuracy was 100% on every invoice it read (26 of 27), action accuracy 100%, and median
-latency 23.8 s against a 30 s target, from the sitting whose calls ran without throttling. The one
-classification miss was an invoice the daily quota cut off, which the agent escalated for manual
-entry rather than guessing.
+four sittings because the free tier allows 20 requests per model per day; each reused the earlier
+sittings' recorded responses so quota went only on what was not yet recorded. Extraction was
+exercised for real: field accuracy 100% across all 27, classification and action accuracy 100%, and
+median latency 23.8 s against a 30 s target, from the sitting whose calls ran without throttling.
+Earlier sittings lost invoices to quota limits and to transient `503`s; each time the agent
+escalated the affected invoice for manual entry rather than guessing.
 
 Still outstanding: everything at full scale on the shipping model — extraction accuracy over 500
 documents, goods-receipt note interpretation, root-cause choice on overlapping discrepancies, brief

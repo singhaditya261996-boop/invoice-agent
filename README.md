@@ -123,7 +123,8 @@ An escalation brief, as the agent writes it:
   ([D-09](docs/decision-log.md#d-09-invoices-awaiting-manual-entry-stay-in-the-duplicate-check-history),
   [D-10](docs/decision-log.md#d-10-the-same-po-billed-twice-for-the-same-amount-is-a-duplicate-signal-on-any-date))
 
-Full log, including the ones still open: [docs/decision-log.md](docs/decision-log.md).
+Full log, including the ones still open: [docs/decision-log.md](docs/decision-log.md). To see the
+mechanism rather than read about it: [one invoice, end to end](docs/walkthrough.md).
 
 ## Evaluation results
 

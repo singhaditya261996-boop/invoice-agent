@@ -4,6 +4,7 @@ The thinking behind InvoiceAgent, in the order worth reading it.
 
 | Document | What it covers |
 |---|---|
+| [walkthrough.md](walkthrough.md) | One real invoice traced through all five steps, with the agent's actual output at each |
 | [prd.md](prd.md) | The problem, the users, scope, user stories and success metrics — and what changed once it was built |
 | [decision-log.md](decision-log.md) | Every product trade-off and why it went that way, including the six decisions the build forced |
 | [trust-design.md](trust-design.md) | How the interface earns an analyst's trust: showing the working, confidence bands, cheap overrides |

@@ -9,6 +9,8 @@ An agentic AI system for accounts-payable invoice exception triage.
 API key: work the review queue on a recorded batch of 27 invoices, read the agent's briefs, and
 override its decisions.
 
+![Working an exception: the queue, the agent's brief, the evidence, the analyst's decision, and the manager's dashboard](docs/images/demo.gif)
+
 ## The problem
 
 Large AP teams process thousands of invoices a month against purchase orders, and 20–40% of them

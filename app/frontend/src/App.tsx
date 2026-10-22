@@ -18,7 +18,8 @@ export default function App() {
   } else if (route[0] === "batches" && route[1] && route[2] === "invoices" && route[3]) {
     page = <InvoicePage batchId={route[1]} docId={route[3]} />;
   } else if (route[0] === "batches" && route[1]) {
-    page = <BatchPage batchId={route[1]} tab={route[2] === "dashboard" ? "dashboard" : "queue"} />;
+    const tab = route[2] === "dashboard" ? "dashboard" : route[2] === "policy" ? "policy" : "queue";
+    page = <BatchPage batchId={route[1]} tab={tab} />;
   } else {
     page = <BatchesPage />;
   }

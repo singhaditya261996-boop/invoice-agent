@@ -80,6 +80,11 @@ fall back to templates when it is unavailable.
   without colour.
 - **Reversed autonomous decisions.** Auto-decisions an analyst undid are counted separately: this is
   the early-warning signal for the false-approval rate.
+- **Policy sandbox.** The manager can re-run the processed batch under different tolerances,
+  confidence thresholds and autonomy boundaries, and see exactly which invoices change hands. It
+  names the sum of money that would move from "an analyst sees this" to "paid automatically", so
+  widening autonomy is a decision taken with a number attached. It replays recorded model responses,
+  so exploring is free and cannot touch a live bill.
 - **Audit trail (US-05).** Every decision, with reasoning, confidence, match method and score,
   discrepancies, model calls and the analyst's review, exportable as CSV — including auto-approved
   invoices on their own, which is the population an auditor asks about first.

@@ -25,6 +25,12 @@ OUT = Path(__file__).resolve().parents[1] / "app" / "frontend" / "public" / "dem
 # Every invoice whose model responses were recorded by the live pilots.
 INVOICE_LIMIT = 24
 
+# The policy sandbox needs a server to re-run a batch, which the hosted demo does not have, so the
+# scenarios it offers are precomputed here. These lists must match POLICY_GRID in the frontend.
+TOLERANCES = [("0.005", "25"), ("0.01", "50"), ("0.02", "150"), ("0.05", "500")]
+APPROVAL_CONFIDENCES = [0.85, 0.90, 0.95, 0.99]
+AUTONOMY_SETS = [["E01", "E04"], ["E01", "E03", "E04"], ["E01", "E03", "E04", "E07"]]
+
 
 def write(path: Path, payload) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -71,9 +77,19 @@ def main() -> None:
             if gr.status_code == 200:
                 write(OUT / "goods-receipts" / f"{po_number}.json", gr.json())
 
+        for ti, (pct, absolute) in enumerate(TOLERANCES):
+            for ci, confidence in enumerate(APPROVAL_CONFIDENCES):
+                for ai, autonomy in enumerate(AUTONOMY_SETS):
+                    body = {"tolerance_pct": pct, "tolerance_absolute": absolute,
+                            "auto_approve_confidence": confidence, "auto_resolvable": autonomy}
+                    write(OUT / "policy" / f"{ti}-{ci}-{ai}.json",
+                          client.post(f"/batches/{bid}/simulate", json=body).json())
+
         size = sum(f.stat().st_size for f in OUT.rglob("*") if f.is_file())
-        print(f"Wrote {len(list(OUT.rglob('*.json')))} JSON files for {len(rows)} invoices "
-              f"and {len(pos)} POs ({size / 1024:.0f} KB) to {OUT.relative_to(Path.cwd())}")
+        scenarios = len(TOLERANCES) * len(APPROVAL_CONFIDENCES) * len(AUTONOMY_SETS)
+        print(f"Wrote {len(list(OUT.rglob('*.json')))} JSON files for {len(rows)} invoices, "
+              f"{len(pos)} POs and {scenarios} policy scenarios ({size / 1024:.0f} KB) "
+              f"to {OUT.relative_to(Path.cwd())}")
 
 
 if __name__ == "__main__":

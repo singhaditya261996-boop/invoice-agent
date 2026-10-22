@@ -23,7 +23,10 @@ on measured override rates per exception type.
    200 exceptions in the PRD's own distribution, so the ceiling is **32.5%** even for a perfect
    agent. Three ways forward: accept a lower MVP target; allow the "conditional" cases below; or
    treat widening autonomy, as this decision already plans, as how the target is eventually met.
-   **Open — needs a product call.**
+   **Open — needs a product call.** The policy sandbox in the UI now quantifies each option against
+   a processed batch: it reports the auto-resolution rate, the invoices that change hands, and the
+   value that would be paid without a human. The decision stays open, but it is no longer a matter
+   of opinion.
 2. *E03 and E07 are always escalated.* The exception table in the data spec calls them
    "conditionally" auto-resolvable (E03 when the goods receipt confirms a partial delivery, E07 when
    recalculation resolves it), which contradicts this decision. The build follows D-01. Allowing

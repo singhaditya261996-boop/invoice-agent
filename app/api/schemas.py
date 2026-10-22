@@ -119,3 +119,47 @@ class AuditRecord(BaseModel):
     reviewed_by: str | None
     review_reason: str | None
     is_override: bool
+
+
+# --------------------------------------------------------------------------- policy sandbox
+
+
+class PolicyOverrides(BaseModel):
+    """Thresholds to try. Anything omitted keeps the batch's configured value."""
+
+    tolerance_pct: Decimal | None = Field(default=None, ge=0, le=1)
+    tolerance_absolute: Decimal | None = Field(default=None, ge=0)
+    auto_approve_confidence: float | None = Field(default=None, ge=0, le=1)
+    auto_reject_duplicate_confidence: float | None = Field(default=None, ge=0, le=1)
+    auto_resolvable: list[ExceptionCode] | None = None
+
+
+class PolicyOutcome(BaseModel):
+    by_action: dict[str, int]
+    auto_resolution_rate: float
+    straight_through_rate: float
+
+
+class PolicyChange(BaseModel):
+    doc_id: str
+    invoice_number: str | None
+    supplier_name: str | None
+    total_amount: Decimal | None
+    before_code: ExceptionCode | None
+    before_action: Action
+    after_code: ExceptionCode | None
+    after_action: Action
+    after_confidence: float
+
+
+class PolicySimulation(BaseModel):
+    """What this batch would have looked like under different rules (US-04, D-01, D-02)."""
+
+    applied: dict[str, str]
+    llm: str  # "replayed" (recorded responses) or "rules" (no model)
+    before: PolicyOutcome
+    after: PolicyOutcome
+    changed: list[PolicyChange]
+    newly_autonomous: int  # escalations the agent would now settle alone
+    newly_escalated: int  # decisions it would now hand back to a human
+    risk: list[str]

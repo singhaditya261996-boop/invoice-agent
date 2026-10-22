@@ -5,10 +5,11 @@
 // browser only, and anything that would process a new invoice is unavailable without a server.
 
 import type {
-  Action, BatchSummary, Dashboard, Decision, GoodsReceipt, OverrideReason, PurchaseOrder, ResultDetail,
-  ResultFilters, ResultRow, Review,
+  Action, BatchSummary, Dashboard, Decision, GoodsReceipt, OverrideReason, PolicySimulation, PurchaseOrder,
+  ResultDetail, ResultFilters, ResultRow, Review,
 } from "./api";
 import { ApiError } from "./api";
+import { scenarioKey, type PolicyIndices } from "./policy";
 
 const BASE = `${import.meta.env.BASE_URL}demo/`;
 const REVIEWS_KEY = "invoice-agent.demo-reviews";
@@ -115,6 +116,9 @@ export const staticApi = {
     if (!res.ok) throw new ApiError(res.status, "source not found");
     return { type: "text/plain", text: await res.text() };
   },
+  // Precomputed at build time: the hosted demo has no server to re-run a batch.
+  simulate: (_id: string, indices: PolicyIndices) =>
+    file<PolicySimulation>(`policy/${scenarioKey(indices)}.json`),
   auditUrl: (_id: string, _action?: Action) => `${BASE}audit.csv`,
 
   createDemo: () => unavailable("Starting a batch"),

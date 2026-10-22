@@ -8,8 +8,9 @@ import {
 import { ACTION_LABELS, BAND_LABELS, CODE_LABELS, DECISION_LABELS, gbp, MODE_LABELS, pct, REASON_LABELS } from "../format";
 import { href, useAsync } from "../hooks";
 import { Progress } from "./BatchesPage";
+import { PolicyPanel } from "./PolicyPanel";
 
-export function BatchPage({ batchId, tab }: { batchId: string; tab: "queue" | "dashboard" }) {
+export function BatchPage({ batchId, tab }: { batchId: string; tab: "queue" | "dashboard" | "policy" }) {
   const batch = useAsync(() => api.batch(batchId), [batchId], (b) => b.status !== "complete");
   const [scoring, setScoring] = useState(false);
   const b = batch.data;
@@ -48,8 +49,9 @@ export function BatchPage({ batchId, tab }: { batchId: string; tab: "queue" | "d
       </div>
 
       <nav className="flex gap-1 border-b border-line" aria-label="Batch views">
-        {([["queue", "Review queue", b.pending_review], ["dashboard", "Dashboard", null]] as const).map(([key, label, n]) => (
-          <a key={key} href={key === "queue" ? href("batches", batchId) : href("batches", batchId, "dashboard")}
+        {([["queue", "Review queue", b.pending_review], ["dashboard", "Dashboard", null],
+           ["policy", "Policy sandbox", null]] as const).map(([key, label, n]) => (
+          <a key={key} href={key === "queue" ? href("batches", batchId) : href("batches", batchId, key)}
             aria-current={tab === key ? "page" : undefined}
             className={`-mb-px border-b-2 px-3 py-2 text-sm font-medium ${tab === key
               ? "border-accent text-ink" : "border-transparent text-ink-2 hover:text-ink"}`}>
@@ -60,7 +62,8 @@ export function BatchPage({ batchId, tab }: { batchId: string; tab: "queue" | "d
       </nav>
 
       {tab === "queue" ? <Queue batchId={batchId} refreshKey={b.processed + b.pending_review} />
-        : <DashboardView batchId={batchId} refreshKey={b.processed} />}
+        : tab === "policy" ? <PolicyPanel batchId={batchId} />
+          : <DashboardView batchId={batchId} refreshKey={b.processed} />}
       {scoring && <ScoreDrawer batchId={batchId} onClose={() => setScoring(false)} />}
     </div>
   );

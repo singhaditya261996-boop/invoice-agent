@@ -162,3 +162,47 @@ def test_cannot_add_to_a_batch_still_processing(client, settings, ds):
     batch = client.app.state.registry.create("pending", RunMode.OFFLINE, ds.purchase_orders, ds.goods_receipts, [])
     resp = client.post(f"/batches/{batch.id}/invoices", json={"document": "x"})
     assert resp.status_code == 409
+
+
+# ---------------------------------------------------------------- policy sandbox
+
+
+def test_widening_the_autonomy_boundary_shows_what_it_would_settle(client, demo):
+    """D-01's open question, made measurable: what does allowing E03 actually change?"""
+    sim = client.post(f"/batches/{demo}/simulate", json={"auto_resolvable": ["E01", "E03", "E04"]}).json()
+    assert sim["llm"] == "rules"
+    assert sim["before"]["by_action"] == {"auto_approve": 340, "auto_reject": 25, "escalate": 135}
+    assert sim["after"]["auto_resolution_rate"] > sim["before"]["auto_resolution_rate"]
+    assert sim["newly_autonomous"] == len([c for c in sim["changed"] if c["before_action"] == "escalate"])
+    assert all(c["before_code"] == "E03" for c in sim["changed"])
+    assert any("E03" in note for note in sim["risk"])
+
+
+def test_loosening_tolerance_moves_invoices_from_e02_to_e01(client, demo):
+    sim = client.post(f"/batches/{demo}/simulate",
+                      json={"tolerance_pct": "0.2", "tolerance_absolute": "100000"}).json()
+    promoted = [c for c in sim["changed"] if c["before_code"] == "E02"]
+    assert promoted and all(c["after_code"] == "E01" for c in promoted)
+    assert any("approved for payment" in note for note in sim["risk"])
+
+    # Reclassifying is not the same as approving: an invoice with no goods receipt keeps a
+    # confidence penalty, so it stays with a human even once the amount is within tolerance.
+    approved = [c for c in promoted if c["after_action"] == "auto_approve"]
+    held = [c for c in promoted if c["after_action"] == "escalate"]
+    assert approved and held
+    assert all(c["after_confidence"] >= 0.95 for c in approved)
+    assert all(c["after_confidence"] < 0.95 for c in held)
+
+
+def test_raising_the_approval_bar_sends_work_back_to_analysts(client, demo):
+    sim = client.post(f"/batches/{demo}/simulate", json={"auto_approve_confidence": 0.999}).json()
+    assert sim["newly_escalated"] > 0 and sim["newly_autonomous"] == 0
+    assert sim["after"]["straight_through_rate"] < sim["before"]["straight_through_rate"]
+    assert any("back to the review queue" in note for note in sim["risk"])
+
+
+def test_unchanged_policy_changes_nothing(client, demo):
+    sim = client.post(f"/batches/{demo}/simulate", json={}).json()
+    assert sim["changed"] == [] and sim["before"] == sim["after"]
+    assert sim["risk"] == ["Nothing changes on this batch. The thresholds that moved are not the ones "
+                           "binding here."]

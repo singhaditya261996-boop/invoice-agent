@@ -63,6 +63,16 @@ settles on its own, and whether analysts are quietly correcting it:
 
 ![The dashboard](docs/images/dashboard.png)
 
+And because "how much should it do on its own?" is the argument every AP team will actually have,
+the policy sandbox re-runs the whole batch under different rules and shows what each setting buys
+and costs:
+
+![The policy sandbox](docs/images/policy-sandbox.png)
+
+Loosening the rules here lifts auto-resolution from 17% to 38% — and names the five invoices, worth
+£14,199, that would be paid without anyone looking at them. It runs on recorded responses, so
+exploring costs nothing.
+
 ## How it works
 
 Five steps, each feeding the next:
@@ -111,7 +121,8 @@ An escalation brief, as the agent writes it:
 
 - **The autonomy boundary is narrower than the target it has to hit.** Only two exception types may
   be resolved without a human, which caps auto-resolution at 32.5% against a 40–60% goal. Widening
-  it is a decision for after the agent has earned trust on measured override rates, not before.
+  it is a decision for after the agent has earned trust on measured override rates, not before — and
+  the policy sandbox above quantifies each option rather than leaving it to opinion.
   ([D-01](docs/decision-log.md#d-01-autonomy-boundary-set-at-a-conservative-threshold))
 - **The model is used where language is, and nowhere else.** It costs less, it is easier to debug,
   and the steps a controller will ask about stay deterministic.

@@ -199,6 +199,35 @@ export interface AgentConfig {
   duplicate_window_days: number;
 }
 
+export interface PolicyOutcome {
+  by_action: Record<string, number>;
+  auto_resolution_rate: number;
+  straight_through_rate: number;
+}
+
+export interface PolicyChange {
+  doc_id: string;
+  invoice_number: string | null;
+  supplier_name: string | null;
+  total_amount: string | null;
+  before_code: Code | null;
+  before_action: Action;
+  after_code: Code | null;
+  after_action: Action;
+  after_confidence: number;
+}
+
+export interface PolicySimulation {
+  applied: Record<string, string>;
+  llm: string;
+  before: PolicyOutcome;
+  after: PolicyOutcome;
+  changed: PolicyChange[];
+  newly_autonomous: number;
+  newly_escalated: number;
+  risk: string[];
+}
+
 export class ApiError extends Error {
   constructor(public status: number, message: string) {
     super(message);
@@ -227,6 +256,7 @@ const json = (body: unknown): RequestInit => ({
   body: JSON.stringify(body),
 });
 
+import { scenarioBody, type PolicyIndices } from "./policy";
 import { staticApi } from "./staticApi";
 
 export interface ResultFilters {
@@ -270,6 +300,8 @@ const liveApi = {
     form.append("file", file);
     return request<ResultDetail>(`/batches/${id}/documents`, { method: "POST", body: form });
   },
+  simulate: (id: string, indices: PolicyIndices) =>
+    request<PolicySimulation>(`/batches/${id}/simulate`, json(scenarioBody(indices))),
   auditUrl: (id: string, action?: Action) =>
     `${BASE}/batches/${id}/audit?format=csv${action ? `&action=${action}` : ""}`,
 };

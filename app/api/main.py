@@ -21,10 +21,13 @@ from app.api.schemas import (
     BatchSummary,
     DemoBatchCreate,
     InvoiceInput,
+    PolicyOverrides,
+    PolicySimulation,
     ResultDetail,
     ResultRow,
     ReviewCreate,
 )
+from app.api.policy import simulate
 from app.api.state import Batch, BatchStatus, Registry, Source
 from app.config import Settings, load_settings
 from app.metrics import Dashboard, summarize
@@ -231,6 +234,18 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         )
         registry.record_review(batch, review)
         return review
+
+    # ------------------------------------------------------------------ policy sandbox
+
+    @app.post("/batches/{batch_id}/simulate")
+    def simulate_policy(batch_id: str, body: PolicyOverrides) -> PolicySimulation:
+        """Re-run this batch under different thresholds and report what would have changed.
+
+        Never calls a model: recorded responses are replayed where they exist, and the rule-based
+        fallbacks run where they do not, so exploring policy costs nothing.
+        """
+        batch = _ready_for_additions(get_batch(batch_id))
+        return simulate(batch, body)
 
     # ------------------------------------------------------------------ dashboard (US-04) and audit (US-05)
 

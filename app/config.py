@@ -54,6 +54,13 @@ class Settings(BaseModel):
 
     # D-01: only these exception types may be auto-resolved in MVP
     auto_resolvable: frozenset[ExceptionCode] = frozenset({ExceptionCode.E01, ExceptionCode.E04})
+    # D-16: the ceiling autonomy may ever reach, whatever the evidence says. The exception taxonomy
+    # marks the rest "always escalate" because they are questions of authority or identity — paying
+    # more than the PO authorises, paying with no PO at all, paying a different legal entity — and no
+    # override rate answers those. A low override rate means the agent categorises them correctly,
+    # which is a different claim entirely.
+    eligible_for_autonomy: frozenset[ExceptionCode] = frozenset({
+        ExceptionCode.E01, ExceptionCode.E03, ExceptionCode.E04, ExceptionCode.E07})
 
     # Failure taxonomy: "False match" mitigation
     min_match_score: float = 0.95
@@ -95,6 +102,16 @@ class Settings(BaseModel):
     # API
     review_log_path: Path = Path(__file__).resolve().parents[1] / "var" / "reviews.jsonl"
     cors_origins: list[str] = Field(default_factory=lambda: ["http://localhost:5173"])
+
+    # Feedback loop (D-16): the evidence bar before autonomy is recommended to move
+    # 40 reviews is the smallest sample where a clean record can clear the bar below: with 20, even
+    # zero overrides leaves a 16% upper bound, so widening could never be recommended.
+    feedback_min_reviews: int = 40  # per category, before any recommendation is made
+    # Tied to the PRD's own < 15% override target: widen only when we are 95% confident the
+    # category's true override rate is already below what the product promises.
+    feedback_widen_max_override: float = 0.15
+    feedback_narrow_min_override: float = 0.25  # matches the PRD's rollback trigger
+    feedback_narrow_min_reversal: float = 0.05  # reversed autonomous decisions are the louder signal
 
     # Trust design §7.1 confidence bands
     band_green_min: float = 0.90

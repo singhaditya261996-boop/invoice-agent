@@ -8,6 +8,7 @@ import {
 import { ACTION_LABELS, BAND_LABELS, CODE_LABELS, DECISION_LABELS, gbp, MODE_LABELS, pct, REASON_LABELS } from "../format";
 import { href, useAsync } from "../hooks";
 import { Progress } from "./BatchesPage";
+import { FeedbackCard } from "./FeedbackCard";
 import { PolicyPanel } from "./PolicyPanel";
 
 export function BatchPage({ batchId, tab }: { batchId: string; tab: "queue" | "dashboard" | "policy" }) {
@@ -294,6 +295,7 @@ function DashboardView({ batchId, refreshKey }: { batchId: string; refreshKey: n
           </div>
         </Card>
       </div>
+      <FeedbackCard batchId={batchId} />
       <p className="text-xs text-muted">Median processing time {d.median_latency_ms} ms per invoice.</p>
     </div>
   );

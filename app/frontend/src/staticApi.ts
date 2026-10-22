@@ -5,8 +5,8 @@
 // browser only, and anything that would process a new invoice is unavailable without a server.
 
 import type {
-  Action, BatchSummary, Dashboard, Decision, GoodsReceipt, OverrideReason, PolicySimulation, PurchaseOrder,
-  ResultDetail, ResultFilters, ResultRow, Review,
+  Action, BatchSummary, Dashboard, Decision, FeedbackReport, GoodsReceipt, OverrideReason, PolicySimulation,
+  PurchaseOrder, ResultDetail, ResultFilters, ResultRow, Review,
 } from "./api";
 import { ApiError } from "./api";
 import { scenarioKey, type PolicyIndices } from "./policy";
@@ -116,6 +116,10 @@ export const staticApi = {
     if (!res.ok) throw new ApiError(res.status, "source not found");
     return { type: "text/plain", text: await res.text() };
   },
+  // A simulated review history, so the demo can show the loop working: one batch cannot supply the
+  // 40 reviews per category the recommendation requires.
+  feedback: (_id: string) => file<FeedbackReport>("feedback.json"),
+
   // Precomputed at build time: the hosted demo has no server to re-run a batch.
   simulate: (_id: string, indices: PolicyIndices) =>
     file<PolicySimulation>(`policy/${scenarioKey(indices)}.json`),

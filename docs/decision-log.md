@@ -215,3 +215,30 @@ reporting pilot numbers names the model beside them, and the shipping-model run 
 The free tier allows 20 requests per model per day, which is why the pilot is 27 invoices, built
 over three sittings; each reuses the earlier sittings' recorded responses so quota goes only on
 invoices not yet measured.
+
+## D-16: Autonomy is recommended by evidence, never widened by the agent itself
+
+**Decision.** The agent measures its own override rate per exception category and recommends where
+the autonomy boundary should move. A person applies the change. Three guards:
+
+1. **A minimum of 40 reviews per category.** Below that the sample cannot support a recommendation.
+2. **The test uses the upper bound of the override rate, not the rate itself** (Wilson, 95%), so a
+   short lucky run cannot look like evidence. Widening requires 95% confidence that the category's
+   true override rate is already under the PRD's own 15% target.
+3. **Some categories are never eligible, whatever the evidence.** E02, E05, E06 and E08 stay with a
+   human permanently.
+
+**Rationale.** D-01 always intended the boundary to widen on measured override rates, but nothing
+measured them. The first two guards are about statistics; the third is the product judgement.
+
+The simulated review history made the point concretely: analysts almost never override E02 (amount
+over tolerance), so a naive rule recommended automating it. But a low override rate means the agent
+*categorises* E02 correctly — it says nothing about whether a machine should authorise paying more
+than the purchase order allows. Override rate measures accuracy; autonomy is a question of
+authority. The eligible set is therefore drawn from the exception taxonomy's own "always escalate"
+column rather than from any metric.
+
+**Why the agent never applies its own recommendation.** An agent that expands its authority on the
+strength of its own metrics is exactly the failure this product exists to avoid, and the audit story
+to a controller would be indefensible. The recommendation names the change; the policy sandbox
+quantifies it; a manager makes it.

@@ -31,10 +31,58 @@ TOLERANCES = [("0.005", "25"), ("0.01", "50"), ("0.02", "150"), ("0.05", "500")]
 APPROVAL_CONFIDENCES = [0.85, 0.90, 0.95, 0.99]
 AUTONOMY_SETS = [["E01", "E04"], ["E01", "E03", "E04"], ["E01", "E03", "E04", "E07"]]
 
+# A category needs 40 reviews before the feedback loop will recommend anything, and a single batch
+# cannot supply that for most categories — evidence accrues across batches. So the demo ships a
+# simulated quarter of review history, labelled as simulated wherever it is shown.
+# (code, reviews, override rate, share of those overrides that reverse an autonomous decision)
+SIMULATED_HISTORY = [
+    ("clean", 400, 0.01, 0.2),
+    ("E01", 200, 0.06, 0.1),
+    ("E02", 120, 0.09, 0.0),
+    ("E03", 150, 0.05, 0.0),
+    ("E04", 80, 0.09, 0.7),
+    ("E05", 140, 0.22, 0.0),
+    ("E06", 30, 0.10, 0.0),
+    ("E07", 90, 0.12, 0.0),
+    ("E08", 60, 0.10, 0.0),
+]
+
 
 def write(path: Path, payload) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(payload if isinstance(payload, str) else json.dumps(payload, separators=(",", ":")))
+
+
+def simulated_feedback(settings: Settings):
+    """A plausible quarter of analyst review history, so the demo can show the mechanism working."""
+    import random
+    from datetime import datetime, timezone
+
+    from app.feedback import analyse
+    from app.models import Action, Decision, ExceptionCode, OverrideReason, Review
+
+    rng = random.Random(11)
+    autonomous = {"clean", "E01", "E04"}
+    reviews = {}
+    for code, count, override_rate, reversal_share in SIMULATED_HISTORY:
+        action = Action.AUTO_REJECT if code == "E04" else (
+            Action.AUTO_APPROVE if code in autonomous else Action.ESCALATE)
+        for i in range(count):
+            doc = f"HIST-{code}-{i}"
+            override = rng.random() < override_rate
+            reverses = override and rng.random() < reversal_share
+            decision = (Decision.APPROVE if action == Action.AUTO_REJECT else Decision.REJECT) if reverses \
+                else (Decision.REJECT if action == Action.AUTO_REJECT else Decision.APPROVE)
+            reviews[doc] = Review(
+                doc_id=doc, invoice_number=doc, original_code=ExceptionCode(code), original_action=action,
+                new_code=ExceptionCode.CLEAN if override else ExceptionCode(code), decision=decision,
+                is_override=override, reason=OverrideReason.WRONG_CATEGORY if override else None,
+                analyst="demo", created_at=datetime.now(timezone.utc))
+    report = analyse({}, reviews, settings)
+    report.note = (f"Simulated review history: {len(reviews)} analyst decisions across earlier batches. "
+                   "A category needs 40 reviews before this will recommend anything, which one batch "
+                   "rarely supplies.")
+    return report
 
 
 def main() -> None:
@@ -84,6 +132,8 @@ def main() -> None:
                             "auto_approve_confidence": confidence, "auto_resolvable": autonomy}
                     write(OUT / "policy" / f"{ti}-{ci}-{ai}.json",
                           client.post(f"/batches/{bid}/simulate", json=body).json())
+
+        write(OUT / "feedback.json", simulated_feedback(settings).model_dump(mode="json"))
 
         size = sum(f.stat().st_size for f in OUT.rglob("*") if f.is_file())
         scenarios = len(TOLERANCES) * len(APPROVAL_CONFIDENCES) * len(AUTONOMY_SETS)

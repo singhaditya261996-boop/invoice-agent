@@ -28,6 +28,7 @@ from app.api.schemas import (
     ReviewCreate,
 )
 from app.api.policy import simulate
+from app.feedback import FeedbackReport, analyse
 from app.api.state import Batch, BatchStatus, Registry, Source
 from app.config import Settings, load_settings
 from app.metrics import Dashboard, summarize
@@ -253,6 +254,12 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     def dashboard(batch_id: str) -> Dashboard:
         batch = get_batch(batch_id)
         return summarize(list(batch.results.values()), batch.reviews, batch.agent.settings)
+
+    @app.get("/batches/{batch_id}/feedback")
+    def feedback(batch_id: str) -> FeedbackReport:
+        """What analyst overrides say about where the autonomy boundary should sit (D-01, D-16)."""
+        batch = get_batch(batch_id)
+        return analyse(batch.results, batch.reviews, batch.agent.settings)
 
     @app.get("/batches/{batch_id}/audit", response_model=None)
     def audit(batch_id: str, format: Literal["json", "csv"] = "json",

@@ -80,6 +80,11 @@ fall back to templates when it is unavailable.
   without colour.
 - **Reversed autonomous decisions.** Auto-decisions an analyst undid are counted separately: this is
   the early-warning signal for the false-approval rate.
+- **Autonomy recommendations.** The dashboard reports, per exception category, how often analysts
+  overrode the agent and whether the evidence supports moving that category in or out of autonomy
+  ([D-16](decision-log.md#d-16-autonomy-is-recommended-by-evidence-never-widened-by-the-agent-itself)).
+  This is what makes override capture worth an analyst's time: the reason codes they enter are
+  visibly the thing that decides what the agent is allowed to do next.
 - **Policy sandbox.** The manager can re-run the processed batch under different tolerances,
   confidence thresholds and autonomy boundaries, and see exactly which invoices change hands. It
   names the sum of money that would move from "an analyst sees this" to "paid automatically", so
@@ -94,8 +99,10 @@ fall back to templates when it is unavailable.
 
 ## 4. What is not built
 
-- **No learning loop yet.** Overrides are captured and reported, but nothing feeds them back into
-  the agent's behaviour. Until it does, the "teaching the system" framing is a promise, not a fact.
+- **The loop informs; it does not yet adapt.** Override rates now drive explicit recommendations to
+  widen or narrow autonomy, and a manager applies them. What is still absent is anything learned
+  automatically — per-supplier tolerances inferred from "contractual adjustment" overrides, for
+  instance. The agent's behaviour changes when a person changes it.
 - **No per-analyst view or workload routing.**
 - **Confidence is uncalibrated in the shipped configuration** (D-04), so bands currently understate
   certainty. Fitting the calibration table on a live run is a prerequisite for trusting the bands.

@@ -102,7 +102,10 @@ no unsafe invoice was auto-approved.
 5. **Adversarial invoices are out of scope.** Nothing here resists an invoice crafted to exploit
    extraction or matching.
 6. **Single currency, standard-rated VAT only.** Zero-rated and exempt items are not modelled.
-7. **The feedback loop is half-built.** Overrides are captured but do not yet change behaviour.
+7. **The feedback loop recommends but does not adapt.** Override rates per category drive explicit
+   recommendations to widen or narrow autonomy (D-16), with a minimum sample and a confidence bound
+   behind each one. Applying a recommendation is a human act by design. Nothing is learned
+   automatically yet.
 8. **Only some production failure modes observed.** Throttling (429) and overloaded models (503)
    have now been seen against a real API, and both are retried; the 503 handling was added *because*
    a live run exposed it. Refusals, truncation and malformed structured output are still only

@@ -73,6 +73,11 @@ Loosening the rules here lifts auto-resolution from 17% to 38% — and names the
 £14,199, that would be paid without anyone looking at them. It runs on recorded responses, so
 exploring costs nothing.
 
+And because the agent should earn autonomy rather than be granted it, override rates per category
+drive an explicit recommendation about where the boundary belongs next:
+
+![Autonomy recommendations from measured override rates](docs/images/feedback-loop.png)
+
 ## How it works
 
 Five steps, each feeding the next:
@@ -130,6 +135,10 @@ An escalation brief, as the agent writes it:
 - **Confirming the agent is not the same as overriding it.** A reason code is required only for a
   real correction, so the override rate stays a measure of agent accuracy rather than of clicks.
   ([D-12](docs/decision-log.md#d-12-confirming-an-escalation-is-a-review-not-an-override))
+- **Autonomy is earned, not granted.** Override rates per category drive recommendations to widen or
+  narrow the boundary — behind a minimum sample and a confidence bound — but the agent never applies
+  them to itself, and some categories are never eligible however good the evidence.
+  ([D-16](docs/decision-log.md#d-16-autonomy-is-recommended-by-evidence-never-widened-by-the-agent-itself))
 - **Two duplicate-payment routes were closed after the evaluation found them**, not after a user
   did. An invoice waiting for manual entry still counts for duplicate checks, and the same PO billed
   twice for the same amount is suspicious on any date.
@@ -188,8 +197,8 @@ Full results, including what each run does not show:
   ([D-04](docs/decision-log.md#d-04-confidence-scores-are-calibrated-not-raw-model-probabilities))
 - **Auto-resolution cannot reach its target** under the current autonomy boundary. That is a product
   decision to revisit, not a bug.
-- **The feedback loop is half-built**: overrides are captured with reason codes and reported, but
-  nothing feeds them back into the agent's behaviour yet.
+- **The feedback loop advises rather than adapts**: override rates drive recommendations about where
+  autonomy belongs, but a person applies them and nothing is learned automatically.
 - **Adversarial invoices are out of scope**, as are multi-currency and non-standard VAT.
 - Batches live in memory; there is no authentication or access control.
 
@@ -202,9 +211,9 @@ Honest summary: [docs/model-card.md](docs/model-card.md) · how it fails:
    and re-check the confidence bands. Everything marked "not measured" above depends on this.
 2. **Settle the two open decisions:** the auto-resolution ceiling, and whether extraction confidence
    should keep suppressing auto-approvals when the arithmetic checks already catch misreads.
-3. **Close the feedback loop.** Override reason codes are already structured; the next step is using
-   them — per-supplier tolerances learned from "contractual adjustment" overrides, and per-category
-   autonomy that widens as measured override rates fall.
+3. **Let the loop adapt, not just advise.** Per-category autonomy recommendations are built; what is
+   missing is anything learned automatically, such as per-supplier tolerances inferred from
+   "contractual adjustment" overrides.
 4. **Shadow-mode pilot on real invoices.** The agent proposes, humans decide, and the two are
    compared for a period before any autonomy is switched on.
 5. **ERP integration** to replace batch upload, then supplier self-service for the exceptions that

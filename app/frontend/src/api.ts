@@ -228,6 +228,28 @@ export interface PolicySimulation {
   risk: string[];
 }
 
+export interface CategoryEvidence {
+  code: Code;
+  autonomous_today: boolean;
+  eligible: boolean;
+  reviewed: number;
+  overrides: number;
+  override_rate: number | null;
+  override_rate_upper: number | null;
+  reversals: number;
+  recommendation: "widen" | "narrow" | "hold" | "insufficient_evidence";
+  reason: string;
+  top_override_reason: OverrideReason | null;
+}
+
+export interface FeedbackReport {
+  note: string | null;
+  reviews: number;
+  min_reviews_required: number;
+  categories: CategoryEvidence[];
+  actionable: string[];
+}
+
 export class ApiError extends Error {
   constructor(public status: number, message: string) {
     super(message);
@@ -300,6 +322,7 @@ const liveApi = {
     form.append("file", file);
     return request<ResultDetail>(`/batches/${id}/documents`, { method: "POST", body: form });
   },
+  feedback: (id: string) => request<FeedbackReport>(`/batches/${id}/feedback`),
   simulate: (id: string, indices: PolicyIndices) =>
     request<PolicySimulation>(`/batches/${id}/simulate`, json(scenarioBody(indices))),
   auditUrl: (id: string, action?: Action) =>

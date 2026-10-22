@@ -5,11 +5,15 @@
     "input": "structured",
     "limit": null,
     "workers": 8,
-    "model": "claude-opus-5",
+    "provider": "anthropic",
+    "model": null,
     "effort": "medium",
     "max_cost_usd": 40.0,
     "estimate": false,
     "simulate_extraction_errors": null,
+    "check": true,
+    "rescore": false,
+    "reuse_recorded": false,
     "fit_calibration": false,
     "no_calibration": false,
     "seed": 0,
@@ -27,6 +31,7 @@
     "auto_reject_precision": 1.0,
     "escalation_recall": 1.0,
     "median_latency_s": 0.0,
+    "latency_measured_on": 500,
     "cost_per_invoice_gbp": 0.0
   },
   "pass": {
@@ -94,6 +99,7 @@
     ]
   },
   "latency_ms": {
+    "invoices": 500,
     "median": 0,
     "p90": 0,
     "max": 18

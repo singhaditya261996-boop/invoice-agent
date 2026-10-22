@@ -98,6 +98,23 @@ every score to about 99.7% and erases the uncertainty signal on genuinely ambigu
 GR-notes-only E03s, currently amber at 75%, would read as near-certain. It should be fitted on the
 live run, where real extraction errors give the fit something to learn from (D-04).
 
+## 4b. The gate in CI
+
+Two evaluation runs execute on every push, and the build fails if either misses its thresholds:
+
+```bash
+python -m eval.run_eval --mode offline --check                       # all 500, rules only
+python -m eval.run_eval --simulate-extraction-errors 0.5 --check     # half deliberately misread
+```
+
+The first checks every threshold that can be measured without a model. The second checks only the
+safety properties — auto-resolution precision, escalation recall, and that nothing with a misread
+that affects payment was auto-approved — because a run that misreads half its invoices is *expected*
+to classify them wrong; what matters is that none of them is paid.
+
+Calibration is deliberately not gated: no table is installed, so the run reports it failing, and
+blocking the build on a known-open target would only teach people to ignore the signal.
+
 ## 5. Rollback criteria
 
 In production, any of these triggers a rollback to manual processing:

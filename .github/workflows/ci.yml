@@ -20,6 +20,12 @@ jobs:
       # and the end-to-end check that no problem invoice is ever auto-approved.
       - run: pytest -q
 
+      # The safety properties are enforced by the pipeline, not by remembering to check them.
+      - name: Evaluation gate — all 500 invoices, rules only
+        run: python -m eval.run_eval --mode offline --check
+      - name: Evaluation gate — half the invoices deliberately misread
+        run: python -m eval.run_eval --simulate-extraction-errors 0.5 --check --name ci-robustness
+
   web:
     name: Frontend build
     runs-on: ubuntu-latest

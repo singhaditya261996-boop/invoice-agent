@@ -4,7 +4,7 @@
 - **Input:** structured (500 of 500 invoices)
 - **Model:** none
 - **Calibration:** none (identity)
-- **Run at:** 2026-09-19 19:38 UTC, 0.1s wall clock
+- **Run at:** 2026-10-22 09:24 UTC, 0.1s wall clock
 
 ## Results against PRD thresholds (§5.2)
 
@@ -68,7 +68,7 @@ Calibration error (PRD definition, mean gap per bucket): 14.49%; size-weighted E
 
 - LLM calls: 0 (0 fell back to rules), 0 input / 0 output tokens
 - Cost: $0.00 (£0.00), £0.0000 per invoice
-- Latency per invoice: median 0 ms, p90 0 ms
+- Latency per invoice: median 0 ms, p90 0 ms (measured on the 500 invoices whose model calls ran this time)
 
 ## Failures (0)
 

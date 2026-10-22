@@ -359,6 +359,8 @@ def main(argv: list[str] | None = None) -> Run:
     parser.add_argument("--estimate", action="store_true", help="project live cost without calling the API")
     parser.add_argument("--simulate-extraction-errors", type=float, metavar="RATE",
                         help="simulated extraction with this share of invoices misread (implies --input documents)")
+    parser.add_argument("--check", action="store_true",
+                        help="exit non-zero if the run misses its thresholds (for CI)")
     parser.add_argument("--rescore", action="store_true",
                         help="recompute metrics and report from a run's saved results.jsonl; no API calls")
     parser.add_argument("--reuse-recorded", action="store_true",
@@ -426,7 +428,40 @@ def main(argv: list[str] | None = None) -> Run:
         print(f"  misreads caught {robust['caught']}/{robust['material_misreads']}, unsafe approvals "
               f"{len(robust['auto_approved_with_material_misread'])}")
     print(f"Report: {run.out / 'report.md'}")
+
+    if args.check:
+        _check(run, scored, robust)
     return run
+
+
+# Safety properties hold under every condition, including deliberate misreads. Accuracy metrics do
+# not: a run that misreads half its invoices is *expected* to classify them wrong, and what matters
+# there is that none of them is paid.
+SAFETY_METRICS = ("auto_resolution_precision", "escalation_recall")
+
+# Calibration is a known-open target: no table is installed, because fitting one needs a sample
+# containing real mistakes (D-04). The report still shows it failing — gating CI on it would mean a
+# permanently red build, which teaches people to ignore the signal.
+NOT_GATED = ("calibration_error",)
+
+
+def _check(run: Run, scored: dict, robust: dict | None) -> None:
+    relevant = SAFETY_METRICS if run.args.simulate_extraction_errors else \
+        tuple(k for k in THRESHOLDS if k not in NOT_GATED)
+    failures = [f"{k} = {_fmt(scored['metrics'][k])} (target {THRESHOLDS[k][0]} {THRESHOLDS[k][1]})"
+                for k in relevant if scored["pass"].get(k) is False]
+    if scored["product"]["false_approvals"]:
+        failures.append(f"{len(scored['product']['false_approvals'])} false approvals: "
+                        f"{', '.join(scored['product']['false_approvals'][:5])}")
+    if robust and robust["auto_approved_with_material_misread"]:
+        failures.append(f"{len(robust['auto_approved_with_material_misread'])} invoices auto-approved "
+                        "despite a misread that affects payment")
+    if failures:
+        print("\nFAILED:")
+        for f in failures:
+            print(f"  - {f}")
+        raise SystemExit(1)
+    print(f"  checked {len(relevant)} thresholds: all pass")
 
 
 if __name__ == "__main__":
